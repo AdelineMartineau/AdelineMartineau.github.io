@@ -7,7 +7,7 @@ body{
     background: linear-gradient(217deg, rgb(255, 255, 255), rgba(192, 192, 192, 0) 70.71%),
     linear-gradient(127deg, rgba(231, 231, 231, 0.945), rgba(230, 230, 230, 0) 70.71%),
     linear-gradient(336deg, rgba(238, 238, 238, 0.897), rgba(218, 218, 218, 0) 70.71%);
-    font-family: Roboto, sans-serif;
+    font-family: 'Comic Neue', cursive;
 }
 
 /* HEADER */
@@ -15,6 +15,7 @@ body{
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
     linear-gradient(127deg, rgba(0, 99, 255, 0.8), rgba(0,255,0,0) 70.71%),
     linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    opacity: 0.8;
     width: 100%;
     text-align: center;
     font-size: 1,5vw;
@@ -29,13 +30,16 @@ body{
     text-align: center;
 }
 
+
 .title{
-    color: #111111;
+    color: #292626;
     font-size: 2vw;
     text-align: center;
+    font-style: bold;
+    font-family: 'Poiret One', cursive;
+
 }
 
-.img_project {}
 
 #main_zone{
     /* display flex : mettre les éléments les uns à la suite des autres */
@@ -55,18 +59,31 @@ hr{
     margin-bottom: 2vw;
     width: 60vw;
     height: 0.1vw;
-    background-color: black;
+    background-color: rgb(136, 152, 156);
 }
 
 h5{
-    color: #141414;
+    color: #222121;
     font-size: 1.5vw;
-    font-style: bold;
+    font-family: 'Comic Neue', cursive;
+}
+h6{
+    color: rgb(66, 60, 60);
+    font-size: 1.2vw;
 }
 
 p{
     font-size: 1.25vw;
     text-align: left;
+    text-align: justify;
+}
+
+.imgCard {
+    width: 42vw;
+    height: 24vw;
+    border:none;
+    border-radius: 0.4vw;
+    box-shadow: 0vw 0vw 1.1vw black;
 }
 
 /* FOOTER */
@@ -80,6 +97,7 @@ p{
     padding: 0.05vw 0vw;
     margin-top: 4vw;
     box-shadow: 0vw 0vw 2vw 0.1vw black;
+    font-family: 'Poiret One', cursive;
 }
 
 /* -width: permet de définir la largeur de la boîte du contenu d'un élément. 
