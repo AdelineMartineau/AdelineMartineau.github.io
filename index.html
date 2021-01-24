@@ -2,81 +2,119 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-    <link rel="icon" type="image/png" href="assets/img/icon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <title>Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <div id="header">
-        <img src="assets/img/portfolio.png" alt="" style="width:30vw;"><br>
-        <a href="https://github.com/AdelineMartineau?tab=repositories"><img src="assets/img/github.svg.png" alt="" style="width: 4vw;"></a>
-        <a href="https://cvdesignr.com/p/5df784f11bb36?hl=fr_FR"><img src="assets/img/cvdesignr.png" alt="" style="width: 4vw;border-radius:2vw;"></a>
-    </div>
-    <div id="main">
-        <h4 class="title">Qui suis-je ?</h4>
-        <hr style="width: 70%; height: 0.01vw; margin-top: 2.2vw; clear: both">
-        <div id="main_zone">
-            <div id="zone_text">
-                <p>Je m'appelle Adeline, j'apprends le développement en Autodidacte et je vous souhaite la bienvenue sur mon Portfolio !</p>
-                <p>Vous trouverez ci-dessous les projets que j'ai réalisés afin de progresser dans divers langages de programmation. Je souhaite acquérir des compétences pour entrer en BTS SIO option SLAM.</p>
-                <p>Autrement, mes passions sont les suivantes : la musique (je joue d'ailleurs de la guitare), les livres, les séries, et les jeux vidéos !</p>
+  <div id="header">
+      <img id="picture" src="./assets/adeliine.png" alt="">
+      <div id="titles">  
+          <div id="title">ADELINE MARTINEAU</div>
+          <div id="subtitle">En recherche d'un stage en Developpement Informatique</div>
+      </div>
+  </div>
+  <div id="main">
+      <div id="leftbar">
+          <div class="titles">INFORMATIONS</div>
+          <div class="infos">
+              <div class="info">Née le 02/11/1998</div>
+              <div class="info">22 ans</div>
+              <div class="info">Permis B</div>
+              <div class="info">Véhicule personnel</div>
+              <div class="info">44000 Nantes</div>
             </div>
-            <img src="assets/img/imgProfil.jpg" alt="" style="height: 24vw;min-width: 18vw; border-radius : 0.7vw; margin-left: 3vw; ">
+            
+            <div class="titles">CONTACTS & CV</div>
+            <div class="infos">
+                <div class="info">adeline.martineau1@outlook.fr</div>
+                <a href="https://github.com/AdelineMartineau"><div class="info">Github</div></a>
+                <a href="https://www.linkedin.com/in/adeline-martineau-0a0681167"><div class="info">Linkedin</div></a>
+            </div>
+            
+            <div class="titles">LANGUES</div>
+            <div class="infos">
+                <div class="info">Anglais</div>
+            </div>
+            
+            <div class="titles">ATOUTS</div>
+            <div class="infos">
+                <div class="info">Perseverante</div>
+                <div class="info">Investie</div>
+                <div class="info">Curieuse</div>
+                <div class="info">Dynamique</div>
+            </div>
+            
+            <div class="titles">CENTRES D'INTERET</div>
+            <div class="infos">
+                <div class="info">Guitare et chant</div>
+                <div class="info">Dessin</div>
+                <div class="info">Series</div>
+            </div>
+        </div>  <!-- leftbar -->
+        <div id="middlebar">
+            <div class="titles">EXPERIENCES PROFESSIONNELLES</div>
+            <div class="infos">
+                <div class="info">VENDEUSE EN BOULANGERIE</div>
+                <p class="details">Boulangerie Honoré 44100 Nantes | Janvier - Juillet 2020</p>
+                <div class="info">EQUIPIÈRE POLYVALENTE</div>
+                <p class="details">Mac Donald 85500 Les Herbiers | Mars - Juillet 2019</p>
+            </div>
+            
+            <div class="titles">FORMATIONS ET DIPLOMES</div>
+            <div class="infos">
+                <div class="info">BTS SIO</div>
+                <p class="details">Lycée La Colinière Nantes | Septembre 2020 - Mai 2022</p>
+                <div class="info">ANNÉE PRÉPARATOIRE EN ART APPLIQUÉ</div>
+                <p class="details">ESMA Cinécréatis Nantes | Septembre - Octobre 2019</p>
+            </div>
+            
+            <div class="titles">COMPETENCES</div>
+            <div class="infos">
+                <div class="info">Python</div>
+                <div class="info">SQL</div>
+                <div class="info">Git</div>
+                <div class="info">PHP (Symfony)</div>
+                <div class="info">HTML / CSS</div>
+                <div class="info">Javascript (VueJs)</div>
+                <div class="info">C#</div>
+            </div>
+            
+            <div class="titles">LOGICIELS</div>
+            <div class="infos">
+                <div class="info">IDE : Visual Studio Code / Visual Studio 2017 / PyCharm</div>
+                <div class="info">BDD : WAMP (phpMyAdmin) / DBeaver</div>
+                <div class="info">Environnement : Windows / Linux (Debian & Ubuntu)</div>
+            </div>
+            
+        </div> <!-- middlebar -->
+        <div id="rightbar">
+            <center>
+                <div class="projectTitles">Dominos</div>
+                <p class="projectDetails">Python POO</p>
+                <img class="project" src="./assets/Domino.png" alt="">
+                <hr>
+                <div class="projectTitles">LCIS</div>
+                <p class="projectDetails">Wordpress - OpenClassrooms</p>
+                <img class="project" src="./assets/wordpress.png" alt="">
+                <hr>
+                <div class="projectTitles">Shared</div>
+                <p class="projectDetails">Php - mysql</p>
+                <img class="project" src="./assets/Shared.png" alt="">
+                <hr>
+                <div class="projectTitles">Aniaux POO</div>
+                <p class="projectDetails">Python POO</p>
+                <img class="project" src="./assets/Kiwi.png" alt="">
+                <hr>
+                <div class="projectTitles">IT</div>
+                <p class="projectDetails">HTML/CSS/JS</p>
+                <img class="project" src="./assets/IT.png" alt="">
+                <hr>
+                <div style="height: 20vh;"></div>
+            </center>
         </div>
-        <h4 class="title">Mes projets</h4>
-        <hr style="width: 70%; height: 0.01vw; margin-top: 2.2vw; clear: both">
-            <h5>Shared: Réseau Social en Php :</h5>
-            <img class="imgCard" src="assets/img/Shared.png" alt="">
-            <br></br>
-            <h5>MiniTchat : Plateforme de discussion en Php :</h5>
-            <h6>Apprentissage avec OpenClassrooms</h6>
-            <img class="imgCard" src="assets/img/Minichat.PNG" alt="">
-            <br></br>
-            <h5>How To Computeur : Site en Symfony</h5>
-            <h6>Créations de formulaire (articles, commentaires..) avec les vidéos de Lior CHAMLA</h6>
-            <div style="display: flex; flex-direction: row;">
-            <img class="imgCard" src="assets/img/HowToComputeur.PNG" alt="" style="margin-right: 1vw">
-            <img class="imgCard" src="assets/img/FormArticle.PNG" alt="" style="margin-left: 1vw">
-            </div>
-            <br></br>
-            <h5>L.A Event: blog evenementiel en Php</h5>
-            <h6>Création de formulaires</h6>
-            <div style="display: flex; flex-direction: row;">
-                <img class="imgCard" src="assets/img/LAEvent.PNG" alt="" style="margin-right: 1vw">
-                <img class="imgCard" src="assets/img/LA.png" alt="" style="margin-left: 1vw">
-            </div>
-                <img class="imgCard" src="assets/img/InscriptionLA.png" alt="" style="margin-left: 1vw; margin-top: 2vw; align-items: center;">
-        <br></br>
-
-        <h4 class="title">Ma Veille Technologique</h4>
-        <hr style="width: 70%; height: 0.01vw; margin-top: 2.2vw; clear: both">
-
-        <p style="text-align: center;">Je souhaite lors de mon BTS réaliser une veille Technologique sur la Cyber Sécurité face aux Black Hats. J’aime comprendre comment cela fonctionne, les risques d’internet qu’on ne voit pas tout le temps, comment sommes-nous protégés et les moyens mis en place pour détourner le hacking et autres ruses malveillantes. </p>
-        <br></br>
-        <h4 class="title">Mes Technologies acquises et en cours d'acquisition</h4>
-        <hr style="width: 70%; height: 0.01vw; margin-top: 2.2vw; clear: both">
-        <h5>Langage de programmation :</h5>
-            <h5>- Coté Front -</h5>
-            <img src="assets/img/html.png" alt="html" style="width: 8vw; height: 8vw;">
-            <img src="assets/img/css.png" alt="Css" style="width: 6vw; height: 8vw;">
-            <img src="assets/img/js.png" alt="Js" style="width: 7vw; height: 6.7vw;">
-            <h5>- Coté Back -</h5>
-            <img src="assets/img/php.png" alt="php" style="width: 8vw; height: 8vw;">
-            <img src="assets/img/Symfony.PNG" alt="Symfony" style="width: 8vw; height: 8vw;">
-            <img src="assets/img/csharp.png" alt="C#" style="width: 8vw; height: 8vw;">
-            <h5>- Gestion de code -</h5>
-            <img src="assets/img/git.png" alt="git"  style="width: 14vw; height: 6vw;">
-        <h5>Base de données :</h5>
-            <img src="assets/img/MySQL.png" alt="MySQL" style="width: 12vw; height: 8vw; margin-right:5vw;">
-            <img src="assets/img/SQLSERVER.png" alt="SQLSERVER" style="width: 12vw; height: 8vw; margin-left:5vw;">
-        <h5>Système et administration réseau (en cours de renseignements sur la mise en place de serveurs) :</h5>
-            <img src="assets/img/windows.png" alt="windows" style="width: 8vw; height: 8vw; margin-right:5vw;">
-            <img src="assets/img/debian.png" alt="Debian" style="width: 12vw; height: 8vw; margin-left:5vw;">
-    </div>
-    <div id="footer">
-        <h4>Adeline Martineau ®</h4>
     </div>
   </body>
 </html>
