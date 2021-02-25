@@ -81,6 +81,12 @@ body {
     font-weight: 500;
 }
 
+.details {
+    font-size: 0.7vw;
+    font-weight: 300;
+    margin: 0.5vw 1.5vw;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -91,12 +97,29 @@ a {
 #middlebar {
     width: 27%;
     height: 90vh;
-    background-color: #fcfcfc;
+    background-color: rgb(252, 252, 252);
     box-shadow: -1vw 0vw 0.5vw rgba(0, 0, 0, 0.349);
     z-index: 2;
 }
 
-.details {
+.m_titles {
+    font-size: 1vw;
+    text-shadow: 0 0 0.2vw rgba(0, 0, 0, 0.4);
+    font-family: 'Lato', sans-serif;
+    margin: 0.8vw;  
+}
+
+.m_infos{
+    margin: 1vw 2vw; 
+}
+
+.m_info{
+    font-size: 0.8vw; 
+    font-weight: 500;
+}
+
+
+.m_details {
     font-size: 0.7vw;
     font-weight: 300;
     margin: 0.5vw 1.5vw;
