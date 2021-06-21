@@ -1,0 +1,247 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 10vw auto 25vw auto 10vw;
+    grid-auto-rows: 10vh 10vh auto 70vh auto;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+/** Icons **/
+
+i {
+    font-size: 1.5vw;
+    color: black;
+    text-shadow: 0 0 0.4vw black;
+    margin: 0 .7vw;
+    transition: 0.3s;
+} i:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    color: rgb(231, 28, 35);
+    text-shadow: 0 0 0.8vw rgb(231, 28, 35);
+}
+
+/** Navbar **/
+
+#navbar {
+    grid-column: 1/6;
+    grid-row: 1;
+    background: linear-gradient(rgb(22, 22, 22), rgba(245, 222, 179, 0.637));
+    box-shadow: 0 0 0.4vw  wheat;
+    text-align: center;
+    opacity: 0;
+}
+
+#links {
+    margin: 2vw;
+}
+
+.link{
+    font-size: 2vw;
+    margin: 0 2vw;
+}
+
+/** Logo **/
+
+#logo {
+    grid-column: 1;
+    grid-row: 1;
+    /* background-color: red; */
+    margin: 1vw;
+    position: fixed;
+    z-index: 1;
+}
+
+/** Menu **/
+
+#menu {
+    grid-column: 5;
+    grid-row: 1;
+    /* background-color: blue; */
+    text-align: center;
+    margin: 1vw;
+    z-index: 10;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 1.8vw;
+    height: 0.5vh;
+    background-color: black;
+    box-shadow: 0 0 0.4vw black;
+    margin: 0.6vh 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-0.5vw, 0.5vh);
+    transform: rotate(-45deg) translate(-0.5vw, 0.5vh);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-0.5vw, -0.5vh);
+    transform: rotate(45deg) translate(-0.5vw, -0.5vh);
+  }
+
+/** About **/
+
+#about {
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+    font-size: 0.8vw;
+    color: black;
+    text-shadow: 0 0 0.4vw black;
+}
+
+/** Main **/
+
+#main {
+    grid-column: 2/5;
+    grid-row: 3;
+    margin: 2vw;
+    padding: 2vw;
+    border-radius: 1vw;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTop {
+    width: 100%;
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    background-color:wheat;
+    box-shadow: 0 0 0.4vw wheat;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    margin-bottom: 0.2vw;
+}
+
+.card {
+    width: 100%;
+    padding: 2vw;
+    font-size: 0.5vw;
+    background-color: wheat;
+    box-shadow: 0 0 0.4vw wheat;
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
+    margin-bottom: 6vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    margin : 0 2vw;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    margin : 2vw 0;
+    padding: 0.5vw 1vw;
+    transition: 0.7s;
+    border-radius: 1.3vw ;
+} .flex_row:hover {
+    transition: 1s;
+    cursor: pointer;
+    background-color: rgb(231, 28, 35);
+}
+
+p {
+    margin: auto;
+    font-size: .9vw;  
+}
+
+* {box-sizing:border-box}
+
+.container {
+  width: 100%;
+  height: 1vh;
+  background-color: rgb(20, 20, 20);
+  border-radius: 1vw;
+  margin: 1vw 0;
+}
+
+.skills {
+  text-align: right; 
+  padding: 0.1vw 0;
+  margin: 0.15vw 0;
+  color: black;
+}
+
+.python { width: 50%; background-color: white; box-shadow: 0 0 0.4vw white; animation: python 2s;}
+.csharp {width: 20%; background-color: white; box-shadow: 0 0 0.4vw white; animation: csharp 2s;}
+.symfony {width: 40%; background-color: white; box-shadow: 0 0 0.4vw white; animation: symfony 2.5s;}
+.javascript {width: 20%; background-color: white; box-shadow: 0 0 0.4vw white; animation: javascript 2.5s;}
+.htmlcss {width: 80%; background-color: white; box-shadow: 0 0 0.4vw white; animation: htmlcss 3s;}
+.git {width: 60%; background-color: white; box-shadow: 0 0 0.4vw white; animation: git 3s;}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes csharp{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+@keyframes symfony{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+@keyframes htmlcss{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes git{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}

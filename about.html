@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="icon" href="./assets/img/logoooed.png">
+    <link rel="stylesheet" href="./assets/css/about.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body oncontextmenu="return false;">
+
+    <div id="navbar">
+        <div id="links">
+          <a href="./index.html"><i class="fab fa-atlassian link"></i></a>
+          <a href="./about.html"><i class="fas fa-user link"></i></a>
+          <a href="./skills.html"><i class="fas fa-file link"></i></a>
+          <a href="./projects.html"><i class="fas fa-briefcase link"></i></a>
+          <a href="./projectsPro.html"><i class="fas fa-briefcase link"></i></a>
+          <a href="./stage.html"><i class="fas fa-calendar-alt link"></i></a>
+          <a href="./contact.html"><i class="fas fa-envelope link"></i></a>
+        </div>
+    </div>
+
+    <div id="logo">
+        <a href="./index.html"><i class="fab fa-atlassian" style="font-size: 2vw;"></i></a>
+    </div>
+
+    <div id="menu">
+        <div class="container" onclick="toggleMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+    </div>
+
+    <div id="about">
+        <h1>About me</h1>
+        <hr style="width: 60%; height: 0.01vw; margin-top: 2.2vw; clear: both">
+    </div>
+
+    <div id="main">
+        <div class="card">
+            <img src="./assets/img/adeline.jpg" alt="" style="width: auto; height: 30vh; border-radius: 50%;">
+            <div class="flex_column">
+              <left style="text-align: justify;">
+              <p>Bienvenue sur mon portfolio !<br><br> Je suis en fin de première année de ma formation BTS SIO option SLAM. 
+                J'ai acquis une passion pour le code il y a 2 ans et depuis je prends toujours autant de plaisir à coder et à apprendre. J’ai récemment réalisé un stage très riche en connaissance que je vous invite d'ailleurs à aller parcourir. 
+                De mon temps libre, je réalise des projets personnels par passion et soif d’apprentissage. Bonne visite et enjoy !</p><br>
+              
+              <p>Adeline.</p>
+              </left>
+            </div>
+            <div class="flex_column">
+              <img src="./assets/img/php.png" alt="" style="width: 3vw; margin: 1vw;">
+              <img src="./assets/img/py.png" alt="" style="width: 3vw; margin: 1vw">
+              <img src="./assets/img/js.png" alt="" style="width: 3vw; margin: 1vw">
+            </div>
+        </div>
+
+        <div class="cardTop">
+          En Détail
+        </div>
+        <div class="card">
+          <img src="./assets/img/city2.gif" alt="" style="width: auto; height: 40vh; margin: auto;">
+          <div class="flex_column" style="margin-left: auto;">
+            <div class="flex_row">
+              <i class="far fa-calendar-alt"></i>
+              <p>1 stage de 5 semaines</p>
+            </div>
+            <div class="flex_row">
+              <i class="fas fa-scroll"></i>
+              <p>1 BTS SIO en cours d'aquisition</p>
+            </div>
+            <div class="flex_row">
+              <i class="fas fa-tasks"></i>
+              <p>3+ Projets personnels</p>
+            </div>
+          </div>
+          <div class="flex_column" style="margin-right: auto;">
+            <div class="flex_row">
+              <i class="fas fa-paint-brush"></i>
+              <p>5+ passions</p>
+            </div>
+            <div class="flex_row">
+              <i class="fab fa-python"></i>
+              <p>5 langages maîtrisé</p>
+            </div>
+            <div class="flex_row">
+              <i class="fas fa-birthday-cake"></i>
+              <p>22 ans</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          Interêts
+        </div>
+        <div class="card">
+          <div class="flex_row">
+            <i class="fas fa-music"></i>
+            <p>Musique</p>
+          </div>
+          <div class="flex_row">
+            <i class="fab fa-youtube"></i>
+            <p>Séries</p>
+          </div>
+          <div class="flex_row">
+            <i class="fab fa-python"></i>
+            <p>Code</p>
+          </div>
+          <div class="flex_row">
+            <i class="fas fa-pen"></i>
+            <p>Dessin</p>
+          </div>
+          <div class="flex_row">
+            <i class="fas fa-horse"></i>
+            <p>Equitation</p>
+          </div>
+          <div class="flex_row">
+            <i class="fas fa-gamepad"></i>
+            <p>Jeux Vidéos</p>
+          </div>
+          <div class="flex_row">
+            <i class="fas fa-guitar"></i>
+            <p>Guitare</p>
+          </div>
+          <div class="flex_row">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <p>Apprendre</p>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          Me contacter
+        </div>
+        <div class="card">
+          <div class="flex_row">
+            <a href="https://github.com/AlexandreGaultier"><i class="fab fa-github"></i></a>
+            <p>GitHub</p>
+          </div>
+          <div class="flex_row">
+            <a href="https://www.linkedin.com/in/alexandre-g-59a387172/"><i class="fab fa-linkedin"></i></a>
+            <p>LinkedIn</p>
+          </div>
+          <div class="flex_row">
+            <a href="https://cvdesignr.com/p/5da6b38d8e59b"><i class="far fa-id-card"></i></a>
+            <p>Mon CV</p>
+          </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

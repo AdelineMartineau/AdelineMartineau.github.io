@@ -1,0 +1,187 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 10vw auto 25vw auto 10vw;
+    grid-auto-rows: 10vh auto 20vh auto 10vh;
+    background-image: url('../img/city3.gif');
+    background-size: cover;
+    background-position: bottom;
+    font-family: 'Roboto', sans-serif;
+}
+
+/** Icons **/
+
+i {
+    font-size: 1vw;
+    color: white;
+    text-shadow: 0 0 0.4vw white;
+    margin: 0 .7vw;
+    transition: 0.3s;
+} i:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    color: rgb(236, 236, 236);
+    text-shadow: 0 0 0.8vw white;
+}
+
+/** Navbar **/
+
+#navbar {
+    grid-column: 1/6;
+    grid-row: 1;
+    background: linear-gradient(rgb(22, 22, 22), rgba(245, 222, 179, 0.753));
+    box-shadow: 0 0 0.4vw  rgb(238, 238, 238);
+    text-align: center;
+    opacity: 0;
+}
+
+#links {
+    margin: 2vw;
+}
+
+.link{
+    font-size: 2vw;
+    margin: 0 2vw;
+}
+
+/** Logo **/
+
+#logo {
+    grid-column: 1;
+    grid-row: 1;
+    /* background-color: red; */
+    margin: 1vw;
+    z-index: 1;
+}
+
+/** Menu **/
+
+#menu {
+    grid-column: 5;
+    grid-row: 1;
+    /* background-color: blue; */
+    text-align: center;
+    margin: 1vw;
+    z-index: 10;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 1.8vw;
+    height: 0.5vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0.4vw white;
+    margin: 0.6vh 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-0.5vw, 0.5vh);
+    transform: rotate(-45deg) translate(-0.5vw, 0.5vh);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-0.5vw, -0.5vh);
+    transform: rotate(45deg) translate(-0.5vw, -0.5vh);
+  }
+
+/** Names (center) **/
+
+#names {
+    grid-column: 3;
+    grid-row: 3;
+    /* background-color: gray; */
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 0.1vw white;
+    /* -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate; */
+}
+
+/* @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #dddddd, 0 0 40px #dddddd, 0 0 50px #dddddd, 0 0 60px #dddddd, 0 0 70px #dddddd;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #f5f5f5, 0 0 40px #f5f5f5, 0 0 50px #f5f5f5, 0 0 60px #f5f5f5, 0 0 70px #f5f5f5, 0 0 80px #f5f5f5;
+    }
+  } */
+
+#name {
+    font-size: 3vw;
+}
+
+#profil {
+    font-size: 1.5vw;
+    margin-top: 1vw;
+}
+
+/** EasterEgg **/
+#rickRolling {
+    position: absolute;
+    top: 45vh;
+    left: 69vw;
+    background-color: transparent;
+    width: 4.5vw;
+    height: 4.5vw;
+}
+
+/** Medias **/
+
+#medias {
+    grid-column: 1;
+    grid-row: 5;
+    /* background-color: yellow; */
+    margin: 1vw;
+}
+
+/** Music **/
+
+#musics {
+    grid-column: 3;
+    grid-row: 5;
+    /* background-color: green; */
+    text-align: center;
+    margin: 1vw;
+} 
+
+.music {
+    color: white;
+    text-shadow: 0 0 0.4vw white;
+    transition: 0.5s;
+    font-size: 2vw;
+}
+.music:hover {
+    color: rgb(41, 168, 41);
+    font-size: 2.5vw;
+    transform: translateY(-0.5vw);
+    text-shadow: 0 0 0.8vw rgb(41, 168, 41);
+    cursor: pointer;
+    transition: 1.5;
+}
+
+/** Copyright **/
+
+#copyright {
+    grid-column: 5;
+    grid-row: 5;
+    /* background-color: violet; */
+    text-align: center;
+    font-size: 0.93vw;
+    color: white;
+    text-shadow: 0 0 0.4vw white;
+    margin: 1vw;
+}
