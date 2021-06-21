@@ -1,137 +1,518 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> 
-  </head>
-  <body>
-  <div id="header">
-      <img id="picture" src="./assets/adeliine.png" alt="">
-      <div id="titles">  
-          <div id="title">ADELINE MARTINEAU</div>
-          <div id="subtitle">En recherche d'un stage en Developpement Informatique</div>
-      </div>
-  </div>
-  <div id="main">
-      <div id="leftbar"> <!-- leftbar -->
-          <div class="titles">INFORMATIONS</div>
-          <div class="infos">
-              <div class="info">Née le 02/11/1998</div>
-              <div class="info">22 ans</div>
-              <div class="info">Permis B</div>
-              <div class="info">Véhicule personnel</div>
-              <div class="info">44000 Nantes</div>
-            </div>
-            
-            <div class="titles">CONTACTS & CV</div>
-            <div class="infos">
-                <div class="info">adeline.martineau1@outlook.fr</div>
-                <a href="https://github.com/AdelineMartineau"><div class="info">Github</div></a>
-                <a href="https://www.linkedin.com/in/adeline-martineau-0a0681167"><div class="info">Linkedin</div></a>
-            </div>
-            
-            <div class="titles">LANGUES</div>
-            <div class="infos">
-                <div class="info">Anglais</div>
-            </div>
-            
-            <div class="titles">ATOUTS</div>
-            <div class="infos">
-                <div class="info">Perseverante</div>
-                <div class="info">Investie</div>
-                <div class="info">Curieuse</div>
-                <div class="info">Dynamique</div>
-            </div>
-            
-            <div class="titles">CENTRES D'INTERET</div>
-            <div class="infos">
-                <div class="info">Guitare et chant</div>
-                <div class="info">Dessin</div>
-                <div class="info">Series</div>
-            </div>
-        </div>  <!-- middlebar -->
-        <div id="middlebar">
-            <div class="m_titles">FORMATIONS ET DIPLOMES</div>
-            <div class="m_infos">
-                <div class="m_info">BTS SIO</div>
-                <p class="m_details">Lycée La Colinière Nantes | Septembre 2020 - Mai 2022</p>
-                <div class="m_info">ANNÉE PRÉPARATOIRE EN ART APPLIQUÉ</div>
-                <p class="m_details">ESMA Cinécréatis Nantes | Septembre - Octobre 2019</p>
-            </div>
-            
-            <div class="m_titles">COMPETENCES</div>
-            <div class="m_infos">
-                <div class="m_info">Python</div>
-                <div class="m_info">Javascript (VueJs)</div>
-                <div class="m_info">SQL</div>
-                <div class="m_info">Git, GitLab (Github, Framagit)</div>
-                <div class="m_info">PHP (Symfony)</div>
-                <div class="m_info">HTML / CSS</div>
-                <div class="m_info">Outils de conception: UML, MCD</div>
-                <div class="m_info">C#</div>
-            </div>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <div class="m_titles">EXPERIENCES PROFESSIONNELLES</div>
-            <div class="m_infos">
-                <div class="m_info">VENDEUSE EN BOULANGERIE</div>
-                <p class="m_details">Boulangerie Honoré 44100 Nantes | Janvier - Juillet 2020</p>
-                <div class="m_info">EQUIPIÈRE POLYVALENTE</div>
-                <p class="m_details">Mac Donald 85500 Les Herbiers | Mars - Juillet 2019</p>
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Adeline</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-home nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> A propos
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Compétences
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Qualifications
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#stage" class="nav__link"> 
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Stage
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/adeline-martineau-0a0681167/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+
+                            <a href="https://framagit.org/dashboard/projects" target="_blank" class="home__social-icon">
+                                <i class="uil uil-gitlab"></i>
+                            </a>
+
+                            <a href="https://github.com/AdelineMartineau" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg clas="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path fill="#6E57E0" path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                                    <image class="home__blob-img" x='5' y='15' xlink:href="assets/img/adeline-removebg-preview.png"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Adeline Martineau</h1>
+                            <h3 class="home__subtitle">Etudiante en BTS SIO</h3>
+                            <p class="home__description">Je vous souhaite la bienvenue sur mon portfolio</p>
+                            <a href="https://www.linkedin.com/in/adeline-martineau-0a0681167/" class="button button--flex">
+                                Contactez-moi <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Bonne visite</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">A propos</h2>
+                <span class="section__subtitle">Mon introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/adeline_profil.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">J'ai acquis une passion pour le code il y a 2 ans et je prends toujours autant plaisir à coder. Je suis en fin de première année de ma formation BTS SIO option SLAM.</p>
+                    
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">02+</span>
+                                <span class="about__info-name">Années de pratique</span>
+                            </div>
+                            
+                            <div>
+                                <span class="about__info-title">05+</span>
+                                <span class="about__info-name">Projets personnels</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">01+</span>
+                                <span class="about__info-name">Mois de stage</span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="" href="#" class="button button--flex">
+                                Téléchargez mon CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Compétences</h2>
+                <span class="section__subtitle">Mon niveau technique</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Frontend</h1>
+                                    <span class="skills__subtitle">Niveau de pratique</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__css"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Javascript</h3>
+                                        <span class="skills__number">20%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-server-network skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Backend</h1>
+                                    <span class="skills__subtitle">Niveau de pratique</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PHP</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__php"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">40%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JQuery</h3>
+                                        <span class="skills__number">30%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__jquery"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Symfony</h3>
+                                        <span class="skills__number">20%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__symfony"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Qualifications</h2>
+                <span class="section__subtitle">Mon parcours</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Formations
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Profesionnel
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION CONTENT 1====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--==================== QUALIFICATION 1====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">BTS SIO</h3>
+                                    <span class="qualification__subtitle">Lycée la Colinière, Nantes</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020 - 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            
+                            <!--==================== QUALIFICATION 2====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">MANAA</h3>
+                                    <span class="qualification__subtitle">ESMA, Nantes</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION CONTENT 2====================-->
+                        <div class="qualification__content" data-content id="work">
+
+                            <!--==================== QUALIFICATION 1====================-->
+                            <div class="qualification__data">
+
+                                <div>
+                                    <h3 class="qualification__title">Stage</h3>
+                                    <span class="qualification__subtitle">Agence digitale Doowup</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Mai-Juin 2021
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 2====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Boulangerie</h3>
+                                    <span class="qualification__subtitle">Vendeuse, Nantes</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Janvier-Juillet 2020
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <!-- <section class="services section" id="services">
+            </section> -->
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section" id="stage">
+                <h2 class="section__title">Stage</h2>
+                <span class="section__subtitle">Stage de première année</span>
+
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <img src="assets/img/LOGO.png" alt="" class="project__img">
+                            <p class="project__description">Venez découvrir mon stage de première année au sein de l'agence Doowup !</p>
+                            <a href="#stage" class="button button--flex button--white">
+                                C'est parti
+                                <i class="uil uil-navigator project__icon button__icon"></i>
+                            </a>
+                        </div>                
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Tout mes projets</span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- <div> -->
+                            <!--==================== PORTFOLIO 1====================-->
+                            <div class="portfolio__content grid swiper-slide">
+                                <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                                <div class="portfolio__data">
+                                    <h3 class="portfolio__title">Projets BTS 2020-2021</h3>
+                                    <p class="portfolio__description">Mes projets BTS de première années ainsi que les compétences associées.</p>
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        En voir plus
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--==================== PORTFOLIO 2====================-->
+                            <div class="portfolio__content grid swiper-slide">
+                                <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+                                <div class="portfolio__data">
+                                    <h3 class="portfolio__title">Projets personnels</h3>
+                                    <p class="portfolio__description">Mes projets personnels afin de prendre en compétences dans certain languages, Frameworks et CMS.</p>
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        En voir plus
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--==================== PORTFOLIO 3====================-->
+                            <div class="portfolio__content grid swiper-slide">
+                                <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+
+                                <div class="portfolio__data">
+                                    <h3 class="portfolio__title">Compétences</h3>
+                                    <p class="portfolio__description"> Compétences du bloc « Support et mise à disposition de services informatiques » avec la liste des projets associés.
+                                    </p>
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        En voir plus
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+
+                    <!-- Add arrows-->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    
+                    <!--Add pagination-->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>   
+
+            <!-- ==================== TESTIMONIAL ==================== -->
+            <!-- <section class="testimonial section"> -->
+            <!-- </section> -->
+
+            <!--==================== CONTACT ME ====================-->
+            <!-- <section class="contact section" id="contact"> -->
+            <!-- </section> -->
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Adeline Martineau</h1>
+                        <span class="footer__subtitle">Etudiante en BTS SIO</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/adeline-martineau-0a0681167/" target="_blank"class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; All right reserved</p>
             </div>
-                 
-            
-            <div class="m_titles">LOGICIELS</div>
-            <div class="m_infos">
-                <div class="m_info">IDE : Visual Studio Code / Visual Studio 2017 / PyCharm</div>
-                <div class="m_info">BDD : WAMP (phpMyAdmin) / DBeaver</div>
-                <div class="m_info">Environnement : Windows / Linux (Debian & Ubuntu)</div>
-            </div>
-            
-        </div> <!-- rightbar -->
-        <div id="rightbar">
-            <center>
-                <div class="projectTitles">Dominos</div>
-                <p class="projectDetails">Python POO</p>
-                <img class="project" src="./assets/Domino.png" alt="">
-                <hr>
-                <div class="projectTitles">Maison des Jeux</div>
-                <p class="projectDetails">HTML/CSS - PHP</p>
-                <img class="project" src="./assets/mdj.png " alt="">
-                <img class="project" src="./assets/mdj2.png " alt="">
-                <hr>
-                <div class="projectTitles">Animaux</div>
-                <p class="projectDetails">Python POO</p>
-                <img class="project" src="./assets/Kiwi.png" alt="">
-                <hr>
-                <div class="projectTitles">LA Event</div>
-                <p class="projectDetails">Php - mysql</p>
-                <img class="project" src="./assets/L.AEventHome.PNG" alt="">
-                <img class="project" src="./assets/LA.png" alt="">
-                <hr>
-                <div class="projectTitles">How to Computeur</div>
-                <p class="projectDetails">Symfony (avec les vidéos de Lior Chamla)</p>
-                <img class="project" src="./assets/HowToComputeur.PNG" alt="">
-                <img class="project" src="./assets/FoemArticle.PNG" alt="">
-                <hr>
-                <div class="projectTitles">LCIS</div>
-                <p class="projectDetails">Wordpress - OpenClassrooms</p>
-                <img class="project" src="./assets/wordpress.png" alt="">
-                <hr>
-                <div class="projectTitles">IT</div>
-                <p class="projectDetails">HTML/CSS/JS</p>
-                <img class="project" src="./assets/IT.png" alt="">
-                <hr>
-                <div class="projectTitles">Shared - Réseau social</div>
-                <p class="projectDetails">HTML/CSS - PHP</p>
-                <img class="project" src="./assets/Minichat.PNG" alt="">
-                <hr>
-                <div style="height: 20vh;"></div> 
-            </center>
-        </div>
-    </div>
-  </body>
-</html>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html> 
