@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
     background-image: url('../img/city3.gif');
     background-size: cover;
     background-position: bottom;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /** Icons **/
@@ -122,11 +122,14 @@ i {
 
 #name {
     font-size: 3vw;
+    font-weight: 300;
 }
 
 #profil {
     font-size: 1.5vw;
     margin-top: 1vw;
+    font-weight: 200;
+
 }
 
 /** EasterEgg **/
@@ -146,6 +149,14 @@ i {
     grid-row: 5;
     /* background-color: yellow; */
     margin: 1vw;
+}
+
+.fa-github{
+    font-size: 1.8vw;
+}
+
+.fa-linkedin{
+    font-size: 1.8vw;
 }
 
 /** Music **/
@@ -180,7 +191,7 @@ i {
     grid-row: 5;
     /* background-color: violet; */
     text-align: center;
-    font-size: 0.93vw;
+    font-size: 0.8vw;
     color: white;
     text-shadow: 0 0 0.4vw white;
     margin: 1vw;

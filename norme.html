@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="icon" href="./assets/img/logoooed.png">
+    <link rel="stylesheet" href="./assets/css/norme.css" type="text/css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body oncontextmenu="return false;">
+
+    <div id="navbar">
+        <div id="links">
+          <a href="./index.html"><i class="fab fa-atlassian link"></i></a>
+          <a href="./about.html"><i class="fas fa-user link"></i></a>
+          <a href="./skills.html"><i class="fas fa-file link"></i></a>
+          <a href="./projects.html"><i class="fas fa-briefcase link"></i></a>
+          <a href="./projectsPro.html"><i class="fas fa-briefcase link"></i></a>
+          <a href="./stage.html"><i class="fas fa-calendar-alt link"></i></a>
+          <a href="./contact.html"><i class="fas fa-envelope link"></i></a>
+        </div>
+    </div>
+
+    <div id="logo">
+        <a href="/index.html"><i class="fab fa-atlassian" style="font-size: 2vw;"></i></a>
+    </div>
+
+    <div id="menu">
+        <div class="container" onclick="toggleMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+
+    <div id="about">
+        <h1>Normes et référentiels</h1>
+        <hr style="width: 60%; height: 0.01vw; margin-top: 2.2vw; clear: both">
+    </div>
+
+    <div id="main">
+
+        <div id="subnav">
+            <a class="subnav_links" href="./runup.html">Projet Runup</a>
+            <a class="subnav_links" href="./norme.html">Normes et référentiels</a>
+            <a class="subnav_links" href="./gestion.html">Gestion de projet</a>
+            <a class="subnav_links" href="./bilan.html">Bilan Personnel</a>
+          </div>
+
+        <section class="hebergement">
+            <div class="cardTop">
+                Hebergement et sauvegarde
+            </div>
+            <div class="card">
+                <p class="description">
+                    BDD MySQL ou postgreSQL ? Comment étaient faites les sauvegardes ? Qui sont les hébergeurs du/des sites (schéma si tu as ?) ? Par quels moyen vous déployez sur le serveur de l'hebergeur ? 
+
+                </p>
+            </div>
+        </section>
+
+        <section class="versionning">
+            <div class="cardTop">
+                Versionning
+            </div>
+            <div class="card">
+                <p class="description">
+                    Utiliser vous un outil de versionning comme git ? Avez tu certains droits ? Utilisais tu des branches ou une seule ? Partagez tu le code avec plusiseurs personnes ? Comment nomez tu tes branches / commit ? 
+                </p>
+            </div>
+        </section>
+
+        <section class="tests">
+            <div class="cardTop">
+                Tests d'intégrations
+            </div>
+            <div class="card">
+                <p class="description">
+                    A quoi servent les tests d'intégrations ? en connais tu d'autres (voir sur internet si jamais) ? Quelle était ta procédure personelle pour tester ? Faisiais tu des cahier de test ?
+                </p>
+            </div>
+        </section>
+
+        <section class="bdd">
+            <div class="cardTop">
+                Base de données
+            </div>
+            <div class="card">
+                <p class="description">
+                    Schéma de la BDD, sur quelles table tu as travaillé, critique de ce qui est bien, de ce qui est moins bien. Il y avait des triggers / procédures stockées ? 
+                </p>
+            </div>
+        </section>   
+
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

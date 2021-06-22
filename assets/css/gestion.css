@@ -10,7 +10,7 @@ body {
     grid-template-columns: 10vw auto 25vw auto 10vw;
     grid-auto-rows: 10vh 10vh auto 70vh auto;
     background-color: rgb(255, 255, 255);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #main{
@@ -106,9 +106,9 @@ i {
     grid-column: 3;
     grid-row: 2;
     text-align: center;
-    font-size: 0.8vw;
+    font-size: 3vw;
     color: black;
-    text-shadow: 0 0 0.4vw black;
+    /* text-shadow: 0 0 0.4vw black; */
 }
 
 /** Main **/
@@ -125,33 +125,25 @@ i {
 }
 
 #subnav {
-    margin: 3vh auto; 
+    margin: 2vh auto 8vh auto ; 
     display: flex;
     flex-direction: row;
 }
 
 .subnav_links {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+    font-weight: 100;
     color: black;
     margin: 0 1vw;
     text-decoration: none;
 }
 
-.modele img{
-    width: 20vw;
-    height: 30vw;
-}
-
-.acteurs img{
-    width: 35vw;
-    height: 25vw;
-}
-
 .cardTop {
-    width: 70%;
-    margin: 0 auto;
+    width: 85%;
+    margin: 2vw auto;
+    text-align: center;
     padding: 1vw 2vw;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     background-color: wheat;
     box-shadow: 0 0 0.4vw wheat;
     border-top-left-radius: 0.5vw;
@@ -160,7 +152,7 @@ i {
 }
 
 .card {
-    width: 70%;
+    width: 85%;
     padding: 2vw;
     margin: 0 auto;
     font-size: 0.5vw;
@@ -173,33 +165,11 @@ i {
     flex-direction: column;
 }
 
-.flex_column {
-    display: flex;
-    flex-direction: column;
-    margin : 0 2vw;
-}
-
-.flex_row {
-    display: flex;
-    flex-direction: row;
-    margin : 2vw 0;
-    padding: 0.5vw 1vw;
-    transition: 0.7s;
-    border-radius: 1.3vw ;
-} .flex_row:hover {
-    transition: 0.5s;
-    cursor: pointer;
-    background-color:rgb(255, 231, 97);
-}
-
-h5 {
-    margin: 4vh auto;
-    font-size: 1.2vw;
-}
-
-p {
+.description{
     margin: auto;
-    font-size: .9vw;
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+    text-align: justify;
 }
 
 .picture {
@@ -208,5 +178,8 @@ p {
     margin: auto;
     box-shadow: 0 0 00.8vw rgba(255, 255, 255, 0.329);
 }
+
+
+
 
 

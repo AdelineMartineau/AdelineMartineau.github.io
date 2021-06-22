@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="icon" href="./assets/img/logoooed.png">
+    <link rel="stylesheet" href="./assets/css/runup.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body oncontextmenu="return false;">
+
+    <div id="navbar">
+        <div id="links">
+          <a href="./index.html"><i class="fab fa-atlassian link"></i></a>
+          <a href="./about.html"><i class="fas fa-user link"></i></a>
+          <a href="./skills.html"><i class="fas fa-file link"></i></a>
+          <a href="./projects.html"><i class="fas fa-briefcase link"></i></a>
+          <a href="./projectsPro.html"><i class="fas fa-briefcase link"></i></a>
+          <a href="./stage.html"><i class="fas fa-calendar-alt link"></i></a>
+          <a href="./contact.html"><i class="fas fa-envelope link"></i></a>
+        </div>
+    </div>
+
+    <div id="logo">
+        <a href="/index.html"><i class="fab fa-atlassian" style="font-size: 2vw;"></i></a>
+    </div>
+
+    <div id="menu">
+        <div class="container" onclick="toggleMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+
+    <div id="about">
+        <h1>RunUp</h1>
+        <hr style="width: 60%; height: 0.01vw; margin-top: 2.2vw; clear: both">
+    </div>
+
+    <div id="main">
+
+        <div id="subnav">
+            <a class="subnav_links" href="./runup.html">Projet Runup</a>
+            <a class="subnav_links" href="./norme.html">Normes et référentiels</a>
+            <a class="subnav_links" href="./gestion.html">Gestion de projet</a>
+            <a class="subnav_links" href="./bilan.html">Bilan Personnel</a>
+          </div>
+
+        <section class="contexte">
+            <div class="cardTop">
+                Contexte et objectif
+            </div>
+            <div class="card">
+                <p class="description">
+                    RunUp est une solution qui s’inscrit dans un contexte d’organisation interne, et à ce titre a pour objectif 
+                    de permettre à l’entreprise une gestion simplifiée et pérenne de ses multiples projets, dont la participation 
+                    va d’une à n personnes, où n ne connaît pas de limite. <br> 
+                    Elle ne concerne dans un premier temps que les membres de l’entreprise, mais prévoit dès sa conception que des 
+                    collaborateurs et/ou clients puissent utiliser la solution pour un suivi du ou des projets les concernant et 
+                    une remontée des besoins ou remarques. 
+                </p>
+            </div>
+        </section>
+
+        <section class="besoins">
+            <div class="cardTop">
+                Les besoins
+            </div>
+            <div class="card">
+                <p class="description">
+                    Pour ma part, j'ai développé un des besoins nécéssaire à la solution : la gestion de ticket. 
+                    Un ticket est un élément permettant au client connecté de faire remonter un problème technique, 
+                    une correction, une demande concernant un ajout conséquent, ou toute autre requête à destination 
+                    de l’entreprise du dirigeant.<br>
+                    L'objectif de ce besoin est que les dirigeants et personnes autorisées doivent pouvoir créer, suivre, 
+                    annoter et modifier des tickets. Au sein de cette entreprise les tickets doivent pouvoir être attribués 
+                    et estimés en termes de temps et/ou de compétence.
+                </p>
+            </div>
+        </section>
+
+        <section class="architecture">
+            <div class="cardTop">
+                Architecture
+            </div>
+            <div class="card">
+                <p class="description">
+                    La solution RunUp est établie sur un modèle d'architecture MVC maison inspiré des frameworks Laravel ou Symfony. 
+                    Ce style d'architecture permet de bien organiser son code source. Il va vous aider à savoir quels fichiers créer, 
+                    mais surtout à définir leur rôle. Le but de MVC est justement de séparer la logique du code en trois parties que 
+                    l'on retrouve dans des fichiers distincts.
+                </p>
+            </div>
+        </section>
+
+        <section class="arborescence">
+            <div class="cardTop">
+                Arborescence
+            </div>
+            <div class="card">
+                <p class="description">
+                    Afin de conserver un code organisé et maintenable, la structure de la solution sera composée de trois dossiers 
+                    distincts. Le dossier Modules contient un dossier pour chaque groupe de fonctionnalités. Chacun de ses dossiers
+                    suit l'architecture du modèle MVC : Modele - Vue - Controller. 
+                </p>
+            </div>
+        </section>
+
+        <section class="modele">
+            <div class="cardTop">
+                Modèle de données
+            </div>
+            <div class="card">
+                <p class="description">
+                Je remercie l'équipe de Doowup pour leur accueil et leur bienveillance. Leur accompganement à été exemplaire et m'a 
+                permis d'en apprendre beaucoup durant ce mois de stage. 
+                </p>
+                <img src="./assets/img/Opera Instantané_2021-06-22_105749_dbdiagram.io.PNG" alt="">
+            </div>
+        </section>
+
+
+        <section class="acteurs">
+            <div class="cardTop">
+                Acteurs
+            </div>
+            <div class="card">
+                <p class="description">
+                Je remercie l'équipe de Doowup pour leur accueil et leur bienveillance. Leur accompganement à été exemplaire et m'a 
+                permis d'en apprendre beaucoup durant ce mois de stage. 
+                </p>
+                <img src="./assets/img/acteurs.PNG" alt="">
+            </div>
+        </section>
+
+        <section class="organisation">
+            <div class="cardTop">
+                Organisation
+            </div>
+            <div class="card">
+                <p class="description">
+                
+                </p>
+                <img src="./assets/img/acteurs.PNG" alt="">
+            </div>
+        </section>
+
+        <section class="remerciement">
+            <div class="cardTop">
+                Remerciement
+            </div>
+            <div class="card">
+                <p class="description">
+                    Je remercie l'équipe de Doowup pour leur accueil et leur bienveillance. Leur accompganement à été exemplaire et m'a 
+                    permis d'en apprendre beaucoup durant ce mois de stage. 
+                    </p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

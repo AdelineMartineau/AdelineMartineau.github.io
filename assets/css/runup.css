@@ -52,6 +52,7 @@ i {
     font-size: 2vw;
     margin: 0 2vw;
 }
+
 /** Logo **/
 
 #logo {
@@ -137,15 +138,6 @@ i {
     text-decoration: none;
 }
 
-.modele img{
-    width: 20vw;
-    height: 30vw;
-}
-
-.acteurs img{
-    width: 35vw;
-    height: 25vw;
-}
 
 .cardTop {
     width: 70%;
@@ -173,40 +165,8 @@ i {
     flex-direction: column;
 }
 
-.flex_column {
-    display: flex;
-    flex-direction: column;
-    margin : 0 2vw;
-}
-
-.flex_row {
-    display: flex;
-    flex-direction: row;
-    margin : 2vw 0;
-    padding: 0.5vw 1vw;
-    transition: 0.7s;
-    border-radius: 1.3vw ;
-} .flex_row:hover {
-    transition: 0.5s;
-    cursor: pointer;
-    background-color:rgb(255, 231, 97);
-}
-
-h5 {
-    margin: 4vh auto;
-    font-size: 1.2vw;
-}
 
 p {
     margin: auto;
     font-size: .9vw;
 }
-
-.picture {
-    width: auto;
-    height: 60vh; 
-    margin: auto;
-    box-shadow: 0 0 00.8vw rgba(255, 255, 255, 0.329);
-}
-
-
