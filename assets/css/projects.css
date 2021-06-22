@@ -7,13 +7,11 @@ html, body {
 
 body {
     display: grid;
-    grid-template-columns: 10vw auto 25vw auto 10vw;
+    grid-template-columns: 10vw auto 40vw auto 10vw;
     grid-auto-rows: 10vh 10vh auto 70vh auto;
     background-color: rgb(255, 255, 255);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-
-/** Icons **/
 
 i {
     font-size: 1.5vw;
@@ -47,7 +45,6 @@ i {
     font-size: 2vw;
     margin: 0 2vw;
 }
-
 /** Logo **/
 
 #logo {
@@ -97,14 +94,14 @@ i {
   }
 
 /** About **/
-
 #about {
     grid-column: 3;
-    grid-row: 2;
+    grid-row: 3;
     text-align: center;
-    font-size: 0.8vw;
+    font-size: 3vw;
     color: black;
-    text-shadow: 0 0 0.4vw black;
+    font-weight: 200;
+    /* text-shadow: 0 0 0.4vw black; */
 }
 
 /** Main **/
@@ -123,6 +120,7 @@ i {
 .cardTop {
     width: 100%;
     padding: 1vw 2vw;
+    margin-top: 4vw;
     font-size: 1.5vw;
     background-color: wheat;
     box-shadow: 0 0 0.4vw wheat;

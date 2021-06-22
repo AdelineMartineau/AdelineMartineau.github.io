@@ -35,23 +35,23 @@ function toggleMenu(x) {
 
 var toggleMu = 1;
 
-function toggleMusic() {
-   if (toggleMu == 1) {
-         audio.play();
-         audio.volume = 0.6;
-         audio.muted = false;
-         document.getElementById("music1").style.display = "none";
-         document.getElementById("music2").style.display = "inline";
-         toggleMu = 2;
-   } else if(toggleMu == 2) {
-         audio.volume = 1;
-         document.getElementById("music2").style.display = "none";
-         document.getElementById("music3").style.display = "inline";
-         toggleMu = 3;
-   } else {
-         audio.muted = true;
-         document.getElementById("music3").style.display = "none";
-         document.getElementById("music1").style.display = "inline";
-         toggleMu = 1;
-   }
-}
+// function toggleMusic() {
+//    if (toggleMu == 1) {
+//          audio.play();
+//          audio.volume = 0.6;
+//          audio.muted = false;
+//          document.getElementById("music1").style.display = "none";
+//          document.getElementById("music2").style.display = "inline";
+//          toggleMu = 2;
+//    } else if(toggleMu == 2) {
+//          audio.volume = 1;
+//          document.getElementById("music2").style.display = "none";
+//          document.getElementById("music3").style.display = "inline";
+//          toggleMu = 3;
+//    } else {
+//          audio.muted = true;
+//          document.getElementById("music3").style.display = "none";
+//          document.getElementById("music1").style.display = "inline";
+//          toggleMu = 1;
+//    }
+// }

@@ -5,6 +5,7 @@
     <title>Portfolio</title>
     <link rel="icon" href="./assets/img/logoooed.png">
     <link rel="stylesheet" href="./assets/css/runup.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
@@ -35,15 +36,16 @@
     </div>
 
     <div id="about">
-        <h1>RunUp</h1>
-        <hr style="width: 60%; height: 0.01vw; margin-top: 2.2vw; clear: both">
+        RunUp
+        <!-- <hr style="width: 60%; height: 0.01vw; margin-top: 2.2vw; clear: both"> -->
     </div>
 
     <div id="main">
 
         <div id="subnav">
+            <a class="subnav_links" href="./stage.html">Doowup</a>
             <a class="subnav_links" href="./runup.html">Projet Runup</a>
-            <a class="subnav_links" href="./norme.html">Normes et référentiels</a>
+            <a class="subnav_links" href="./norme.html">Sauvegarde et continuité</a>
             <a class="subnav_links" href="./gestion.html">Gestion de projet</a>
             <a class="subnav_links" href="./bilan.html">Bilan Personnel</a>
           </div>
@@ -54,9 +56,8 @@
             </div>
             <div class="card">
                 <p class="description">
-                    RunUp est une solution qui s’inscrit dans un contexte d’organisation interne, et à ce titre a pour objectif 
-                    de permettre à l’entreprise une gestion simplifiée et pérenne de ses multiples projets, dont la participation 
-                    va d’une à n personnes, où n ne connaît pas de limite. <br> 
+                    RunUp est une solution qui s’inscrit dans un contexte d’organisation interne et a pour objectif 
+                    de permettre à l’entreprise une gestion simplifiée et pérenne de ses multiples projets. <br> 
                     Elle ne concerne dans un premier temps que les membres de l’entreprise, mais prévoit dès sa conception que des 
                     collaborateurs et/ou clients puissent utiliser la solution pour un suivi du ou des projets les concernant et 
                     une remontée des besoins ou remarques. 
@@ -73,7 +74,7 @@
                     Pour ma part, j'ai développé un des besoins nécéssaire à la solution : la gestion de ticket. 
                     Un ticket est un élément permettant au client connecté de faire remonter un problème technique, 
                     une correction, une demande concernant un ajout conséquent, ou toute autre requête à destination 
-                    de l’entreprise du dirigeant.<br>
+                    de l’entreprise du dirigeant.<br><br>
                     L'objectif de ce besoin est que les dirigeants et personnes autorisées doivent pouvoir créer, suivre, 
                     annoter et modifier des tickets. Au sein de cette entreprise les tickets doivent pouvoir être attribués 
                     et estimés en termes de temps et/ou de compétence.
@@ -92,6 +93,7 @@
                     mais surtout à définir leur rôle. Le but de MVC est justement de séparer la logique du code en trois parties que 
                     l'on retrouve dans des fichiers distincts.
                 </p>
+                <img src="./assets/Doowup/mvc.png" alt="" style="width: 40%; margin: 4vh auto;">
             </div>
         </section>
 
@@ -102,22 +104,29 @@
             <div class="card">
                 <p class="description">
                     Afin de conserver un code organisé et maintenable, la structure de la solution sera composée de trois dossiers 
-                    distincts. Le dossier Modules contient un dossier pour chaque groupe de fonctionnalités. Chacun de ses dossiers
+                    distincts. Le dossier Modules contient un dossier pour chaque groupe de fonctionnalitées. Chacun de ses dossiers
                     suit l'architecture du modèle MVC : Modele - Vue - Controller. 
                 </p>
+                <div style="display: flex; flex-direction: row;">
+                    <img src="./assets/Doowup/mvc1.png" alt="" style="width: 30%; margin: 4vh auto;">
+                    <img src="./assets/Doowup/mvc2.png" alt="" style="width: 30%; margin: 4vh auto;">
+                </div>
             </div>
         </section>
 
         <section class="modele">
             <div class="cardTop">
-                Modèle de données
+                Modèle de données et fonctionnalitées
             </div>
             <div class="card">
-                <p class="description">
-                Je remercie l'équipe de Doowup pour leur accueil et leur bienveillance. Leur accompganement à été exemplaire et m'a 
-                permis d'en apprendre beaucoup durant ce mois de stage. 
+                <p class="description"> 
                 </p>
-                <img src="./assets/img/Opera Instantané_2021-06-22_105749_dbdiagram.io.PNG" alt="">
+                <img src="./assets/Doowup/dbset.png" alt="" style="width: 30%; margin: 4vh auto;">
+                <div style="display: flex; flex-direction: column;">
+                    <img src="./assets/Doowup/uml_doowup/uml1.png" alt="" style="width: 60%; height: 20vw; margin: 4vh auto;">
+                    <img src="./assets/Doowup/uml_doowup/uml2.png" alt="" style="width: 60%; height: 20vw; margin: 4vh auto;">
+                    <img src="./assets/Doowup/uml_doowup/uml3.png" alt="" style="width: 60%; height: 20vw; margin: 4vh auto;">
+                </div>
             </div>
         </section>
 
@@ -128,34 +137,31 @@
             </div>
             <div class="card">
                 <p class="description">
-                Je remercie l'équipe de Doowup pour leur accueil et leur bienveillance. Leur accompganement à été exemplaire et m'a 
-                permis d'en apprendre beaucoup durant ce mois de stage. 
+                
                 </p>
-                <img src="./assets/img/acteurs.PNG" alt="">
+                <img src="./assets/Doowup/acteurs.png" alt="" style="width: 70%; margin: 5vh auto;">
             </div>
         </section>
 
         <section class="organisation">
             <div class="cardTop">
-                Organisation
+                Outils
             </div>
             <div class="card">
                 <p class="description">
                 
                 </p>
-                <img src="./assets/img/acteurs.PNG" alt="">
-            </div>
-        </section>
+                <div style="display: flex; flex-direction: row;">
 
-        <section class="remerciement">
-            <div class="cardTop">
-                Remerciement
-            </div>
-            <div class="card">
-                <p class="description">
-                    Je remercie l'équipe de Doowup pour leur accueil et leur bienveillance. Leur accompganement à été exemplaire et m'a 
-                    permis d'en apprendre beaucoup durant ce mois de stage. 
-                    </p>
+                    <img src="./assets/img/acteurs.PNG" alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png" alt="" style="width: 10%; margin: 0 auto;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png" alt="" style="width: 10%; margin: 0 auto;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/WampServer-logo.png" alt="" style="width: 10%; margin: 0 auto;">
+                    <img src="https://logo-marque.com/wp-content/uploads/2020/11/Slack-Logo.png" alt="" style="width: 20%;margin: 0 auto;">
+                    <img src="https://about.gitlab.com/images/press/logo/png/gitlab-icon-rgb.png" alt="" style="width: 10%; margin: 0 auto;">
+                    <img src="https://clickup.com/landing/images/for-se-page/clickup.png" alt="" style="width: 10%;margin: 0 auto;">
+                </div>
+
             </div>
         </section>
 

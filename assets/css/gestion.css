@@ -7,7 +7,7 @@ html, body {
 
 body {
     display: grid;
-    grid-template-columns: 10vw auto 25vw auto 10vw;
+    grid-template-columns: 10vw auto 40vw auto 10vw;
     grid-auto-rows: 10vh 10vh auto 70vh auto;
     background-color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
@@ -104,10 +104,11 @@ i {
 
 #about {
     grid-column: 3;
-    grid-row: 2;
+    grid-row: 3;
     text-align: center;
     font-size: 3vw;
     color: black;
+    font-weight: 500;
     /* text-shadow: 0 0 0.4vw black; */
 }
 
@@ -125,7 +126,7 @@ i {
 }
 
 #subnav {
-    margin: 2vh auto 8vh auto ; 
+    margin: 10vh auto 8vh auto ; 
     display: flex;
     flex-direction: row;
 }
@@ -167,8 +168,9 @@ i {
 
 .description{
     margin: auto;
-    font-size: 1.1vw;
-    line-height: 1.5vw;
+    font-size: 1.3vw;
+    line-height: 1.8vw;
+    font-weight: 500;
     text-align: justify;
 }
 

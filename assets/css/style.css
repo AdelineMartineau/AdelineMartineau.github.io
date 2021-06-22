@@ -7,7 +7,7 @@ html, body {
 
 body {
     display: grid;
-    grid-template-columns: 10vw auto 25vw auto 10vw;
+    grid-template-columns: 10vw auto 40vw auto 10vw;
     grid-auto-rows: 10vh auto 20vh auto 10vh;
     background-image: url('../img/city3.gif');
     background-size: cover;

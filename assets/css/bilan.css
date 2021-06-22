@@ -24,7 +24,7 @@ i {
     font-size: 1.5vw;
     color: black;
     text-shadow: 0 0 0.4vw black;
-    margin: 0.7vw;
+    margin: 0 .7vw;
     transition: 0.3s;
 } i:hover {
     transition: 0.5s;
@@ -168,9 +168,8 @@ i {
 
 .description{
     margin: auto;
-    font-size: 1.3vw;
-    line-height: 1.8vw;
-    font-weight: 500;
+    font-size: 1.1vw;
+    line-height: 1.5vw;
     text-align: justify;
 }
 
@@ -180,6 +179,10 @@ i {
     margin: auto;
     box-shadow: 0 0 00.8vw rgba(255, 255, 255, 0.329);
 }
+
+
+
+
 
 
 

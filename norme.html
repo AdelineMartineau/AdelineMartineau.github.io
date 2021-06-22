@@ -6,9 +6,10 @@
     <link rel="icon" href="./assets/img/logoooed.png">
     <link rel="stylesheet" href="./assets/css/norme.css" type="text/css"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
-  <body oncontextmenu="return false;">
+  <!-- <body oncontextmenu="return false;"> -->
 
     <div id="navbar">
         <div id="links">
@@ -33,17 +34,18 @@
             <div class="bar3"></div>
         </div>
     </div>
-
+    
     <div id="about">
-        <h1>Normes et référentiels</h1>
-        <hr style="width: 60%; height: 0.01vw; margin-top: 2.2vw; clear: both">
+        Sauvegarde et continuité
+        <!-- <hr style="width: 60%; height: 0.01vw; margin-top: 2.2vw; clear: both"> -->
     </div>
 
     <div id="main">
 
         <div id="subnav">
+            <a class="subnav_links" href="./stage.html">Doowup</a>
             <a class="subnav_links" href="./runup.html">Projet Runup</a>
-            <a class="subnav_links" href="./norme.html">Normes et référentiels</a>
+            <a class="subnav_links" href="./norme.html">Sauvegarde et continuité</a>
             <a class="subnav_links" href="./gestion.html">Gestion de projet</a>
             <a class="subnav_links" href="./bilan.html">Bilan Personnel</a>
           </div>
@@ -54,8 +56,8 @@
             </div>
             <div class="card">
                 <p class="description">
-                    BDD MySQL ou postgreSQL ? Comment étaient faites les sauvegardes ? Qui sont les hébergeurs du/des sites (schéma si tu as ?) ? Par quels moyen vous déployez sur le serveur de l'hebergeur ? 
-
+                    Chaque semaine, une sauvegarde complète du projet était effectuée sur un cloud et hébergée par un tiers. 
+                    La sauvegarde se faisais manuellement et non automatiquement. 
                 </p>
             </div>
         </section>
@@ -66,8 +68,40 @@
             </div>
             <div class="card">
                 <p class="description">
-                    Utiliser vous un outil de versionning comme git ? Avez tu certains droits ? Utilisais tu des branches ou une seule ? Partagez tu le code avec plusiseurs personnes ? Comment nomez tu tes branches / commit ? 
+                    Intégration continue : <br><br>
+
+                    GitLab est l'interface utilisé pour le versionning du projet. C'est également le moyen qui permet d’assurer 
+                    la continuité d’un service en cas de panne. Si une panne survient, un redéploiement sur une autre machine 
+                    sera effectué. <br><br>
+
+                    Procédure : <br><br>
+                    Chaque membre du projet disposait de sa propre branche en local portant de nom de la fonctionnalité qui leur était assignée.
+                    Pour ma part : develop_ticket. Afin de prendre en compte les changements effectués au cours du développement, chaque membre 
+                    du projet procédait à un push sur sa branche. Le merge se faisait sur une brancche supérieur nommée develop. <br><br>
+
+                    Guide utile : <br><br>
+
+                    Un document spécifiant des bonnes pratiques à utilisé pour le versionning était mis à notre disposition. 
+                    Elles devaient être utilisées à chaque commit afin de définir leur rôle. <br><br>
+                    [IMPROVE] → Nouvelles fonctionnalitées <br>
+                    [UPDATE] → MAJ d’une fonctionnalitée <br>
+                    [FIX] → Correction d’un bug <br>
+                    [LANG] → changement du contenu non-dynamique <br>
+                    [CLEAN] → Nettoyage de code <br><br>
+
+                    De plus, pour chaque modification propre à un fichier css ou js, une commande était utilisée afin de 
+                    mixer leur changement dans un autre fichier nommer general.css ou general.js.
+                    Cette procédure était nécéssaire pour comptabiliser les changements.
+                    Ces derniers se trouvaient dans un dossier à la racine du projet. <br><br>
+
+                    Evolution de la structure et impact: <br><br> 
+
+                    Au bout de deux semaines de projet, un merge commun à été effectué par l'ensemble des membres afin
+                    de prendre en compte des changements majeurs sur l'arborescence du projet. <br><br>
+                    Intégration d'un router : <br><br>
+                    Dans cette architecture MVC maison, l'intégration d'un router à été mis en place.  
                 </p>
+                <img src="./assets/Doowup/gitLab__Doowup/gitlabview.png" alt="" style="width: 100%; margin: 5vh auto;">
             </div>
         </section>
 
@@ -77,7 +111,10 @@
             </div>
             <div class="card">
                 <p class="description">
-                    A quoi servent les tests d'intégrations ? en connais tu d'autres (voir sur internet si jamais) ? Quelle était ta procédure personelle pour tester ? Faisiais tu des cahier de test ?
+                    Procédure : <br><br>
+                    Sur ce projet, il n’y avait pas de serveur de déploiement. Autrement dit, tous les tests fonctionnels de chaque service, 
+                    par exemple le module ticket, se faisaient en local. La branche git concernant le service était récupérée par le maître de 
+                    stage puis testé manuellement ensuite.
                 </p>
             </div>
         </section>
@@ -88,7 +125,17 @@
             </div>
             <div class="card">
                 <p class="description">
-                    Schéma de la BDD, sur quelles table tu as travaillé, critique de ce qui est bien, de ce qui est moins bien. Il y avait des triggers / procédures stockées ? 
+                    La base de données utilisé était MySQL sous la plateforme de développement Web WampServer. Chacun des membres du projet disposaient de 
+                    sa propre base de données afin d'effectuer les tests en local. <br><br> Néanmoins, cela devenait contraignant lorsqu'il fallait récuperer
+                    les modifications de la BDD de chaque membre. Aucun système ne permet de gérer cela pour l'instant. La solution première
+                    consiste à s'envoyer les scripts SQl et que chaque membre les exécutes de son côté. Le problème est que cela devient vite
+                    source d'erreur de manipulation et de non-compatibilité. <br><br>
+
+                    Objectif d'évolution à terme : <br><br>
+                    La mise en place un déploiement de base. Le but de ce déploiement est d'inscrire les instructions dans des fichiers, 
+                    dont l'exécution suit la même procédure pour tout le monde. Ce système est inspiré des Frameworks php.
+                    Au lieu d'altérer la base de données avec des requêtes ou via l'interface phpmyadmin, les développeurs passent par des fichiers 
+                    php appelés migrations, générées via une commande php. 
                 </p>
             </div>
         </section>   

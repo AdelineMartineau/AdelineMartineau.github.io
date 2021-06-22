@@ -10,7 +10,7 @@ body {
     grid-template-columns: 10vw auto 25vw auto 10vw;
     grid-auto-rows: 10vh 10vh auto 70vh auto;
     background-color: rgb(255, 255, 255);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /** Icons **/
@@ -48,8 +48,6 @@ i {
     margin: 0 2vw;
 }
 
-/** Logo **/
-
 #logo {
     grid-column: 1;
     grid-row: 1;
@@ -78,7 +76,7 @@ i {
   .bar1, .bar2, .bar3 {
     width: 1.8vw;
     height: 0.5vh;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     box-shadow: 0 0 0.4vw black;
     margin: 0.6vh 0;
     transition: 0.4s;
@@ -102,9 +100,10 @@ i {
     grid-column: 3;
     grid-row: 2;
     text-align: center;
-    font-size: 0.8vw;
+    font-size: 3vw;
     color: black;
-    text-shadow: 0 0 0.4vw black;
+    font-weight: 500;
+    /* text-shadow: 0 0 0.4vw black; */
 }
 
 /** Main **/
@@ -160,12 +159,12 @@ i {
 } .flex_row:hover {
     transition: 1s;
     cursor: pointer;
-    background-color: rgb(231, 28, 35);
+    background-color: rgb(255, 255, 255); 
 }
 
 p {
     margin: auto;
-    font-size: .9vw;  
+    font-size: 1vw;  
 }
 
 * {box-sizing:border-box}

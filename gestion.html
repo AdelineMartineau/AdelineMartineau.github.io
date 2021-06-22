@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link rel="icon" href="./assets/img/logoooed.png">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="./assets/css/gestion.css" type="text/css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
-  <body oncontextmenu="return false;">
+  <!-- <body oncontextmenu="return false;"> -->
 
     <div id="navbar">
         <div id="links">
@@ -23,7 +28,7 @@
     </div>
 
     <div id="logo">
-        <a href="/index.html"><i class="fab fa-atlassian" style="font-size: 2vw;"></i></a>
+        <a href="./index.html"><i class="fab fa-atlassian" style="font-size: 2vw; color:rgb(8, 8, 8)"></i></a>
     </div>
 
     <div id="menu">
@@ -36,14 +41,15 @@
 
     <div id="about">
         Gestion
-        <hr style="width: 60%; height: 0.01vw; margin-top: 2.2vw; clear: both">
+        <!-- <hr style="width: 60%; height: 0.01vw; margin-top: 2.2vw; clear: both"> -->
     </div>
 
     <div id="main">
 
         <div id="subnav">
+            <a class="subnav_links" href="./stage.html">Doowup</a>
             <a class="subnav_links" href="./runup.html">Projet Runup</a>
-            <a class="subnav_links" href="./norme.html">Normes et référentiels</a>
+            <a class="subnav_links" href="./norme.html">Sauvegarde et continuité</a>
             <a class="subnav_links" href="./gestion.html">Gestion de projet</a>
             <a class="subnav_links" href="./bilan.html">Bilan Personnel</a>
           </div>
@@ -59,27 +65,36 @@
                    Documentation officiel : <br><br>
 
                    Afin de prendre connaissance du projet RunUp et d'en cerner les besoins, j'ai eu à ma disposition 
-                   une documentation complète de la solution. Parmis les ressources, on y trouvais l'explication de 
-                   l'architecture MVC, un schcéma de l'arborescence des fichiers, le modèle de données ainsi que les 
+                   une documentation complète de la solution. Parmis les ressources, on y trouvait l'explication de 
+                   l'architecture MVC, un schéma de l'arborescence des fichiers, le modèle de données ainsi que les 
                    spécifications fonctionnelles de chaque fonctionnalitées. <br><br><br>
 
                    Maquettes Ticket avec Adobe XD : <br><br>
 
                    J'ai eu la possibilité d'avoir à ma dispostion, des maquettes réalisés avec soins par mon tuteur. 
-                   Ces vues des différentes pages de la fonctionnalitée Ticket étaientt bénéfiques et très utiles pour 
+                   Ces vues des différentes pages de la fonctionnalitée Ticket étaient bénéfiques et très utiles pour 
                    savoir ce qui était précisément attendue. <br><br><br>
-
-                   <div class="organisation__content swiper-slide">
-                        <img src="/assets/Doowup/AdobeXD_Doowup/Vue ticket - Création d’un nouveau ticket.png" alt="" class="organisation">
-                   </div>
-
-                   Tutoriels Discord: <br><br>
-
-                   Au cours du stage, des tutoriels ont été mis en place sur Discord afin d'obtenir une aide plus
-                   complète du développement de la solution. 
-
-                   (screen)
                 </p>
+                <div style="display: flex; flex-direction: column;">
+                    <img src="./assets/Doowup/AdobeXD_Doowup/Vue ticket - Création d’un nouveau ticket.png" alt="" style="width: 100%; margin: 5vh auto;">
+                    <img src="./assets/Doowup/AdobeXD_Doowup/Vue ticket - Détails.png" alt="" style="width: 100%; margin: 5vh auto;">
+                    <img src="./assets/Doowup/AdobeXD_Doowup/Vue ticket - Espace administrateur.png" alt="" style="width: 100%; margin: 5vh auto;">
+                </div>
+                <p  class="description">
+                    
+                   Tutoriels Discord: <br><br>
+                   
+                   Au cours de ce stage, des tutoriels ont été mis en place sur Discord par les membres du projet
+                   afin d'obtenir une aide plus complète du développement de la solution. 
+                </p>
+                   
+                <div style="display: flex; flex-direction: column;">
+                    <img src="./assets/Doowup/Discord_Doowup/Capture_Discord.PNG" alt="" style="width: 20%; margin: 5vh auto;">
+                    <img src="./assets/Doowup/Discord_Doowup/Capture_Discord2.PNG" alt="" style="width: 100%; margin: 5vh auto;">
+                    <img src="./assets/Doowup/Discord_Doowup/Capture_Discord4.PNG" alt="" style="width: 100%; margin: 5vh auto;">
+                    <img src="./assets/Doowup/Discord_Doowup/Capture_Discord5.PNG" alt="" style="width: 100%; margin: 5vh auto;">
+                </div>
+                
             </div>
         </section>  
 
@@ -91,20 +106,23 @@
                 <p class="description">
                     Planification des tâches avec ClickUp : <br><br>
 
-                    Chaque tâches étaient réparties en trois parties, chacune correspondant aux pages de la fonctionnalité ticket.
-                    Elles disposaient toutes d'une date buttoir, d'un niveau de priorités plus ou moins élevé et pour certaine, une $
-                    description détaillé de ce que devait traité cette fonctionnalitée.
-                    La diagramme de GANTT a permis de d'éavluer le temps passé sur chaque fonctionnalitées. 
-
-                    (screen)
-
+                    Chaque tâches étaient réparties en trois grandes parties, chacune correspondant aux pages de la fonctionnalitée ticket.
+                    Elles disposaient toutes d'une date buttoir, d'un niveau de priorités plus ou moins élevé et pour certaine, une
+                    description détaillé attendue de cette fonctionnalitée.
+                    La diagramme de GANTT a permis d'éavluer le temps passé sur chaque fonctionnalitées. 
+                </p>
+                <img src="./assets/Doowup/Clickup_Doowup/5.png" alt="" style="width: 100%; margin: 5vh auto;">
+                <img src="./assets/Doowup/Clickup_Doowup/6.png" alt="" style="width: 100%; margin: 5vh auto;">
+                <img src="./assets/Doowup/Clickup_Doowup/2.png" alt="" style="width: 100%; margin: 5vh auto;">
+                <p class="description">
                     Suivie de l'avancée avec Slack : <br><br>
 
-                    Pour chaque changement d'état d'une fonctionnalitée, une notifications était envoyé sur le serveur Slack
-                    afin d'informer le tuteur de notre avancée.
-
-                    (screen)
+                    Pour chaque changement d'état d'une fonctionnalitée, une notifications était envoyé sur le serveur Slack du projet RunUp
+                    afin d'informer le tuteur de mon avancée.
                 </p>
+                <img src="./assets/Doowup/Slack_Doowup/Capture_Slack.PNG" alt="" style="width: 100%; margin: 5vh auto;">
+                <img src="./assets/Doowup/Slack_Doowup/Capture_Slack2.PNG" alt="" style="width: 100%; margin: 5vh auto;">
+                <img src="./assets/Doowup/Slack_Doowup/Capture_Slack3.PNG" alt="" style="width: 30%; margin: 5vh auto;">
             </div>
         </section>  
 
@@ -115,19 +133,22 @@
             <div class="card">
                 <p class="description">
                     Au départ, il y avait des tâches prédéfinies et nécessaires au développement de l’application. 
-                    Au cours du développement, il y a eu des évolutions sur à la demande du client (Doowup) qui se sont 
+                    Au cours du développement, il y a eu des évolutions à la demande du client (Doowup) qui se sont 
                     ajoutées et qui n'étaient pas présentes sur la maquette. <br><br><br>
 
                     Exemple de ces évolutions : <br><br>
 
-                    - création du bar de recherche pour l'accès à des ticket spécifiques. <br>
-                    - création d'une selection sur l'état des tickets pour un accès ciblé <br>
-                    - création d'une selection par date
+                    - création du bar de recherche pour l'accès à des tickets spécifiques. <br>
+                    - création d'une selection sur l'état des tickets pour un accès ciblé. <br>
+                    - création d'une selection par date.
                 </p>
             </div>
         </section>
     </div>
 
     <script src="./assets/js/main.js"></script>
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
   </body>
 </html>
