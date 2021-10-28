@@ -1,0 +1,202 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+#app{
+    height: 70vw;
+    width: 50vw;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#add_todo{
+    height:auto;
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto 2vw auto;
+}
+
+#title{
+    margin: 3vw auto 3vw auto;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.input{
+    width: 30vw;
+    height: 3vw;
+    margin: 0vw auto 2vw auto;
+    padding: 0vw 0.5vw;
+    background-color: transparent;
+    border: white 1px solid;
+    border-radius : 0.3vw;
+    color:white;
+    font-size: 1.2vw;
+}
+
+#button_add{
+    width: 31vw;
+    height: 3vw;
+    margin: 0vw auto 2vw auto;
+    font-size: 1.5vw;
+    background-color: rgb(240, 66, 162);
+    border:none;
+    border-radius: 0.3vw;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+} #button_add:hover{
+    cursor: pointer;
+} #button_add:active {
+    box-shadow: 0 0 0.8vw rgba(240, 66, 162, 0.6);
+}
+
+.title_list{
+    font-size: 1.6vw;
+    margin: 0vw 0 2vw 0vw; 
+    font-weight: 600;
+}
+
+#list_todo{
+    height:auto;
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    margin:0 auto 2vw auto;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+}
+
+.todo{
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    height: 3vw;
+    margin: 0vw auto 2vw auto;
+    background-color: whitesmoke;
+    border:none;
+    border-radius : 0.3vw;
+    color:rgb(7, 0, 0);
+} .todo:active{
+    box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.6);
+}
+
+#todo_title{
+    width: 25vw;
+    padding: 1vw 0.5vw;
+    font-weight: 600;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+#finished_tasks{
+    height:auto;
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.icon_trash{
+    font-size: 1.6rem;
+    color: #0a0a0ac5;
+    text-decoration: none;
+    
+}.icon_trash:hover{
+    color: #ff0162a6;
+    cursor:pointer;
+}
+
+.icon_circle{
+    font-size: 1.6rem;
+    color: #0a0a0ac5;
+    text-decoration: none;
+}.icon_circle:hover{
+    color: rgb(130, 238, 157);
+    cursor:pointer;
+}
+
+.icon_add{
+    font-size: 1.8rem;
+    margin: auto auto;
+    color: #000000;
+    text-decoration: none;
+}.icon_add:hover{
+    cursor:pointer;
+}
+
+.done {
+    color: rgb(50, 205, 109);
+}
+.notDone {
+    color: rgb(255, 0, 98);
+}
+
+.done_notdone{
+    font-size: 1.3rem;
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 1280px) {
+     
+#title{
+    font-size: 2.6vw;
+    font-weight: 500;
+}
+.input{
+    width: 32vw;
+    height: 4.2vw;
+    font-size: 1.6vw;
+}
+
+#button_add{
+    width: 33vw;
+    height: 4.2vw;
+} 
+
+.title_list{
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+.todo{
+    display: flex;
+    flex-direction: row;
+    width: 33vw;
+    height: 4.2vw;
+    margin: 0vw auto 2vw auto;
+    background-color: whitesmoke;
+    border:none;
+    border-radius : 0.3vw;
+    color:rgb(7, 0, 0);
+} .todo:active{
+    box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.6);
+}
+
+#todo_title{
+    width: 25vw;
+    padding: 1vw 0.8vw;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+
+}

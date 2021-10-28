@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>TodoList 1</title>
+    </head>
+    <body>
+        <div id="app">
+            <div id="add_todo">
+                <div id="title">My Todo List</div>
+                <input class="input" v-model="newTodo" type="text" placeholder="Ajouter une tâche" maxlength="34"> 
+                <button id="button_add" @click="addTodo()"><i class="uil uil-plus-circle icon_add"></i></button>
+            </div>
+            <div id="list_todo">
+                <p class="title_list">Todo List</p>
+                <ul v-if="todoList.length > 0">
+                    <div class="todo" v-for="(todo, index) of todoList">
+                        <div id="todo_title">{{ todo }}</div> 
+                        <div class="buttons">
+                            <button class="btn" @click="doneTask(todo, index)"><i class="uil uil-check-circle icon_circle"></i></button>
+                            <button class="btn" @click="deleteTodo(todoList, index)"><i class="uil uil-trash-alt icon_trash"></i></button>
+                        </div>
+                    </div>
+                </ul>
+                <p v-else>Aucune tâche en cours</p>
+            </div>
+            <div id="finished_tasks">
+                <p class="title_list">Todos archivés</p>
+                <ul v-if="doneTodoList.length > 0">
+                    <div class="todo" v-for="(doneTodo, index) of doneTodoList">
+                        <div id="todo_title">{{ doneTodo }}</div> 
+                        <div class="buttons">
+                            <button class="btn" @click="deleteTodo(doneTodoList, index)"><i class="uil uil-trash-alt icon_trash"></i></button>
+                        </div>
+                    <div>
+                </ul>
+                <p v-else>Aucune tâche terminés</p>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script>
+
+    var app = new Vue({
+        el: '#app',
+        data : {
+            newTodo : '',
+            todoList:[
+                'Faire les courses',
+                'Aller à Paris',
+                'Rendez-vous medecin', 
+            ],
+            doneTodoList:['Jouer à Mario Kart']
+        },
+        methods: {
+            addTodo: function(){
+                if (this.newTodo.length > 0)
+                this.todoList.push(this.newTodo);
+                this.newTodo = '';
+            },
+            deleteTodo: function(list, index){
+                list.splice(index, 1);
+            },
+            doneTask: function(todo,index){
+                this.doneTodoList.push(todo);
+                this.deleteTodo(this.todoList,  index);
+            },
+
+        } 
+    })
+</script>

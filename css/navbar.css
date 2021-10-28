@@ -1,0 +1,175 @@
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0 5%;
+	height: 80px;
+	background: #010101cb;
+	box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nav_stage{
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0 5%;
+	height: 80px;
+	background: #060608f3;
+	box-shadow: 0 -1px 4px rgb(0 0 0 / 30%);
+}
+
+
+.anim-nav {
+    background:#060608ea;
+    color: rgb(15, 15, 15);
+	transition: 0.5s;
+}
+
+nav .logo {
+	float: left;
+	width: 10%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.icon{
+	font-size: 2.5rem;
+	color:white;
+}.icon:hover{
+	color: rgb(184, 125, 184);
+  }
+
+.icon_navstage{
+	color:white;
+}
+
+nav .logo_stage{
+	width: 20%;
+}
+
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	align-items: center;
+}
+
+nav .back_icon {
+	font-size: 125%;
+	margin: 1vh 0.5vw;
+}
+
+nav .links_stage {
+	width: 70%;
+}
+
+nav .links_projet {
+	width: 50%;
+}
+
+nav .links li {
+	list-style: none;
+}
+
+nav .links a {
+	display: block;
+	padding: 0.4em;
+	font-size: 1rem;
+	font-weight: 500;
+	color: white;
+	text-shadow: 0 0 0.6vw white;
+	text-decoration: none;
+}nav .links a:hover{
+	color: rgb(201, 114, 201);
+	transition: 0.3s;
+}
+
+nav .links_stage a {
+	color: rgb(253, 251, 251);
+}
+
+nav .links_projet a{
+	color: rgb(250, 248, 248);
+}
+
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 1050px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+
+	nav .icon{
+		font-size: 2.5rem;
+	}
+	  
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 70px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}

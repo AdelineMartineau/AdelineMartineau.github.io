@@ -1,0 +1,258 @@
+@media only screen and (min-width: 320px) and (max-width: 400px){
+    
+}
+
+@media only screen and (min-width: 400px) and (max-width: 550px){
+    #slider{
+        width: 20rem;
+    }
+
+    #slides .inner {
+        height: 30rem;
+     }
+
+     #slider2{
+        width: 24rem;
+    }
+
+    #slides2 .inner2 {
+        height: 35rem;
+     }
+
+     #bullets{
+         margin: 0;
+         padding-top: 9rem;
+     }
+
+     #bullets2{
+        margin: 0;
+        padding-top:0rem;
+    }
+
+    /* controls right */
+
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1){
+        margin: -70px -35px 0 0;
+    }
+
+    #slide1_:checked ~ #controls2 label:nth-child(2),
+    #slide2_:checked ~ #controls2 label:nth-child(3),
+    #slide3_:checked ~ #controls2 label:nth-child(4),
+    #slide4_:checked ~ #controls2 label:nth-child(1) {
+        margin: -100px -35px 0 0;
+    }
+
+    /* controls left */
+
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+        margin: -70px 0 0 -35px;
+    }
+
+    #slide1_:checked ~ #controls2 label:nth-last-child(2),
+    #slide2_:checked ~ #controls2 label:nth-last-child(3),
+    #slide3_:checked ~ #controls2 label:nth-last-child(4),
+    #slide4_:checked ~ #controls2 label:nth-last-child(1) {
+        margin: -100px 0 0 -35px;
+    }
+
+     #controls label {
+        width: 30px;
+        height: 30px;  
+     }
+
+     #controls2 label{
+        width: 30px;
+        height: 30px; 
+     }
+
+} 
+
+@media only screen and (min-width: 550px) and (max-width: 650px){
+    #slider{
+        width: 24rem;
+    }
+
+    #slides .inner {
+        height: 30rem;
+     }
+
+     #slider2{
+        width: 24rem;
+    }
+
+    #slides2 .inner2 {
+        height: 35rem;
+     }
+
+     #bullets{
+         margin: 0;
+         padding-top: 9rem;
+     }
+
+     #bullets2{
+        margin: 0;
+        padding-top:0rem;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 750px){
+    #slider{
+        width: 28rem;
+    }
+
+    #slides .inner {
+        height: 30rem;
+     }
+
+     #slider2{
+        width: 28rem;
+    }
+
+    #slides2 .inner2 {
+        height: 35rem;
+     }
+
+     #bullets{
+         margin: 0;
+         padding-top: 9rem;
+     }
+
+     #bullets2{
+        margin: 0;
+        padding-top:2rem;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 799px){
+    #slider{
+        width: 33rem;
+    }
+
+    #slides .inner {
+        height: 30rem;
+     }
+
+     #slider2{
+        width: 33rem;
+    }
+
+    #slides2 .inner2 {
+        height: 35rem;
+     }
+
+     #bullets{
+         margin: 0;
+         padding-top: 9rem;
+     }
+
+     #bullets2{
+        margin: 0;
+        padding-top:2rem;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 966px){
+    #slider{
+        width: 36rem;
+    }
+
+    #slides .inner {
+        height: 30rem;
+     }
+
+     #slider2{
+        width: 36rem;
+    }
+
+    #slides2 .inner2 {
+        height: 30rem;
+     }
+
+     #bullets{
+         margin: 0;
+         padding-top: 9rem;
+     }
+
+     #bullets2{
+        margin: 0;
+        padding-top:2rem;
+    }
+}
+
+
+@media only screen and (min-width: 966px) and (max-width: 1024px){
+    #slider{
+        width: 40rem;
+    }
+
+    #slides .inner {
+        height: 30rem;
+     }
+
+     #slider2{
+        width: 42rem;
+    }
+
+    #slides2 .inner2 {
+        height: 35rem;
+     }
+
+     #bullets2{
+        margin: 0;
+        padding-top:4rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1050px){
+    #slider{
+        width: 42rem;
+    }
+
+    #slides .inner {
+        height: 31rem;
+     }
+
+     #slider2{
+        width: 42rem;
+    }
+
+    #slides2 .inner2 {
+        height: 31rem;
+     }
+
+     #bullets2{
+        margin: 0;
+        padding-top:4rem;
+    }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1280px) {
+
+    #slider{
+        width: 43rem;
+    }
+
+    #slides .inner {
+        height: 32rem;
+     }
+
+     #slider2{
+        width: 43rem;
+    }
+
+    #slides2 .inner2 {
+        height: 32rem;
+     }
+
+    #bullets2{
+        margin: 0;
+        padding-top:4rem;
+    }
+
+}

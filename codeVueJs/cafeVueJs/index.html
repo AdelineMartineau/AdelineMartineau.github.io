@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Lobster+Two&family=Montserrat:wght@100&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>Cafe</title>
+</head>
+<body>
+    <div id="app">
+      <div id="left">
+        <p class="title">Coffee Machine</p>
+        <div id="ecran">
+            <p class="ecran_text" v-if="isSelectedCofee">Choisissez une dose de sucre</p>    
+            <p class="ecran_text">
+              Dose de sucre : {{count}}
+            </p>
+            <p class="ecran_text" v-if="isSelectedCofee">{{selectedCofee}}</p>
+            <p class="ecran_text" v-if="!isSelectedCofee">{{selectedCofee.title}} : {{selectedCofee.prix}} euros</p>
+        
+        </div>
+      
+        <div id="buttons_sugar">
+          <button class="btn" v-if="isSelectedCofee" @click="lessSugar()"><i class="uil uil-arrow-circle-down sugar_icon"></i></button>
+          <button class="btn" v-else><i class="uil uil-arrow-circle-down sugar_icon"></i></button>
+          <button class="btn" v-if="isSelectedCofee" @click="addSugar()"><i class="uil uil-arrow-circle-up sugar_icon"></i></button>
+          <button class="btn" v-else><i class="uil uil-arrow-circle-up sugar_icon"></i></button>
+        </div>
+      
+        <div id="buttons_coffees">
+          <ul>
+            <div class="coffee" v-for="coffee in coffees">
+              <div class="coffee_title">{{ coffee.title }}</div> 
+              <button class="circle" @click="ChoiceCoffee(coffee)"></button> 
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <div id="right">
+        <div v-if="!isSelectedCofee">
+          <div id="creditCard" @click="payment()">
+            <p id="title">Blue Card</p>
+            <p>Solde sur la carte : {{solde | onlyDecimals}} euros</p>
+          </div>
+        </div>
+        <div v-else>
+          <div id="creditCard">
+            <p id="title">Blue Card</p>
+            <p>Solde sur la carte : {{solde | onlyDecimals}} euros</p>
+          </div>
+        </div>
+        <div id="historiqueCard">
+          <h2 id="commandeTitle">Historique des commandes</h2>
+          <hr style="background-color:black; width: 80%;">
+          <div id="commandes" v-for="(commande, index) in commandes" :key="'paiement-' + commande.id">
+            <p class="commande"> {{commande.title}} - {{commande.prix}} € {{commande.validation | formatPaymentValidation}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+
+  var app = new Vue({
+    el: '#app',
+    data:{
+      selectedCofee: 'Quelle boisson chaude désirez-vous ?',
+      count: 0,
+      nCoffee: 0,
+      solde: 10,
+      commandes:[],
+      coffees : [
+        {
+          title:'Latte',
+          prix: 1.5,
+          validation : null
+        },
+        { 
+          title:'Coffee Mocha', 
+          prix: 1.7,
+          validation : null
+        },
+        { 
+          title:'American Coffee', 
+          prix: 1.3,
+          validation : null
+        },
+        {
+          title:'Irish Cofee', 
+          prix: 1.1,
+          validation : null
+        }, 
+        {
+          title:'Caramel Machiato', 
+          prix: 1.2,
+          validation : null
+        }, 
+        {
+          title:'Coffee with cream', 
+          prix: 1.6,
+          validation : null
+        }, 
+        {
+          title:'Chocolate Coffee', 
+          prix: 1.6,
+          validation : null
+        }, 
+        // {
+        //   title:'Venice Coffee', 
+        //   prix: 1.6,
+        //   validation : null
+        // } 
+      ],
+    },
+
+    methods:{
+      lessSugar: function(){
+        if (this.count > 0) {
+          return this.count--
+        }
+      },
+      addSugar: function(){
+        if (this.count < 5) {
+          return this.count++
+        }
+      },
+      ChoiceCoffee(coffee) {
+        this.selectedCofee = coffee 
+      },
+      payment(){
+        if (this.solde >= this.selectedCofee.prix){
+          this.solde = this.solde - this.selectedCofee.prix 
+          
+          this.selectedCofee.validation = true
+          this.commandes.push({...this.selectedCofee, id: this.nCoffee++}) 
+        } else {
+          this.selectedCofee.validation = false
+          this.commandes.push({...this.selectedCofee, id: this.nCoffee++}) 
+        }
+        this.selectedCofee = 'Quelle boisson chaude désirez-vous ?'
+        this.count = 0
+      }
+    },
+    computed: {
+      isSelectedCofee() {
+        return this.selectedCofee === 'Quelle boisson chaude désirez-vous ?'
+      },
+    },
+    filters : {
+      formatPaymentValidation(value){
+        if (value === true)
+          return 'Paiement validé'
+        else 
+          return 'Paiement refusé'
+      },
+      onlyDecimals(value) {
+        console.log(value)
+        return value.toString().substring(0, 3)
+        console.log(value)
+      }
+    }
+  })
+</script>
+
