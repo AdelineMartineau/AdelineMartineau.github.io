@@ -29,7 +29,7 @@
                 <p v-else>Aucune tâche en cours</p>
             </div>
             <div id="finished_tasks">
-                <p class="title_list">Todos archivés</p>
+                <p class="title_list">Todos Done</p>
                 <ul v-if="doneTodoList.length > 0">
                     <div class="todo" v-for="(doneTodo, index) of doneTodoList">
                         <div id="todo_title">{{ doneTodo }}</div> 
@@ -51,11 +51,11 @@
         data : {
             newTodo : '',
             todoList:[
-                'Faire les courses',
-                'Aller à Paris',
-                'Rendez-vous medecin', 
+                'Jouer du piano',
+                'Jouer à Mario Kart',
+                'Finir Hollow Knight', 
             ],
-            doneTodoList:['Jouer à Mario Kart']
+            doneTodoList:['Faire du café', 'suivre un cours VueJs']
         },
         methods: {
             addTodo: function(){

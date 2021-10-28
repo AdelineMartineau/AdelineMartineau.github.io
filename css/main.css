@@ -15,8 +15,11 @@ html, body {
     height: 100%;
 }
 
-.iframe{
-  height: 10vh;
+iframe {
+  border:none; 
+  border-radius: 0.4vw;
+  box-shadow:0 0 1.5vw #070707; 
+  margin-bottom: 10vh;
 }
 
 /* images */
@@ -322,6 +325,10 @@ p {
   color: white;
   font-weight: 500;
   margin: 0rem auto 3rem auto;
+}
+
+.downArrowIcon{
+  margin: -4vh auto 2vh auto;
 }
 
 .subtitle{

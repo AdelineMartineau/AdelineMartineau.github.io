@@ -66,6 +66,10 @@ nav .links {
 	align-items: center;
 }
 
+nav .active {
+	color: rgb(201, 114, 201) !important;
+}
+
 nav .back_icon {
 	font-size: 125%;
 	margin: 1vh 0.5vw;
