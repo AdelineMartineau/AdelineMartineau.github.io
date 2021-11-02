@@ -8,7 +8,7 @@
 
 html, body {
     /* background:#1d2229; */
-    background:#1b2129;
+    background:#161e29;
     /* background:#1e1f27; */
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
@@ -232,7 +232,7 @@ p {
 /* buttons */
 
 .contact_button{
-  background-color: rgb(209, 142, 209);
+  background-color: rgb(184, 125, 184);
   width: 11rem;
   padding: 1rem 0.5rem 1rem 1rem;  
   text-decoration: none;
@@ -241,13 +241,13 @@ p {
   border-radius: 0.8vw;
   margin: 2rem 0 0 2rem;
 }.contact_button:hover{
-  background-color: rgb(216, 163, 216);
+  box-shadow: 0 0 0.3vw rgb(255, 150, 229);
   transition: 0.3s;
 }
 
 .doowup_btn {
   display: flex;
-  background-color: rgb(209, 142, 209);
+  background-color: rgb(184, 125, 184);
   padding: 1rem 0.5rem 1rem 1rem;  
   font-weight: 600;
   font-size: 1rem;
@@ -257,7 +257,7 @@ p {
   margin-top: 2vw;
   width: 13rem;
 }.doowup_btn:hover{
-  background-color: rgb(216, 163, 216);
+  box-shadow: 0 0 0.3vw rgb(255, 150, 229);
   transition: 0.3s;
 }
 
@@ -368,7 +368,7 @@ p {
   width: 90%;
   margin: 0 auto;
   padding: 1vw;
-  background-color: #12131a;
+  background-color: #0d121a;
   border-radius: 0.8rem;
 }
 
@@ -378,7 +378,7 @@ p {
   width: 60%;
   margin: 0 auto 8vw auto;
   padding: 1vw;
-  background-color: #12131a;
+  background-color: #0d121a;
   border-radius: 0.8rem;
 }
 
@@ -511,7 +511,7 @@ p {
 }
 
 .container_skills{
-  background-color: #12131a; 
+  background-color: #0d121a; 
   margin: 1vw 0;
   border-radius: .25rem;
 }
@@ -523,7 +523,7 @@ p {
 
 .skills_percentage{
   display: block;
-  background-color: rgb(184, 125, 184);
+  background-color: rgb(211, 133, 191);
 }
 
 .skills_javascript{
@@ -614,16 +614,16 @@ p {
   margin : 2.5rem auto 2.5rem auto;
   padding: 1rem 0rem 1rem 1rem;  
   width: 16rem;
-  background-color: #cce0ff;
+  background-color: #f0f0f0;
   border-radius: 0.8vw;
   box-shadow: #242329;
   text-align: center;
 }
 .project_header:hover{
   cursor:pointer;
-  transition: 0.3s;
-  background-color: #dfecff;
+  transition: 0.2s;
   color: black;
+  box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.6);
 }
 
 .project_header p{
@@ -709,7 +709,7 @@ p {
   align-items: center;
   width: 100%;
   height: 12rem;
-  background-color: #12131a;
+  background-color: #0d121a;
   font-size: 2rem;
   padding: 2rem;
   font-weight: bolder;

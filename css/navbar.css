@@ -6,8 +6,8 @@ nav {
 	top: 0;
 	padding: 0 5%;
 	height: 80px;
-	background: #010101cb;
-	box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
+	background: #0b1016d7;
+	box-shadow: 0 -1px 4px rgb(0 0 0 / 30%);
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -19,13 +19,13 @@ nav {
 	top: 0;
 	padding: 0 5%;
 	height: 80px;
-	background: #060608f3;
-	box-shadow: 0 -1px 4px rgb(0 0 0 / 30%);
+	background: #0b1016;
+	box-shadow: 0 -1px 4px rgb(0 0 0 / 60%);
 }
 
 
 .anim-nav {
-    background:#060608ea;
+    background:#0b1016;
     color: rgb(15, 15, 15);
 	transition: 0.5s;
 }
@@ -67,7 +67,7 @@ nav .links {
 }
 
 nav .active {
-	color: rgb(201, 114, 201) !important;
+	color: rgb(255, 95, 215) !important;
 }
 
 nav .back_icon {
@@ -93,7 +93,7 @@ nav .links a {
 	font-size: 1rem;
 	font-weight: 500;
 	color: white;
-	text-shadow: 0 0 0.6vw white;
+	text-shadow: 0 0 0.8vw white;
 	text-decoration: none;
 }nav .links a:hover{
 	color: rgb(201, 114, 201);
