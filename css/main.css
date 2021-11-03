@@ -187,7 +187,7 @@ p {
   color: rgb(252, 252, 252);
   margin: 0 1vw 0 0;
 }.icons:hover{
-  color: rgb(184, 125, 184);
+  color: rgb(125, 153, 184);
   cursor:pointer;
 }
 
@@ -196,13 +196,13 @@ p {
 }
 
 .icon:hover{
-  color: #b6c0fc;
+  color: rgb(125, 153, 184);
 }
 
 .icon_navstage{
   color: black;
 }.icon_navstage:hover{
-  color: rgb(184, 125, 184);
+  color: rgb(125, 153, 184);
 }
 
 .icon_skills{
@@ -232,7 +232,7 @@ p {
 /* buttons */
 
 .contact_button{
-  background-color: rgb(184, 125, 184);
+  background-color: rgb(218, 179, 255);
   width: 11rem;
   padding: 1rem 0.5rem 1rem 1rem;  
   text-decoration: none;
@@ -241,13 +241,13 @@ p {
   border-radius: 0.8vw;
   margin: 2rem 0 0 2rem;
 }.contact_button:hover{
-  box-shadow: 0 0 0.3vw rgb(255, 150, 229);
+  box-shadow: 0 0 0.8vw rgb(102, 102, 102);
   transition: 0.3s;
 }
 
 .doowup_btn {
   display: flex;
-  background-color: rgb(184, 125, 184);
+  background-color: rgb(218, 179, 255);
   padding: 1rem 0.5rem 1rem 1rem;  
   font-weight: 600;
   font-size: 1rem;
@@ -257,7 +257,7 @@ p {
   margin-top: 2vw;
   width: 13rem;
 }.doowup_btn:hover{
-  box-shadow: 0 0 0.3vw rgb(255, 150, 229);
+  box-shadow: 0 0 0.6vw rgb(102, 102, 102);
   transition: 0.3s;
 }
 
@@ -266,7 +266,7 @@ p {
 }
 
 .stage_button{
-  background-color: rgb(209, 142, 209);
+  background-color: rgb(125, 153, 184);
   width: 11rem;
   padding: 1rem;
   text-decoration: none;
@@ -277,7 +277,7 @@ p {
   box-shadow: #242329;
 }.stage_button:hover{
   transition: 0.3s;
-  background-color: rgb(216, 163, 216);
+  box-shadow: 0 0 0.8vw rgb(102, 102, 102);
 }
 
 /* about */
@@ -479,7 +479,7 @@ p {
   width: 0.6vw;
   height: 0.6vw;
   border-radius: 100%;
-  background-color: rgb(184, 125, 184);
+  background-color: rgb(125, 153, 184);
   border: none;
   box-shadow: 0 0 0.2vw rgba(0, 0, 0, 0.6);
   margin: 1.4vh 0.7vw 0vw 0vw ;
@@ -523,7 +523,7 @@ p {
 
 .skills_percentage{
   display: block;
-  background-color: rgb(211, 133, 191);
+  background-color: rgb(125, 153, 184);
 }
 
 .skills_javascript{
@@ -734,7 +734,7 @@ p {
   color: rgb(255, 253, 253);
 }.icon_social:hover{
   cursor:pointer;
-  color:rgb(184, 125, 184);
+  color:rgb(125, 153, 184);
   
 }
 

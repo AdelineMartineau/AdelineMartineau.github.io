@@ -42,7 +42,7 @@ nav .logo {
 	font-size: 2.5rem;
 	color:white;
 }.icon:hover{
-	color: rgb(184, 125, 184);
+	color: rgb(125, 153, 184);
   }
 
 .icon_navstage{
@@ -67,7 +67,7 @@ nav .links {
 }
 
 nav .active {
-	color: rgb(255, 95, 215) !important;
+	color: rgb(132, 206, 255) !important;
 }
 
 nav .back_icon {
@@ -96,7 +96,7 @@ nav .links a {
 	text-shadow: 0 0 0.8vw white;
 	text-decoration: none;
 }nav .links a:hover{
-	color: rgb(201, 114, 201);
+	color: rgb(132, 206, 255);
 	transition: 0.3s;
 }
 

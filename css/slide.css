@@ -69,7 +69,6 @@
  }
  #controls label:hover {
     opacity: 1;
-    border: solid seashell;
  }
 #slide1:checked ~ #controls label:nth-child(2),
 #slide2:checked ~ #controls label:nth-child(3),
@@ -97,7 +96,7 @@
 #slide2:checked ~ #bullets label:nth-child(2),
 #slide3:checked ~ #bullets label:nth-child(3),
 #slide4:checked ~ #bullets label:nth-child(4) {
-   background: seashell;
+   background: rgb(125, 153, 184);
 }
 
  #bullets {

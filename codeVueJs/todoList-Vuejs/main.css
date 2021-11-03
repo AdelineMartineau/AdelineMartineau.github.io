@@ -46,7 +46,7 @@ html, body{
     height: 3vw;
     margin: 0vw auto 2vw auto;
     font-size: 1.5vw;
-    background-color: rgb(240, 66, 162);
+    background-color: rgb(218, 179, 255);
     border:none;
     border-radius: 0.3vw;
     color:white;
@@ -54,7 +54,7 @@ html, body{
 } #button_add:hover{
     cursor: pointer;
 } #button_add:active {
-    box-shadow: 0 0 0.8vw rgba(240, 66, 162, 0.6);
+    box-shadow: 0 0 0.8vw rgba(218, 179, 255);
 }
 
 .title_list{
