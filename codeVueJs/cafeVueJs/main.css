@@ -3,7 +3,7 @@ html, body{
     padding: 0;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(89, 140, 173);
+    background-color: rgb(151, 176, 190);
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
@@ -164,9 +164,9 @@ p {
     height: 50vh;
     margin:0vw auto;
     padding: auto;
-    background-color: whitesmoke;
+    background-color: rgb(31, 31, 31);
     border-radius: 0.8vw;
-    color: black;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     overflow-y:auto;
