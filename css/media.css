@@ -1,5 +1,6 @@
 /* media query */
 @media only screen and (min-width: 320px) and (max-width: 400px){
+
   .about{
     margin: 2rem auto 0rem auto;
 }
