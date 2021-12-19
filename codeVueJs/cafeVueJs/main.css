@@ -9,7 +9,7 @@ html, body{
 }
 
 #app{
-    width: 80vw;
+    width: 50rem;
     height:auto;
     display: flex;
     flex-direction: row;

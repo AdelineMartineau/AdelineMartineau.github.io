@@ -4,9 +4,9 @@
     margin: 2rem auto 0rem auto;
 }
 
-  .title{
-    font-size: 2rem;
-    margin: 4rem auto 2rem auto;
+.title{
+  font-size: 2rem;
+  margin: 4rem auto 2rem auto;
 }
 
 p{
@@ -28,6 +28,14 @@ p{
   
   .stage{
     padding-top: 0rem;
+  }
+
+  iframe {
+    border:none; 
+    border-radius: 0.4vw;
+    box-shadow:0 0 1.5vw #070707; 
+    margin-bottom: 10vh;
+    width:20rem;
   }
 
 /* hero */
@@ -178,6 +186,11 @@ p{
 
 .project_header p {
     font-size: 0.9rem;
+}
+
+.card_projet {
+  width: 85%;
+  padding: 1rem;
 }
 
 /* stage */

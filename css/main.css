@@ -20,6 +20,8 @@ iframe {
   border-radius: 0.4vw;
   box-shadow:0 0 1.5vw #070707; 
   margin-bottom: 10vh;
+  height:40rem;
+  width: 55rem;
 }
 
 /* images */
@@ -286,7 +288,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 6vw auto 0 auto;
+    margin: 6rem auto 0 auto;
 }
 
 .container_stage{
