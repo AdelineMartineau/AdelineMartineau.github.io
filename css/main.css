@@ -476,8 +476,8 @@ p {
 }
 
 .color_legend{
-  width: 0.6vw;
-  height: 0.6vw;
+  width: 0.6rem;
+  height: 0.6rem;
   border-radius: 100%;
   background-color: rgb(125, 153, 184);
   border: none;
