@@ -1,36 +1,28 @@
 /* media query */
 @media only screen and (min-width: 320px) and (max-width: 400px){
-  
   .about{
     margin: 2rem auto 0rem auto;
 }
-
 .title{
   font-size: 2rem;
   margin: 4rem auto 2rem auto;
 }
-
 p{
     font-size: 0.9rem;
   } 
-
   .icons{
   font-size: 1rem;
   margin: 0 1rem 0 0;
   }
-
   .competence{
     padding-top: 0rem;
   }
-  
   .projets{
     padding-top: 4rem;
   }
-  
   .stage{
     padding-top: 0rem;
   }
-
   iframe {
     border:none; 
     border-radius: 0.4vw;
@@ -40,37 +32,30 @@ p{
   }
 
 /* hero */
-
 #hero_title {
   font-size: 2.7rem;
 }
-
 #under_title {
   font-size: 1.1rem;
 }
-
 .scroll_down{
   font-size: 3rem
 }
 
 /* about */
-
 #presentation{
   display:flex;
   flex-direction: column; 
   width: 90%;
 }
-
 .description{
   font-size: 1rem;
 }
-
 .profil_img{
   height: 20rem;
   width: 14rem; 
   margin: 0 auto 3rem auto;
 }
-
 .contact_button{
   width: 9rem;
   padding: 0.6rem;  
@@ -78,96 +63,78 @@ p{
   font-size: 0.9rem;
   border-radius: 0.4rem;
 }
-
 .card {
   flex-direction: column;
   margin: 2rem auto 5rem auto;
   padding: 1rem;
   width: 100%;
 }
-
 .card p{
     font-size: 0.9rem;
   }
-
 .cardTop{
   margin: 15vw auto 2vw auto;
 }
-
 .flex_column {
   display: flex;
   flex-direction: column;
   margin: auto 0rem;
   text-align: left;
 }
-
 .flex_row{
   margin: 1rem 0;
 }
-
 .row{
     flex-direction: column;
   }
-
 .detail_img{
   width: 15rem; 
   height: 10rem; 
   margin: 0 auto 1rem auto; 
   padding: 0rem;
 }
-
 .interests{
   flex-direction: column;
 }
 
 /* skills */
-
 .color_legend{
   width: 0.5rem;
   height: 0.4rem;
 }
-
 .skill_title{
   font-size: 1rem;
   font-weight: 500;
 }
-
 .icon_skills{
   font-size: 1.2rem;
   margin-right: 1rem;
 }
-
 .container_skills{
   margin: 1vw 0 2vw 0vw;
 }
-
 .skills_part_1 , .skills_part_2{
   display: flex;
   flex-direction: column;
 }
-
 .skill_subtitle {
   font-size: 0.9rem;
   margin-bottom: 2rem; 
 }
-
 .skills_block {
     display: flex;
     flex-direction: column;
     margin:0 auto 3rem auto;
     width: 100%;
 }
-
 .backend{
     width: 90%;
 }
-
 .frontend{
     width: 90%;
 }
 
 /* project */
-
 .projets{
   padding-top: 2rem;
 }
@@ -177,136 +144,110 @@ p{
     height: 10rem;
     margin: 0 auto;
 }
-
 .project_header{
     margin: 2rem auto;
     width: 11rem;
     padding: 0.6rem;
     border-radius: 0.4rem;
 }
-
 .project_header p {
     font-size: 0.9rem;
 }
-
 .card_projet {
   width: 85%;
   padding: 1rem;
 }
 
 /* stage */
-
 .title_stage{
   padding: 1rem;
   text-align: center;
 }
-
 .logo_stage{
   height: 2.5rem;
   width: 10rem;
 }
-
 .stage_description{
 font-size: 1rem;
 }
-
 .card_stage{
   flex-direction: column;
   padding: 3rem;
 }
-
 .row{
   flex-direction: column;
 }
-
 .card_outils{
   margin: 2rem auto 3rem auto;
   width: 50%;
 }
-
 .stage_button{
 width: 9rem;
 padding: 0.6rem;
 margin-top: 2rem;
 }
-
 .doowup_description{
   width: 65%;
 }
-
 .doowup_btn{
   margin-top: 2.5rem;
-  width: 10rem;
+  width: 11 rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
 }
-
 .maquettes_btn{
   width: 12rem;
 }
-
 .img_mvc{
   height: 18rem;
 }
-
 .img_acteurs{
   height: 12rem;
 }
-
 .img_uml{
   width:20rem;
   height: 14rem; 
 }
-
 .img_gitlab{
   width: 18rem; 
   margin: 3vw auto 1vw auto;
 }
-
 .img_bdd{
   width: 16rem; 
   margin: 3vw auto 1vw auto;
 }
-
 .img_doc{
   margin: 3vw auto 0vw auto; 
   width: 17rem;
 }
-
 .img_slack{
   width: 23rem;
   margin: auto;
 }
-
 .img_bilan{
   margin: 0 auto; 
   padding: 1vw;
   width: 15rem;
   height: 13rem;
 }
-
 .legende_img{
   margin-bottom: 2rem;
 }
-
 .subtitle{
   margin-bottom: 3rem;
 }
 
 /* footer */
-
 .icon_social{
     font-size: 1.5rem;
 }
-
 .copyright{
     font-size: 0.9rem;
 }
-
 .footer{
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
 }
-
 .socials{
     margin: 1.5rem 0;
 }
@@ -314,293 +255,236 @@ iframe {
   height:37rem; 
   width: 20rem;
 }
-
 }
 
   @media only screen and (min-width: 400px) and (max-width: 550px){
-    
     /* general */
     .about{
         margin: 2rem auto 0rem auto;
     }
-    
       .title{
         font-size: 2rem;
         margin: 4rem auto 2rem auto;
     }
-
     p{
         font-size: 1rem;
       }
-
     .icons{
     font-size: 1rem;
     margin: 0 1rem 0 0;
     }
-
     .competence{
         padding-top: 0rem;
       }
-      
       .projets{
         padding-top: 0rem;
       }
-      
       .stage{
         padding-top: 0rem;
       }
 
     /* hero */
-  
     #hero_title {
       font-size: 2.5rem;
     }
-  
     #under_title {
       font-size: 1.3rem;
     }
-  
     .scroll_down{
       font-size: 3rem
     }
 
     /* about */
-  
     #presentation{
       display:flex;
       flex-direction: column; 
       width: 90%;
     }
-
     .description{
       font-size: 1rem;
     }
-  
     .profil_img{
       height: 20rem;
       width: 14rem; 
       margin: 0 auto 3rem auto;
     }
-  
     .contact_button{
       width: 10rem;
       padding: 0.6rem;  
       margin: 3rem auto;
       font-size: 1rem;
     }
-  
     .card {
       flex-direction: column;
       margin: 2rem auto 5rem auto;
       padding: 1rem;
       width: 100%;
     }
-
     .card p{
         font-size: 1rem;
       }
-  
     .flex_column {
       display: flex;
       flex-direction: column;
       margin: auto 0rem;
       text-align: left;
     }
-
     .flex_row{
       margin: 1rem 0;
     }
-
     .row{
         flex-direction: column;
       }
-
     .detail_img{
       width: 15rem; 
       height: 10rem; 
       margin: 0 auto 1rem auto; 
       padding: 0rem;
     }
-  
     .interests{
       flex-direction: column;
     }
   
     /* skills */
-
     .skill_title{
       font-size: 1rem;
       font-weight: 500;
     }
-  
     .icon_skills{
       font-size: 1.2rem;
       margin-right: 1rem;
     }
-  
     .skills_part{
       display: flex;
       flex-direction: column;
     }
-  
     .skill_subtitle {
       margin-bottom: 2rem; 
       font-size: 0.9rem;
     }
-
     .skills_block {
         display: flex;
         flex-direction: column;
         margin:0 auto 2.5rem auto;
         width: 100%;
     }
-  
     .backend{
         width: 90%;
     }
-    
     .frontend{
         width: 90%;
     }
 
     /* project */
-  
     .project_img{
         width: 15rem; 
         height: 10rem;
         margin: 0 auto;
-        
     }
-    
     .project_header{
         margin: 2rem auto;
         width: 15rem;
         padding: 0.6rem;
     }
-    
     .project_header p {
         font-size: 1rem;
     }
-
     /* stage */
-
     .title_stage{
       padding: 1rem;
       text-align: center;
     }
-
     .logo_stage{
       height: 2.5rem;
       width: 10rem;
     }
-
     .stage_description{
     font-size: 0.9rem;
     }
-
     .card_stage{
       flex-direction: column;
       padding: 3rem;
       margin: 3rem auto 5rem auto;
     }
-
     .row{
       flex-direction: column;
     }
-
     .card_outils{
       margin: 2rem auto 3rem auto;
       width: 50%;
     }
-
     .stage_button{
     width: 9rem;
     padding: 0.6rem;
     margin-top: 2rem;
     }
-
     .stage_description{
       font-size: 1rem;
     }
-
     .doowup_description{
       width: 65%;
     }
-
     .doowup_btn{
       margin-top: 2.5rem;
-      width: 10rem;
-    }
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
+      width: 12rem;
 
+    }
     .maquettes_btn{
       width: 13rem;
     }
-
     .img_mvc{
       height: 18rem;
     }
-
     .img_acteurs{
       height: 12rem;
     }
-
     .img_uml{
       width:20rem;
       height: 14rem; 
     }
-
     .img_gitlab{
       width: 20rem; 
       margin: 3vw auto 1vw auto;
     }
-    
     .img_bdd{
       width: 16rem; 
       margin: 3vw auto 1vw auto;
     }
-
     .img_doc{
       margin: 3vw auto 0vw auto; 
       width: 17rem;
     }
-    
     .img_slack{
       width: 23rem;
       margin: auto;
     }
-
     .img_bilan{
       margin: 0 auto; 
       padding: 1vw;
       width: 15rem;
       height: 13rem;
     }
-
     .legende_img{
       margin-bottom: 2rem;
     }
-
     .subtitle{
       margin-bottom: 3rem;
     }
 
     /* footer */
-  
     .icon_social{
         font-size: 1.5rem;
     }
-    
     .copyright{
         font-size: 0.9rem;
     }
-    
     .footer{
         display: flex;
         flex-direction: column;
         font-size: 1.9rem;
         height: 12.5rem;
     }
-    
     .socials{
         margin: 1.3rem 0;
     }
@@ -611,260 +495,208 @@ iframe {
   }
   
   @media only screen and (min-width: 550px) and (max-width: 650px){
-
     /* general */
-  
     .about{
       margin: 2rem auto 4rem auto;
     }
-  
     .title{
       font-size: 2.3rem;
     }
-
     .competence{
         padding-top: 4rem;
       }
-    
       .projets{
         padding-top: 4rem;
       }
-    
       .stage{
         padding-top: 4rem;
       }
-
       p{
         font-size: 1rem;
       }
 
-
     /*HERO  */
-
-      #hero_title{
-        font-size: 2.5rem;
-        font-weight: 100;
-      }
-
-      #hero_subtitle{
-        font-size: 1.3rem;
-      }
-
-    /* about */
-
-    #presentation{
-        display:flex;
-        flex-direction: column; 
-        width: 90%;
+    #hero_title{
+      font-size: 2.5rem;
+      font-weight: 100;
+    }
+    #hero_subtitle{
+      font-size: 1.3rem;
     }
 
-    .profil_img{
-        height: 24rem;
-        width: 17rem; 
-        margin: 0 auto 3rem auto;
-    }
-
-    .description{
-        text-align: justify;
-        font-size: 1.1rem;
-    }
-
-    .contact_button{
-        width: 10rem;
-        padding: 0.6rem;  
-        margin: 3rem auto;
-        font-size: 1rem;
-    }
-  
-    .interests{
-      flex-direction: column;
-    }
-
-    .card {
-        flex-direction: column;
-        margin: 0 auto;
-        padding: 1rem;
-    }
-
-    .card p{
-        font-size: 1rem;
-    }
-
-    .cardTop {
-      margin: 15vw auto 3.5vw auto;
+  /* about */
+  #presentation{
+      display:flex;
+      flex-direction: column; 
+      width: 90%;
   }
-    
-    .flex_column {
-        display: flex;
-        flex-direction: column;
-        margin: auto 1rem;
-        text-align: left;
-    }
-
-    .flex_row{
+  .profil_img{
+      height: 24rem;
+      width: 17rem; 
+      margin: 0 auto 3rem auto;
+  }
+  .description{
+      text-align: justify;
+      font-size: 1.1rem;
+  }
+  .contact_button{
+      width: 10rem;
+      padding: 0.6rem;  
+      margin: 3rem auto;
+      font-size: 1rem;
+  }
+  .interests{
+    flex-direction: column;
+  }
+  .card {
+      flex-direction: column;
+      margin: 0 auto;
       padding: 1rem;
-    }
-  
-    .detail_img{
-      width: 23rem; 
-      height: 18rem; 
-      margin: auto; 
-      padding: 2rem;
-    }
-
-    .icons_passion{
-      margin-right: 1rem;
-    }
+  }
+  .card p{
+      font-size: 1rem;
+  }
+  .cardTop {
+    margin: 15vw auto 3.5vw auto;
+  }
+  .flex_column {
+      display: flex;
+      flex-direction: column;
+      margin: auto 1rem;
+      text-align: left;
+  }
+  .flex_row{
+    padding: 1rem;
+  }
+  .detail_img{
+    width: 23rem; 
+    height: 18rem; 
+    margin: auto; 
+    padding: 2rem;
+  }
+  .icons_passion{
+    margin-right: 1rem;
+  }
 
     /* project */
-    
     .project_img{
       width: 23rem; 
       height: 18rem; 
       margin: 0 auto;
       padding: 2rem;
     }
-  
     .project_header{
       margin: 2rem auto;
       width: 15rem;
       padding: 0.6rem;
     }
-  
     .project_header p {
       font-size: 1rem;
     }
   
     /* skills */
-    
     .skills_part{
       display: flex;
       flex-direction: column;
     }
-  
     .skills_block{
       margin: 1rem auto 2rem auto;
       width: 100%;
     }
-  
     .backend{
       width: 90%;
     }
-  
     .frontend{
       width: 90%;
     }
 
     /* stage */
-  
     .card_stage{
       flex-direction: column;
       padding: 3rem;
       margin: 3rem auto 5rem auto;
     }
-
     .logo_stage{
       height: 3rem;
       width: 12rem;
     }
-
     .row{
       flex-direction: column;
     }
-
     .card_outils{
       margin: 2rem auto 3rem auto;
       width: 50%;
     }
-  
     .stage_button{
       width: 9rem;
       padding: 0.6rem;
       margin-top: 2rem; 
       font-size: 1rem; 
     }
-
     .stage_description{
       font-size:1rem;
     }
-
     .doowup_description{
       width: 65%;
       font-size: 0.9rem;
     }
-
     .doowup_btn{
       margin-top: 2.5rem;
-      width: 10rem;
+      width: 12rem;
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
     }
-
     .maquettes_btn{
       width: 14rem;
     }
-
     .img_mvc{
       height: 21rem;
     }
-
     .img_acteurs{
       height: 14rem;
     }
-
     .img_uml{
       width:24rem;
       height: 17rem; 
     }
-
     .img_gitlab{
       width: 29rem; 
       margin: 3vw auto 1vw auto;
     }
-    
     .img_bdd{
       width: 16rem; 
       margin: 3vw auto 1vw auto;
     }
-
     .img_doc{
       margin: 3vw auto 0vw auto; 
       width: 23rem;
     }
-    
     .img_slack{
       width: 29rem;
     }
-
     .img_bilan{
       margin: 0 auto; 
       padding: 1vw;
       width: 15rem;
       height: 13rem;
     }
-
     .legende_img{
       margin-bottom: 2rem;
     }
-
     .subtitle{
       margin-bottom: 3rem;
     }
-
     /* footer */
-  
     .icon_social{
       font-size: 1.5rem;
     }
-  
     .copyright{
       font-size: 0.9rem;
     }
-  
     .footer{
       font-size: 2rem;
       display: flex;
       flex-direction: column;
     }
-  
     .socials{
       margin: 1rem 0;
     }
@@ -872,213 +704,173 @@ iframe {
       height:37rem; 
       width: 23rem;
     }
-
   }
   
   @media only screen and (min-width: 650px) and (max-width: 750px){
-
     /* general */
-  
     .about{
       margin: 2rem auto 4rem auto;
     }
-    
     .title{
       font-size: 2.5rem;
     }
-
     .competence{
         padding-top: 3rem;
     }
-    
     .projets{
     padding-top: 3rem;
     }
-    
     .stage{
     padding-top: 3rem;
     }
-
     p{
       font-size: 1rem;
     }
 
     /* hero */
-
     #hero_title{
       font-size: 3.2rem;
     }
-
     #hero_subtitle{
       font-size: 2.2rem;
     }
 
     /* about */
-
     #presentation{
         display:flex;
         flex-direction: column; 
         width: 90%;
       }
-    
       .profil_img{
         height: 26rem;
         width: 18rem; 
         margin: 0 auto 3rem auto;
       }
-    
       .description{
         text-align: justify;
         font-size: 1.1rem;
       }
-    
       .contact_button{
         width: 11rem;
         padding: 1rem;  
         margin: 3rem auto;
         font-size: 1rem;
       }
-  
     .interests{
       flex-direction: column;
     }
     .flex_row{
       padding: 1rem;
     }
-
     .flex_column {
         display: flex;
         flex-direction: column;
         margin: auto 1rem;
         text-align: left;
       }
-  
     .detail_img{
       width: 27rem; 
       height: 18rem; 
       margin: auto; 
       padding: 2rem;
     }
-
     .card {
         flex-direction: column;
         margin: 0 auto;
         padding: 1rem;
       }
-
     .cardTop{
       margin: 15vw auto 3.5vw auto;
     }
 
     /* project */
-    
     .project_img{
       width: 27rem; 
       height: 18rem; 
       margin: 0 auto;
       padding: 2rem;
     }
-  
     .project_header{
       margin: 2rem auto;
       width: 16rem;
       padding: 1rem;
     }
-  
     .project_header p {
       font-size: 1rem;
     }
-
     /* skills */
-  
     .skills_part{
       display: flex;
       flex-direction: column;
     }
-  
     .skills_block{
       margin: 1rem auto 2rem auto;
       width: 100%;
     }
-  
     .backend{
       width: 90%;
     }
-  
     .frontend{
       width: 90%;
     }
 
     /* stage */
-  
     .card_stage{
       flex-direction: column;
       padding: 3rem;
       margin: 3rem auto 5rem auto;
     }
-
     .card_outils{
       margin: 2rem auto 3rem auto;
       width: 75%;
     }
-  
     .stage_button{
       width: 10rem;
       padding: 1rem; 
       font-size: 1rem; 
       margin-top: 2rem;
     }
-
     .doowup_description{
       width: 65%;
       font-size: 0.9rem;
     }
-
     .doowup_btn{
       margin-top: 2rem;
-      width: 11rem;
-    }
+      width: 12rem;
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
 
+    }
     .legende_img{
       margin-bottom: 2rem;
     }
-
     .maquettes_btn{
       width: 14rem;
     }
-
     .img_mvc{
       height: 23rem;
     }
-
     .img_acteurs{
       height: 15rem;
     }
-
     .img_uml{
       width:27rem;
       height: 19rem; 
     }
-
     .img_gitlab{
       width: 30rem; 
       margin: 3vw auto 1vw auto;
     }
-    
     .img_bdd{
       width: 16rem; 
       margin: 3vw auto 1vw auto;
     }
-
     .img_doc{
       margin: 3vw auto 0vw auto; 
       width: 25rem;
     }
-    
     .img_slack{
       width: 30rem;
     }
-
     .img_bilan{
       margin: 0 auto; 
       padding: 1vw;
@@ -1087,21 +879,17 @@ iframe {
     }
 
     /* footer */
-
     .icon_social{
       font-size: 1.5rem;
     }
-  
     .copyright{
       font-size: 0.9rem;
     }
-  
     .footer{
       display: flex;
       flex-direction: column;
       font-size: 2.2rem;
     }
-  
     .socials{
       margin: 0.8rem 0;
     }
@@ -1109,103 +897,82 @@ iframe {
       height:37rem; 
       width: 27rem;
     }
-      
     }
   
   @media only screen and (min-width: 750px) and (max-width: 799px){
     /*style smartphones et petites tablettes en portrait*/
-
     /* general */
-
     .competence{
         padding-top: 3rem;
       }
-    
       .projets{
         padding-top: 3rem;
       }
-    
       .stage{
         padding-top: 3rem;
       }
-
       .title{
         font-size: 2.5rem;
       }
-
       .p{
         font-size: 1rem;
       }
-
       p{
         font-size: 1rem;
       }
 
       /* hero */
-
     #hero_title{
       font-size: 3.2rem;
     }
-
     #hero_subtitle{
       font-size: 2.2rem;
     }
 
-
     /* about */
-
     #presentation{
         display:flex;
         flex-direction: column; 
         width: 90%;
     }
-    
     .profil_img{
         height: 26rem;
         width: 18rem; 
         margin: 0 auto 3rem auto;
     }
-    
     .description{
         text-align: justify;
         font-size: 1.1rem;
     }
-    
     .contact_button{
         width: 11rem;
         padding: 1rem;  
         margin: 2rem auto;
         font-size: 1rem;
     }
-
     .interests{
       flex-direction: column;
     }
     .flex_row{
       padding: 1rem;
     }
-
     .card {
         flex-direction: column;
         margin: 0 auto;
         padding: 1rem;
     }
-
     .card p{
       font-size: 1rem;
     }
-
     .cardTop{
       margin: 15vw auto 3.5vw auto;
     }
-    
     .flex_column {
         display: flex;
         flex-direction: column;
         margin: auto 1rem;
         text-align: left;
     }
-  
     .detail_img{
       width: 32rem; 
       height: 22rem; 
@@ -1214,118 +981,96 @@ iframe {
     }
 
     /* project */
-    
     .project_img{
       width: 32rem; 
       height: 22rem;
       margin: 0 auto;
       padding: 2rem;
     }
-  
     .project_header{
       margin: 2rem auto;
       width: 16rem;
       padding: 1rem;
     }
-  
     .project_header p {
       font-size: 1rem;
     }
   
     /* skills */
-  
     .skills_part{
       display: flex;
       flex-direction: column;
     }
-  
     .skills_block{
       margin: 1rem auto 2rem auto;
       width: 100%;
     }
-  
     .backend{
       width: 90%;
     }
-  
     .frontend{
       width: 90%;
     }
 
     /* stage */
-  
     .card_stage{
       flex-direction: column;
       padding: 3rem;
       margin: 3rem auto 5rem auto;
     }
-  
     .stage_button{
       width: 9rem;
       padding: 0.8rem; 
       font-size: 0.9rem; 
       margin-top: 2rem;
     }
-
     .stage_description{
       font-size: 1rem;
     }
-
     .doowup_description{
       width: 65%;
       font-size: 0.9rem;
     }
-
     .doowup_btn{
       margin-top: 2rem;
-      width: 11rem;
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
+      width: 12rem;
     }
-
     .legende_img{
       margin-bottom: 2rem;
     }
-
     .card_outils{
       margin: 2rem auto 3rem auto;
       width: 70%;
     }
-
     .maquettes_btn{
       width: 14rem;
     }
-
     .img_mvc{
       height: 23rem;
     }
-
     .img_acteurs{
       height: 15rem;
     }
-
     .img_uml{
       width:27rem;
       height: 18rem; 
     }
-
     .img_gitlab{
       width: 33rem; 
       margin: 3vw auto 1vw auto;
     }
-    
     .img_bdd{
       width: 16rem; 
       margin: 3vw auto 1vw auto;
     }
-
     .img_doc{
       margin: 3vw auto 0vw auto; 
       width: 27rem;
     }
-    
     .img_slack{
       width: 33rem;
     }
-
     .img_bilan{
       margin: 0 auto; 
       padding: 1vw;
@@ -1334,20 +1079,16 @@ iframe {
     }
 
     /* footer */
-  
     .icon_social{
       font-size: 1.5rem;
     }
-  
     .copyright{
       font-size: 0.9rem;
     }
-  
     .footer{
       display: flex;
       flex-direction: column;
     }
-  
     .socials{
       margin: 1rem 0;
     }
@@ -1359,35 +1100,27 @@ iframe {
   
   @media only screen and (min-width: 800px) and (max-width: 966px){
     /*style petites-moyennes tablettes */
-
     /* general */
-
     .competence{
         padding-top: 2rem;
       }
-    
       .projets{
         padding-top: 2rem;
       }
-    
       .stage{
         padding-top: 2rem;
       }
-
       .title{
         font-size: 2.5rem;
       }
-
       p{
         font-size: 1rem;
       }
 
     /* hero */
-
     #hero_title{
       font-size: 3.2rem;
     }
-
     #hero_subtitle{
       font-size: 2.2rem;
     }
@@ -1398,54 +1131,45 @@ iframe {
         flex-direction: column; 
         width: 90%;
     }
-    
     .profil_img{
         height: 26rem;
         width: 18rem; 
         margin: 0 auto 3rem auto;
     }
-    
     .description{
         text-align: justify;
         font-size: 1.1rem;
     }
-    
     .contact_button{
         width: 11rem;
         padding: 1rem;  
         margin: 2rem auto;
         font-size: 1rem;
     }
-
     .interests{
       flex-direction: column;
     }
     .flex_row{
       padding: 1rem;
     }
-  
     .detail_img{
       width: 34rem; 
       height: 24rem; 
       margin: auto; 
       padding: 2rem;
     }
-
     .card {
         flex-direction: column;
         margin: 0 auto;
         padding: 1rem;
     }
-
     .card p{
       font-size: 1rem;
     }
-
     .cardTop{
       margin: 15vw auto 3vw auto;
       font-size: 1.7rem;
     }
-    
     .flex_column {
         display: flex;
         flex-direction: column;
@@ -1454,52 +1178,43 @@ iframe {
     }
 
     /* project */
-    
     .project_img{
       width: 34rem; 
       height: 24rem;
       margin: 0 auto;
       padding: 2rem;
     }
-  
     .project_header{
       margin: 2rem auto;
       width: 16rem;
       padding: 1rem;
     }
-  
     .project_header p {
       font-size: 1rem;
     }
 
     /* skills */
-
     .skills_part{
       display: flex;
       flex-direction: column;
     }
-  
     .skills_block{
       margin: 1rem auto 2rem auto;
       width: 100%;
     }
-  
     .backend{
       width: 90%;
     }
-  
     .frontend{
       width: 90%;
     }
 
     /* stage */
-
     .card_stage{
       flex-direction: column;
       padding: 3rem;
       margin: 3rem auto 5rem auto;
     }
-  
     .stage_button {
       width: 10rem;
       padding: 1rem;
@@ -1510,57 +1225,46 @@ iframe {
       width: 65%;
       font-size: 0.9rem;
     }
-
     .doowup_btn{
       margin-top: 2rem;
-      width: 11rem;
+      width: 12rem;
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
     }
-
     .legende_img{
       margin-bottom: 2rem;
     }
-
     .card_outils{
       margin: 2rem auto 3rem auto;
       width: 70%;
     }
-
     .maquettes_btn{
       width: 14rem;
     }
-
     .img_mvc{
       height: 25rem;
     }
-
     .img_acteurs{
       height: 16rem;
     }
-
     .img_uml{
       width:30rem;
       height: 20rem; 
     }
-
     .img_gitlab{
       width: 35rem; 
       margin: 3vw auto 1vw auto;
     }
-    
     .img_bdd{
       width: 16rem; 
       margin: 3vw auto 1vw auto;
     }
-
     .img_doc{
       margin: 3vw auto 0vw auto; 
       width: 30rem;
     }
-    
     .img_slack{
       width: 33rem;
     }
-
     .img_bilan{
       margin: auto; 
       padding: 1vw;
@@ -1569,20 +1273,16 @@ iframe {
     }
 
     /* footer */
-
     .footer{
       display: flex;
       flex-direction: column;
     }
-  
     .icon_social{
       font-size: 1.8rem;
     }
-  
     .socials{
       margin: 1rem 0;
     }
-  
     .copyright{
       font-size: 0.9rem;
     }
@@ -1590,97 +1290,78 @@ iframe {
       height:37rem; 
       width: 32rem;
     }
-    
     }
   
     @media only screen and (min-width: 966px) and (max-width: 1024px){
-
     /* general */
-
     .competence{
       padding-top: 2rem;
     }
-  
     .projets{
       padding-top: 2rem;
     }
-  
     .stage{
       padding-top: 2rem;
     }
-
     .title{
       font-size: 2.5rem;
     }
-
     p{
       font-size: 1rem;
     }
 
   /* hero */
-
   #hero_title{
     font-size: 3.2rem;
   }
-
   #hero_subtitle{
     font-size: 2.2rem;
   }
-
   /* about */
   #presentation{
       display:flex;
       flex-direction: column; 
       width: 90%;
   }
-  
   .profil_img{
       height: 26rem;
       width: 18rem; 
       margin: 0 auto 3rem auto;
   }
-  
   .description{
       text-align: justify;
       font-size: 1.1rem;
   }
-  
   .contact_button{
       width: 11rem;
       padding: 1rem;  
       margin: 3rem auto;
       font-size: 1rem;
   }
-
   .interests{
     flex-direction: column;
   }
   .flex_row{
     padding: 1rem;
   }
-
   .detail_img{
     width: 34rem; 
     height: 24rem; 
     margin: auto; 
     padding: 2rem;
   }
-
   .card {
       flex-direction: column;
       margin: 0 auto;
       padding: 1rem;
   }
-
   .card p{
     font-size: 1rem;
   }
-
   .cardTop{
     margin: 15vw auto 3vw auto;
     font-size: 1.7rem;
   }
-  
   .flex_column {
       display: flex;
       flex-direction: column;
@@ -1689,59 +1370,49 @@ iframe {
   }
 
   /* project */
-  
   .project_img{
     width: 34rem; 
     height: 24rem;
     margin: 0 auto;
     padding: 2rem;
   }
-
   .project_header{
     margin: 2rem auto;
     width: 16rem;
     padding: 1rem;
   }
-
   .project_header p {
     font-size: 1rem;
   }
 
   /* skills */
-
   .skills_part{
     display: flex;
     flex-direction: column;
   }
-
   .skills_block{
     margin: 1rem auto 2rem auto;
     width: 100%;
   }
-
   .backend{
     width: 90%;
   }
-
   .frontend{
     width: 90%;
   }
 
   /* stage */
-
   .card_stage{
     flex-direction: column;
     padding: 3rem;
     margin: 3rem auto 5rem auto;
   }
-
   .stage_button {
     width: 10rem;
     padding: 1rem;
     font-size: 1rem;
     margin-top: 2rem;
 }
-
 .stage_description{
   font-size: 1rem;
 }
@@ -1749,57 +1420,46 @@ iframe {
     width: 65%;
     font-size: 0.9rem;
   }
-
   .doowup_btn{
     margin-top: 2rem;
-    width: 11rem;
+    width: 12rem;
+    padding: 1rem 0.5rem 1rem 1rem;
   }
-
   .legende_img{
     margin-bottom: 2rem;
   }
-
   .card_outils{
     margin: 2rem auto 3rem auto;
     width: 60%;
   }
-
   .maquettes_btn{
     width: 14rem;
   }
-
   .img_mvc{
     height: 26rem;
   }
-
   .img_acteurs{
     height: 19rem;
   }
-
   .img_uml{
     height: 22rem; 
     width:35rem;
   }
-
   .img_gitlab{
     width: 39rem; 
     margin: 3vw auto 1vw auto;
   }
-  
   .img_bdd{
     width: 18rem; 
     margin: 3vw auto 1vw auto;
   }
-
   .img_doc{
     margin: 3vw auto 0vw auto; 
     width: 34rem;
   }
-  
   .img_slack{
     width: 37rem;
   }
-
   .img_bilan{
     margin: auto; 
     padding: 1vw;
@@ -1813,15 +1473,12 @@ iframe {
     display: flex;
     flex-direction: column;
   }
-
   .icon_social{
     font-size: 1.8rem;
   }
-
   .socials{
     margin: 1rem 0;
   }
-
   .copyright{
     font-size: 0.9rem;
   }
@@ -1833,34 +1490,27 @@ iframe {
   
     @media only screen and (min-width: 1024px) and (max-width: 1050px) {
 
-       /* general */
-
-    .competence{
-      padding-top: 2rem;
-    }
-  
-    .projets{
-      padding-top: 2rem;
-    }
-  
-    .stage{
-      padding-top: 2rem;
-    }
-
-    .title{
-      font-size: 2.5rem;
-    }
-
-    p{
-      font-size: 1rem;
-    }
+  /* general */
+  .competence{
+    padding-top: 2rem;
+  }
+  .projets{
+    padding-top: 2rem;
+  }
+  .stage{
+    padding-top: 2rem;
+  }
+  .title{
+    font-size: 2.5rem;
+  }
+  p{
+    font-size: 1rem;
+  }
 
   /* hero */
-
   #hero_title{
     font-size: 3.2rem;
   }
-
   #hero_subtitle{
     font-size: 2.2rem;
   }
@@ -1871,54 +1521,45 @@ iframe {
       flex-direction: column; 
       width: 90%;
   }
-  
   .profil_img{
       height: 26rem;
       width: 18rem; 
       margin: 0 auto 3rem auto;
   }
-  
   .description{
       text-align: justify;
       font-size: 1.1rem;
   }
-  
   .contact_button{
       width: 11rem;
       padding: 1rem;  
       margin: 3rem auto;
       font-size: 1rem;
   }
-
   .interests{
     flex-direction: column;
   }
   .flex_row{
     padding: 1rem;
   }
-
   .detail_img{
     width: 34rem; 
     height: 24rem; 
     margin: auto; 
     padding: 2rem;
   }
-
   .card {
       flex-direction: column;
       margin: 0 auto;
       padding: 1rem;
   }
-
   .card p{
     font-size: 1rem;
   }
-
   .cardTop{
     margin: 15vw auto 3vw auto;
     font-size: 1.7rem;
   }
-  
   .flex_column {
       display: flex;
       flex-direction: column;
@@ -1927,114 +1568,92 @@ iframe {
   }
 
   /* project */
-  
   .project_img{
     width: 34rem; 
     height: 24rem;
     margin: 0 auto;
     padding: 2rem;
   }
-
   .project_header{
     margin: 2rem auto;
     width: 16rem;
     padding: 1rem;
   }
-
   .project_header p {
     font-size: 1rem;
   }
 
   /* skills */
-
   .skills_part{
     display: flex;
     flex-direction: row;
   }
-
   .skills_block{
     margin: 1rem auto 2rem auto;
     width: 100%;
   }
-
   .backend{
     width: 90%;
   }
-
   .frontend{
     width: 90%;
   }
 
   /* stage */
-
   .card_stage{
     flex-direction: column;
     padding: 3rem;
   }
-
   .stage_button {
     width: 10rem;
     padding: 1rem;
     font-size: 1rem;
     margin-top: 2rem;
 }
-
 .stage_description{
   font-size: 1rem;
 }
 .doowup_description{
   width: 60%;
 }
-
 .doowup_btn{
   width: 12rem;
 }
-
 .legende_img{
   margin-bottom: 1rem;
 }
-
 .card_outils{
   width: 50%;
   margin: 2rem auto 3rem auto;
 }
-
 .maquettes_btn{
   width: 14rem;
 }
-
 .img_mvc{
   height: 28rem;
 }
-
 .img_acteurs{
   height: 19rem;
 }
-
 .img_uml{
   height: 24rem; 
   width:38rem;
 }
-
 .img_gitlab{
   width: 42rem; 
   margin: 3vw auto 1vw auto;
 }
-
 .img_bdd{
   width: 18rem; 
   margin: 3vw auto 1vw auto;
 }
-
 .img_doc{
   margin: 3vw auto 0vw auto; 
   width: 36rem;
 }
-
 .img_slack{
   width: 42rem;
 }
-
 .img_bilan{
   margin: auto; 
   padding: 1vw;
@@ -2043,19 +1662,15 @@ iframe {
 }
 
   /* footer */
-
   .footer{
     font-size: 2.2rem;
   }
-
   .icon_social{
     font-size: 1.8rem;
   }
-
   .socials{
     margin: 1rem 0;
   }
-
   .copyright{
     font-size: 0.9rem;
   }
@@ -2066,35 +1681,27 @@ iframe {
     }
   
     @media screen and (min-width: 1050px) and (max-width: 1280px) {
-
       /* general */
-
       .competence{
         padding-top: 2rem;
       }
-    
       .projets{
         padding-top: 2rem;
       }
-    
       .stage{
         padding-top: 2rem;
       }
-  
       .title{
         font-size: 2.5rem;
       }
-
       p{
         font-size: 1rem;
       }
 
     /* hero */
-  
     #hero_title{
       font-size: 3.2rem;
     }
-  
     #hero_subtitle{
       font-size: 2.2rem;
     }
@@ -2105,54 +1712,45 @@ iframe {
         flex-direction: column; 
         width: 90%;
     }
-    
     .profil_img{
         height: 28rem;
         width: 19rem; 
         margin: 0 auto 3rem auto;
     }
-    
     .description{
         text-align: justify;
         font-size: 1.1rem;
     }
-    
     .contact_button{
         width: 11rem;
         padding: 1rem;  
         margin: 3rem auto;
         font-size: 1rem;
     }
-  
     .interests{
       flex-direction: row;
     }
     .flex_row{
       padding: 1rem;
     }
-  
     .detail_img{
       width: 34rem; 
       height: 24rem; 
       margin: auto; 
       padding: 2rem;
     }
-  
     .card {
         flex-direction: column;
         margin: 0 auto;
         padding: 1rem;
     }
-  
     .card p{
       font-size: 1rem;
     }
-  
     .cardTop{
       margin: 15vw auto 3vw auto;
       font-size: 1.7rem;
     }
-    
     .flex_column {
         display: flex;
         flex-direction: column;
@@ -2161,140 +1759,110 @@ iframe {
     }
   
     /* project */
-    
     .project_img{
       width: 34rem; 
       height: 24rem;
       margin: 0 auto;
       padding: 2rem;
     }
-  
     .project_header{
       margin: 2rem auto;
       width: 16rem;
       padding: 1rem;
     }
-  
     .project_header p {
       font-size: 1rem;
     }
   
     /* skills */
-  
     .skills_part{
       display: flex;
       flex-direction: row;
     }
-  
     .skills_block{
       margin: 1rem auto 2rem auto;
       width: 100%;
     }
-  
     .backend{
       width: 90%;
     }
-  
     .frontend{
       width: 90%;
     }
-  
 
       /* stage */
-  
       .logo_stage{
         height: 3.7rem;
         width: 14rem;
       }
-
       .stage_button{
         font-size: 1rem;
         width: 10rem;
       }
-
       .links_stage{
         width: 90%;
       }
-
       .doowup_btn{
         width: 12rem;
       }
-
       .card_stage{
         flex-direction: column;
       }
-
       .stage_description{
         font-size: 1rem;
       }
-
       .legende_img{
         margin-bottom: 1rem;
       }
-
       .card_outils{
         width: 50%;
         margin: 2rem auto 3rem auto;
       }
-
       nav .links a {
         font-size: 1.3rem;
       }
-
       .doowup_description{
         width: 60%;
       }
-
       .maquettes_btn{
         width: 14rem;
       }
-
       .img_mvc{
         height: 28rem;
       }
-
       .img_acteurs{
         height: 19rem;
       }
-
       .img_uml{
         height: 24rem; 
         width:38rem;
       }
-
       .img_gitlab{
         width: 42rem; 
         margin: 3vw auto 1vw auto;
       }
-      
       .img_bdd{
         width: 18rem; 
         margin: 3vw auto 1vw auto;
       }
-
       .img_doc{
         margin: 3vw auto 0vw auto; 
         width: 36rem;
       }
-      
       .img_slack{
         width: 42rem;
       }
 
       /* footer */
-
       .footer{
         font-size: 2.2rem;
       }
-
       .icon_social{
         font-size: 1.8rem;
       }
-
       .socials{
         margin: 1rem 0;
       }
-
       .copyright{
         font-size: 0.9rem;
       }
@@ -2302,14 +1870,12 @@ iframe {
         height:37rem; 
         width: 40rem;
       }
-
     }
 
     @media screen and (min-width: 1280px){
       .row{
         margin: 0;
       }
-
       .card_outils{
         width: 65%;
         margin: 2rem auto 3rem auto;
@@ -2318,8 +1884,4 @@ iframe {
         height:38rem; 
         width: 56rem;
       }
-
-
     }
-  
-  
