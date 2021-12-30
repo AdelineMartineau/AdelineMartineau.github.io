@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Memories</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div id="app">
+        <p class="title_list">Memory Game</p>
+        <div class="buttonsParty">
+            <div><span class="btn">Tours : <span >{{tour}}</span> </span></div>
+            <div><span class="btn">Temps total : <span >{{min}} : {{ sec}}</span></span></div>
+            <div><button class="btn btn_reset" @click="reset" :class="finish ? 'badge_light' : ''" :disabled="!start"><i class="uil uil-play play_btn"></i></button></div>
+        </div>
+        <div class="plateau" >
+            <div class="listOfCards" v-for="(card) of cards">
+                <div :class="{'selected': card.isSelected}" @click="!card.isMatched&&isClickable?selectedCard(card):''">
+                    <div v-if="!card.isSelected"><img class="img" width="200" height="250" src="./images/card.jpg" alt=""></div>
+                    <img v-else-if="card.isMatched || card.isSelected " class="img" :src="`./images/${card.img}`" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data : {
+            cards: [],
+            compareCards:[],
+            isClickable: true,
+            start: false,
+            finish: false,
+            tour: 0,
+            totalTime: {
+            minutes: 0,
+            seconds: 0,
+            },
+        },
+        created(){
+            const firstsCards = [...Array(5)].map((_,index)=>({ number: index+1, img: `LoL${index+1}.jpg`, isSelected: false, isMatched: false}))
+            const duplicatas = [ ...Array(5)].map((_,index = 5)=>({ number: index+1, img: `LoL${index+1}.jpg`, isSelected: false, isMatched: false}))
+            this.cards = [...firstsCards, ...duplicatas].sort((card) => (Math.random() > .5) ? 1 : -1)
+            this.reset()
+        },
+        watch: {
+            compareCards(newCompareCards) {
+                console.log('compareCards', newCompareCards)
+            },
+        },
+        computed:{
+                sec(){
+                    if(this.totalTime.seconds < 10){
+                        return '0'+this.totalTime.seconds;
+                    }
+                    return this.totalTime.seconds;
+                },
+                min(){
+                    if(this.totalTime.minutes < 10){
+                        return '0'+this.totalTime.minutes;
+                    }
+                    return this.totalTime.minutes;
+                }
+        },
+        methods: {
+            selectedCard : function(card){
+                this.compareCards =  [...this.compareCards, card]
+                this.compareCards.map((card) => card.isSelected = true)
+                if (this.compareCards.length === 2){
+                    this.tour ++
+                    this.matchCard(this.compareCards);
+                }
+                if(!this.start){
+                    this._startGame();
+                }
+            },        
+            matchCard : function(compareCards){
+                if(compareCards[0].img === compareCards[1].img){    
+                    this.cards.map((card) => {
+                        if(card.img === compareCards[0].img) {
+                            card.isMatched = true
+                        }
+                    })
+                } else {
+                    this.isClickable = false
+                    setTimeout(() => {
+                        this.cards.map((card) => {
+                            if(card.img === compareCards[0].img) {
+                                card.isSelected = false
+                            }
+                            if(card.img === compareCards[1].img) {
+                                card.isSelected = false
+                            }
+                        })
+                        this.isClickable = true
+                    }, 600)
+                }
+                this.compareCards = []
+
+                if( this.cards.every(card => card.isMatched === true)){
+                    clearInterval(this.interval);
+                    this.finish = true;
+                }
+            },
+            _startGame(){
+                this._tick();
+                this.interval = setInterval(this._tick,1000);
+                this.start = true;
+            },
+
+            _tick(){
+                if(this.totalTime.seconds !== 59){
+                    this.totalTime.seconds++;
+                    return
+                }
+                this.totalTime.minutes++;
+                this.totalTime.seconds = 0;
+            },
+            reset(){
+                const firstsCards = [...Array(5)].map((_,index)=>({ number: index+1, img: `LoL${index+1}.jpg`, isSelected: false, isMatched: false}))
+                const duplicatas = [ ...Array(5)].map((_,index = 5)=>({ number: index+1, img: `LoL${index+1}.jpg`, isSelected: false, isMatched: false}))
+                this.cards = [...firstsCards, ...duplicatas].sort((card) => (Math.random() > .5) ? 1 : -1)
+                clearInterval(this.interval);
+                this.totalTime.minutes = 0;
+                this.totalTime.seconds = 0;
+                this.start = false;
+                this.finish = false;
+                this.tour = 0;
+            },
+        }
+    })
+</script>

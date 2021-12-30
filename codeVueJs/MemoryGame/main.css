@@ -1,0 +1,89 @@
+html,body{
+    background-color: #0f0f0f;
+    color: rgb(250, 248, 248);
+    margin:0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#app{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.buttonsParty{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.btn{
+    display:flex;
+    margin: 1vw 2vw 2vw 0vw;
+    font-size: 1rem;
+    width:auto;
+    font-weight: 500;
+    border-radius: 0.4vw;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 1vw #282d3a;
+    background-color: #2b32469f;
+    padding: 0.8vw;
+}.btn:active{
+    box-shadow: 0 0 1vw #3e4658;
+}
+
+.btn_reset{
+    border: none;
+}.btn_reset:hover{
+    cursor: pointer;
+}
+
+.play_btn{
+    font-size: 1rem;
+    color: purple;
+}
+ 
+.badge_light{
+    background-color: #4350729f;
+}.badge_light:active{
+    box-shadow: 0 0 1vw #363d4e;
+}
+
+.plateau{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.title_list{
+    display: flex;
+    margin: 2vw auto;
+    font-family: 'Satisfy', cursive;
+    font-size: 2.4rem;
+}
+
+.listOfCards{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.selected{
+    transform: rotateY(360deg);
+    transition: 0.3s;
+}
+
+.img {
+    display: flex;
+    width:8rem;
+    height:12rem;
+    object-fit: cover;
+    border-radius: 0.4vw;
+    margin: 2vw 0.5vw;
+    box-shadow: 0 0 1vw #2b3246;
+}.img:hover{
+    cursor: pointer;
+}
