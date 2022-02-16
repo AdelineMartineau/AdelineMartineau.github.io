@@ -18,22 +18,22 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Ephesis&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Ephesis&family=Sansita+Swashed&family=Great+Vibes&display=swap" rel="stylesheet">
     <!-- icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
-<body oncontextmenu="return false;" >
+<body>
     <nav class="nav_stage">
-        <input id="nav-toggle" type="checkbox">
-        <a href="index.html">
-            <div class="logo"><i class="uil uil-moon icon"></i></div>
-        </a>
+        <label class="theme-switch" for="checkbox">
+            <input id="checkbox" type="checkbox">
+            <div class="logo"><i class="uil uil-moon icon" id="toggleDark"></i></div>
+        </label>
         <ul class="links">
             <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">A propos</a></li>
             <li><a href="projet_perso.html" class="active">Projets personnels</a></li>
-            <li><a href="projet_BTS.html">Projets BTS</a></li>
             <li><a href="experiencePro.html">Stage</a></li>
         </ul>
         <label for="nav-toggle" class="icon-burger">
@@ -51,7 +51,7 @@
             <div class="project_column">
                 <div class="cardTopProjet">Contexte</div>
                 <div class="project_row">
-                    <p class="description">
+                    <p class="projet_description">
                         Memory Game est ma dernière mini application en VueJs. Le but était de d'approfondir mes connaissances dans ce 
                         langage. 
                     </p>
@@ -66,7 +66,7 @@
             <div class="project_column">
                 <div class="cardTopProjet">Contexte</div>
                 <div class="project_row">
-                    <p class="description">
+                    <p class="projet_description">
                         TodoList est une mini application réalisé en VueJs. Elle fait partie de mes derniers projets personnels.
                         Je prépare de prochaines applications afin de progresser en VueJs. 
                     </p>
@@ -81,7 +81,7 @@
             <div class="project_column">
                 <div class="cardTopProjet">Contexte</div>
                 <div class="project_row">
-                    <p class="description">
+                    <p class="projet_description">
                         Coffee Machine est l'une de mes dernières petites applications web que j'ai réalisé avec VueJs. 
                         Le but est de me familiariser avec la librairie VueJs et d'en comprendre le fonctionnement.
                     </p>
@@ -104,7 +104,7 @@
             <div class="project_column">
                 <div class="cardTopProjet">Contexte</div>
                 <div class="project_row">
-                    <p class="description">J'ai réalisé moi-même ce portfolio dans le cadre de l'examen final du BTS SIO. 
+                    <p class="projet_description">J'ai réalisé moi-même ce portfolio dans le cadre de l'examen final du BTS SIO. 
                         Le but est d'y recenser tous mes projets personnels et scolaires ainsi que mes compétences et mes
                         expériences professionnelles. Il a été développé uniquement en HTML, CCS.
                     </p>
@@ -160,7 +160,7 @@
             <div class="project_column">
                 <div class="cardTopProjet">Contexte</div>
                 <div class="project_row">
-                    <p class="description">Fitactiv est un site web vitrine que j'ai réalisé récemment pour un client fictif. Le but était de me familiariser avec le CMS Wordpress.
+                    <p class="projet_description">Fitactiv est un site web vitrine que j'ai réalisé récemment pour un client fictif. Le but était de me familiariser avec le CMS Wordpress.
                         Le tutoriel sur lequel je me suis appuyé est celui de Openclassrooms.
                         Le projet à durer une petite semaine pendant laquelle j'ai appris à manipuler les extensions essentielles ainsi que la configuration d’un site WordPress.
                     </p>
@@ -220,7 +220,7 @@
             <div class="project_column">
                 <div class="cardTopProjet">Contexte</div>
                 <div class="project_row">
-                    <p class="description"> How To Computer est un site web réalisé en Symfony 4. Après avoir travaillé le PHP, j'ai découvert
+                    <p class="projet_description"> How To Computer est un site web réalisé en Symfony 4. Après avoir travaillé le PHP, j'ai découvert
                         l'utilisation du Framework Symfony. Ce site n'avait pas de contexte particulier. L'objectif était de me familiariser avec une architecture
                         MVC et d'en comprendre les principes. Bien sûr, je me suis aidé de tutoriels YouTube créer par Lior Chamla. Entre autres, j'ai appris à utiliser l'ORM Doctrine, le système 
                         de migration, les fixtures... J'ai également implementer des formulaires et enfin la découverte du composant Security de Symfony.
@@ -282,7 +282,7 @@
             <div class="project_column">
                 <div class="cardTopProjet">Contexte</div>
                 <div class="project_row">
-                    <p class="description"> L.A event anciennement Artists fait partie de mes tout premiers projets il y a maintenant 
+                    <p class="projet_description"> L.A event anciennement Artists fait partie de mes tout premiers projets il y a maintenant 
                         2 ans. C'est un mini blog fictif censé regrouper diverses actualités du monde artistique américain. 
                         L'objectif était d'acquérir les fondamentaux de PHP : Réalisation de formulaire d'inscription/connexion 
                         et publication d'article.

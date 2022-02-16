@@ -25,7 +25,7 @@ nav {
 
 
 .anim-nav {
-    background:#0b1016;
+    background:var(--card-color);
     color: rgb(15, 15, 15);
 	transition: 0.5s;
 }
@@ -67,7 +67,8 @@ nav .links {
 }
 
 nav .active {
-	color: rgb(132, 206, 255) !important;
+	/* color: rgb(132, 206, 255) !important; */
+	color: var(--nav-color) !important;
 }
 
 nav .back_icon {
@@ -96,7 +97,7 @@ nav .links a {
 	text-shadow: 0 0 0.8vw white;
 	text-decoration: none;
 }nav .links a:hover{
-	color: rgb(132, 206, 255);
+	color: var(--nav-color);
 	transition: 0.3s;
 }
 

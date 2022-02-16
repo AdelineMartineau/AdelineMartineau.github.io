@@ -6,10 +6,52 @@
   padding: 0;
 }
 
+/*------------------------------------------------------------------------------------------------------*/
+:root {
+  --bg-color: #f3f4f4;
+  --card-color: #161e29;
+  --font-icon-color: #000000;
+  --p-color:white;
+  --card-p-color:white;
+  --title:#1c242e;
+  --btn-color:rgb(130, 128, 182);
+  --nav-color:#9b98ff;
+  --progress-color: #7f7dc5;
+  --container-color:#161e29d8;
+  --icon: #7f7dc5;
+  --icon-skills: black;
+
+  --weight-font-title: 900;
+  --weight-font-text: 600;
+  --weight-font-card-projet: 500; 
+}
+
+[data-theme="dark"] {
+  --bg-color: #161e29;
+  --card-color: #0d121a;
+  --font-icon-color: #f9f9fa;
+  --title:#fafafa;
+  --card-p-color:white;
+  --btn-color:#dab3ff;
+  --nav-color:#89d4f7;
+  --progress-color: #7d99b8;
+  --container-color:#0d121a;
+  --icon: #f8f8f8;
+  --icon-skills: rgb(255, 255, 255);
+
+  --weight-font-title: 600;
+  --weight-font-text: 500;
+  --weight-font-p:400;
+  --weight-font-card-projet: 500; 
+}
+
+.theme-switch input {
+  display:none;
+}
+/*------------------------------------------------------------------------------------------------------*/
+
 html, body {
-    /* background:#1d2229; */
-    background:#161e29;
-    /* background:#1e1f27; */
+    background:var(--bg-color);
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
     height: 100%;
@@ -121,7 +163,7 @@ p {
   font-size: 1rem;   
   font-weight: 300;
   line-height: 1.9rem;
-  color: #fff;
+  color: var(--card-p-color);
 }
 
 /* hero */
@@ -184,11 +226,15 @@ p {
 
 .icons{
   font-size: 1.3rem;
-  color: rgb(252, 252, 252);
+  color: var(--icon);
   margin: 0 1vw 0 0;
 }.icons:hover{
-  color: rgb(125, 153, 184);
+  color: var(--progress-color);
   cursor:pointer;
+}
+
+#toggleDark:hover{
+  color:var(--nav-color);
 }
 
 .icons_passion{
@@ -196,24 +242,25 @@ p {
 }
 
 .icon:hover{
-  color: rgb(125, 153, 184);
+  color: var(--progress-color);
+  cursor: pointer;
 }
 
 .icon_navstage{
   color: black;
 }.icon_navstage:hover{
-  color: rgb(125, 153, 184);
+  color: var(--progress-color);
 }
 
 .icon_skills{
   font-size: 1.5rem;
-  color:rgb(253, 252, 252);
+  color:var(--icon-skills);
   margin:  auto 0.5vw auto 0;
 }
 
 .icon_project{
   font-size: 1.2rem;
-  color:rgb(253, 252, 252);
+  color:var(--icon);
   margin: auto 1vw auto 1vw;
 }
 
@@ -232,14 +279,15 @@ p {
 /* buttons */
 
 .contact_button{
-  background-color: rgb(218, 179, 255);
+  background-color: var(--btn-color);
   width: 11rem;
   padding: 1rem 0.5rem 1rem 1rem;  
   text-decoration: none;
-  color: #0f0f0f;
-  font-weight: 800;
+  color: #000000;
+  font-weight: 600;
   border-radius: 0.8vw;
   margin: 2rem 0 0 2rem;
+  box-shadow:0 0 0.9vw rgba(0, 0, 0, 0.329);
 }.contact_button:hover{
   box-shadow: 0 0 0.8vw rgb(102, 102, 102);
   transition: 0.3s;
@@ -247,7 +295,7 @@ p {
 
 .doowup_btn {
   display: flex;
-  background-color: rgb(218, 179, 255);
+  background-color: var(--btn-color);
   padding: 1rem 0.5rem 1rem 1rem;  
   font-weight: 600;
   font-size: 1rem;
@@ -266,7 +314,7 @@ p {
 }
 
 .stage_button{
-  background-color: rgb(125, 153, 184);
+  background-color: var(--progress-color);
   width: 11rem;
   padding: 1rem;
   text-decoration: none;
@@ -312,24 +360,26 @@ p {
 .title {
   margin: 2rem auto 3rem auto;
   font-size: 2.4rem;
-  font-weight:bolder;
-  color: #f9f9fa;
-  display: flex;
+  font-weight:var(--weight-font-title);
+  color: var(--title);
+  display: flex;  
   justify-content: center;
   align-items: center;
-  font-family: 'Lobster two', cursive;
+  /* font-family: 'Lobster two'; */
+  font-family: 'Sansita Swashed', cursive;
 }
 
 .testMe{
   font-size: 1.3rem;
-  color: white;
-  font-weight: 500;
+  color: var(--font-icon-color);
+  font-weight: var(--weight-font-text);
   margin: 0rem auto 3rem auto;
 }
 
 .downArrowIcon{
   margin: -4vh auto 2vh auto;
   font-size: 2.2rem;
+  color: var(--font-icon-color);
 }
 
 .subtitle{
@@ -340,15 +390,25 @@ p {
 .description{
   margin: auto 0 auto 2vw;
   text-align: justify;
+  font-weight: var(--weight-font-text);
+  font-size: 1.1rem;
+  color:var(--font-icon-color);
+}
+
+.projet_description{
+  font-weight: var(--weight-font-card-projet);
+  text-align: justify;
   font-size: 1.1rem;
 }
 
+
 .cardTop {
   width: 90%;
+  font-weight:var(--weight-font-text);
   text-align: center;
   font-size: 1.4rem;
   margin: 6vw auto 2vw auto;
-  color:white;
+  color:var(--font-icon-color);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -357,9 +417,8 @@ p {
   text-align: center;
   font-size: 1.7rem;
   margin: 0 auto 2vw auto;
-  color:white;
-  font-family: 'Lobster two', cursive;
-
+  color:var(--p-color);
+  font-family: 'Sansita Swashed', cursive;
 }
 
 
@@ -369,8 +428,11 @@ p {
   width: 90%;
   margin: 0 auto;
   padding: 1vw;
-  background-color: #0d121a;
+  background-color: var(--card-color);
+  color:var(--card-p-color);
   border-radius: 0.8rem;
+  box-shadow:0 0 0.9vw rgba(0, 0, 0, 0.329);
+  font-weight: var(--weight-font-text);
 }
 
 .card_projet{
@@ -379,12 +441,14 @@ p {
   width: 60%;
   margin: 0 auto 8vw auto;
   padding: 1vw;
-  background-color: #0d121a;
+  background-color: var(--card-color);
   border-radius: 0.8rem;
+  color:var(--card-p-color);
+  font-weight: var(--weight-font-card-projet);
 }
 
-.card p{
-  color:rgb(255, 255, 255);
+.card, .card_projet p{
+  color:var(--card-p-color)
 }
 
 .flex_column {
@@ -446,6 +510,11 @@ p {
   width: 80%;
 }
 
+.skills_block p{
+  font-weight: var(--weight-font-text);
+  color:var(--font-icon-color);
+}
+
 .skills_header{
   margin: 2vw auto 0 auto;
   display: flex;
@@ -456,12 +525,13 @@ p {
   font-size: 1.3rem;
   font-weight: 600;
   margin: 0 0 0.5vw 0;
-  color: white;
+  color: var(--font-icon-color);
 }
 
 .skill_subtitle{
   font-size: 0.9rem;
-  color:rgb(180, 179, 179);
+  font-weight: var(--weight-font-text);
+  color:var(--font-icon-color);
   margin-bottom: 2vw;
 }
 
@@ -473,14 +543,15 @@ p {
 
 .legend p {
   font-size: 0.9rem;
-  color:rgb(180, 179, 179);
+  font-weight: var(--weight-font-text);
+  color:var(--font-icon-color);
 }
 
 .color_legend{
   width: 0.6rem;
   height: 0.6rem;
   border-radius: 100%;
-  background-color: rgb(125, 153, 184);
+  background-color: var(--progress-color);
   border: none;
   box-shadow: 0 0 0.2vw rgba(0, 0, 0, 0.6);
   margin: 1.4vh 0.7vw 0vw 0vw ;
@@ -512,10 +583,11 @@ p {
 }
 
 .container_skills{
-  background-color: #0d121a; 
+  background-color: var(--container-color); 
   margin: 1vw 0;
   border-radius: .25rem;
   height: 0.32rem;
+  box-shadow:0 0 0.9vw rgba(0, 0, 0, 0.329);
 }
 
 .container_skills .skills_percentage{
@@ -525,7 +597,7 @@ p {
 
 .skills_percentage{
   display: block;
-  background-color: rgb(125, 153, 184);
+  background-color: var(--progress-color);
 }
 
 .skills_javascript{
@@ -636,14 +708,6 @@ p {
   font-size: 1rem;
 }
 
-.projet_description{
-  font-size: 0.8vw;
-  color: #36353b; 
-  width: 20vw;
-  margin : 0.5vw 0;
-  padding: 0.5vw 1vw;
-}
-
 /* stage */
 
 .stage{
@@ -690,19 +754,19 @@ p {
   margin: 0 auto 1rem auto;
   width: 50%;
   text-align: justify;
+  color:var(--font-icon-color);
 }
 
 .stage_cardTop{
-  color: #d3c6f8;
+  color: var(--font-icon-color);
 }
 
 .stage_description{
-  color:rgb(255, 255, 255);
+  color:var(--font-icon-color);
   text-align: left;
   margin-top: 1rem ;
   font-size: 1rem;
 }
-
 
 /* footer */
 
@@ -711,10 +775,11 @@ p {
   align-items: center;
   width: 100%;
   height: 12rem;
-  background-color: #0d121a;
+  background-color: var(--card-color);
   font-size: 2rem;
   padding: 2rem;
   font-weight: bolder;
+  box-shadow:0 0 0.9vw rgba(0, 0, 0, 0.329);
   color:white;
 }
 
@@ -733,10 +798,10 @@ p {
 .icon_social{
   font-size: 2rem;
   padding: 1rem;
-  color: rgb(255, 253, 253);
+  color: var(--icon);
 }.icon_social:hover{
   cursor:pointer;
-  color:rgb(125, 153, 184);
+  color:var(--progress-color);
   
 }
 

@@ -15,22 +15,22 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Ephesis&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Sansita+Swashed&family=Ephesis&family=Great+Vibes&display=swap" rel="stylesheet">
     <!-- icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
-<body oncontextmenu="return false;">
+<body>
     <nav class="nav_stage">
-        <input id="nav-toggle" type="checkbox">
-        <a href="index.html">
-            <div class="logo"><i class="uil uil-moon icon"></i></div>
-        </a>
+        <label class="theme-switch" for="checkbox">
+            <input id="checkbox" type="checkbox">
+            <div class="logo"><i class="uil uil-moon icon" id="toggleDark"></i></div>
+        </label>
         <ul class="links">
             <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">A propos</a></li>
             <li><a href="projet_perso.html">Projets personnels</a></li>
-            <li><a href="projet_BTS.html">Projets BTS</a></li>
             <li><a href="experiencePro.html" class="active">Stage</a></li>
         </ul>
         <label for="nav-toggle" class="icon-burger">
@@ -45,7 +45,7 @@
             <div class="project_column">
                 <div class="cardTopProjet">Doowup</div>
                 <div class="project_row">
-                    <p class="description"> J'ai effectué mon stage de première année de BTS au sein de Doowup.
+                    <p class="projet_description"> J'ai effectué mon stage de première année de BTS au sein de Doowup.
                         Doowup est une agence Digitale Nantaise créée en 2016. Elle conçoit et met en place des solutions digitales 
                         comme les sites internet. DOOWUP s’occupe de tout : du développement à la maintenance, de la gestion du contenu à son 
                         référencement dans les moteurs de recherche. La société assure également la réalisation de boutiques en ligne 
@@ -63,7 +63,7 @@
             <div class="project_column">
                 <div class="cardTopProjet">Mission et compétences</div>
                 <div class="project_row">
-                    <p class="description">Pendant ce stage de 5 semaines, j'ai été intégré dans un projet avec 3 autres développeurs. 
+                    <p class="projet_description">Pendant ce stage de 5 semaines, j'ai été intégré dans un projet avec 3 autres développeurs. 
                         Ce projet avait pour objectif de permettre à l’entreprise une gestion simplifiée et pérenne de ses multiples projets 
                         en relation avec ses clients. Ma mission principale consistait à développer un des besoins nécessaires à la solution : 
                         la gestion de tickets. <br> <br>
