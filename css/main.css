@@ -14,12 +14,13 @@
   --p-color:white;
   --card-p-color:white;
   --title:#1c242e;
-  --btn-color:rgb(130, 128, 182);
+  --btn-color:#dab3ff;
   --nav-color:#9b98ff;
-  --progress-color: #7f7dc5;
+  --progress-color: #9b98ff;
   --container-color:#161e29d8;
-  --icon: #7f7dc5;
+  --icon: #9b98ff;
   --icon-skills: black;
+  --hover-icon-color:white;
 
   --weight-font-title: 900;
   --weight-font-text: 600;
@@ -34,10 +35,11 @@
   --card-p-color:white;
   --btn-color:#dab3ff;
   --nav-color:#89d4f7;
-  --progress-color: #7d99b8;
+  --progress-color: #89d4f7;
   --container-color:#0d121a;
   --icon: #f8f8f8;
   --icon-skills: rgb(255, 255, 255);
+  --hover-icon-color:#89d4f7;
 
   --weight-font-title: 600;
   --weight-font-text: 500;
@@ -60,7 +62,7 @@ html, body {
 iframe {
   border:none; 
   border-radius: 0.4vw;
-  box-shadow:0 0 1.5vw #070707; 
+  box-shadow:0 0 0.9vw rgba(0, 0, 0, 0.329);
   margin-bottom: 10vh;
 }
 
@@ -228,7 +230,7 @@ p {
   color: var(--icon);
   margin: 0 1vw 0 0;
 }.icons:hover{
-  color: var(--progress-color);
+  color: var(--hover-icon-color);
   cursor:pointer;
 }
 
@@ -440,6 +442,7 @@ p {
   width: 60%;
   margin: 0 auto 8vw auto;
   padding: 1vw;
+  box-shadow:0 0 0.9vw rgba(0, 0, 0, 0.329);
   background-color: var(--card-color);
   border-radius: 0.8rem;
   color:var(--card-p-color);
@@ -797,11 +800,10 @@ p {
 .icon_social{
   font-size: 2rem;
   padding: 1rem;
-  color: var(--icon);
+  color: white;
 }.icon_social:hover{
   cursor:pointer;
-  color:var(--progress-color);
-  
+  color:var(--nav-color);
 }
 
 
