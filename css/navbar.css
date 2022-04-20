@@ -23,6 +23,32 @@ nav {
 	box-shadow: 0 -1px 4px rgb(0 0 0 / 60%);
 }
 
+.under_navbar{
+	margin-bottom: 4vw;
+	display: flex;
+}
+
+.under_nav_btn{
+	display:flex;
+	flex-direction: row;
+	width: auto;
+	margin: 0 2vw;
+	align-items: center;
+	color:black;
+	background-color: var(--btn-color);
+	font-weight: 800;
+	padding: 0.6vw 1vw;
+	border-radius: 0.4vw;
+}.under_nav_btn:hover{
+	box-shadow: 0 0 0.8vw rgb(102, 102, 102);
+}
+
+.under_navbar .active{
+	background-color: var(--btn-header-color) ;
+	box-shadow: 0 0 0.8vw rgb(102, 102, 102);
+}	
+
+
 
 .anim-nav {
     background:var(--card-color);
@@ -42,7 +68,7 @@ nav .logo {
 	font-size: 2.5rem;
 	color:white;
 }.icon:hover{
-	color: rgb(125, 153, 184);
+	color: var(--nav-color);
   }
 
 .icon_navstage{
@@ -94,7 +120,7 @@ nav .links a {
 	font-size: 1rem;
 	font-weight: 500;
 	color: white;
-	text-shadow: 0 0 0.8vw white;
+	text-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.904);
 	text-decoration: none;
 }nav .links a:hover{
 	color: var(--nav-color);

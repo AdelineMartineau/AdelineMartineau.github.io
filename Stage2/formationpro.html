@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/moon-regular.svg">
+    <title>Adeline .M</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/slide.css">
+    <link rel="stylesheet" href="../css/slide2.css">
+    <link rel="stylesheet" href="../css/slide3.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Ephesis&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../js/slider2.js"></script>
+</head>
+
+<body >
+    <nav class="nav_stage">
+        <label class="theme-switch" for="checkbox">
+            <input id="checkbox" type="checkbox">
+            <div class="logo"><i class="uil uil-sun icon" id="toggleDark"></i></div>
+        </label>
+        <ul class="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projet_perso.html">Projets Personnels</a></li>
+            <li><a href="../projet_BTS.html">Projets BTS</a></li>
+            <li><a href="../experiencePro.html" class="active">Stages</a></li>
+            <li><a href="../competences.html">Compétences</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    
+    <div class="container container_stage" id="start">
+        <div class="under_navbar">
+            <a href="presentation.html" class="under_nav_btn">Présentation Talend</a>
+            <a href="produits.html" class="under_nav_btn">Data Inventory</a>
+            <a href="gestion_projet.html" class="under_nav_btn">Gestion de projet</a>
+            <a href="missions.html" class="under_nav_btn">Mes missions</a>
+            <a href="processus.html" class="under_nav_btn">Les processus</a>
+            <a href="formationpro.html" class="under_nav_btn active">Formation professionnelles</a>
+        </div>
+        <a class="scroll_back" href="#start"><i class="uil uil-arrow-circle-up"></i></a>
+        <div class="title title_stage">Formations professionnelles</div>
+        <div class="subtitle">Udemy, Hackathons, Users Story</div>
+        <p class="doowup_description">
+            Voici ici l'ensemble des formations que j'ai réalisé dans un cadre de mon développement professionnel.
+        </p>
+        <div class="cardTop stage_cardTop">
+            React Testing Library - Udemy
+        </div>
+        <p class="doowup_description">
+            Pendant mes deux premières semaine de stage, j'ai suivi une formation autour de React Testing Library sur la 
+            Platforme Udemy.
+            React Testing Library est un outil utilitaire de test conçu pour tester le DOM rendu 
+            par React dans le navigateur. <br><br> L'objectif de cette bibliothèque est de nous aider à faciliter l'écriture des tests.
+            Cette formation était organisé autour de la conception de deux applications et entièrement en anglais. <br><br>
+        </p>
+
+        <div class="slideshow-container">
+            <div class="slideshow-inner">
+              <div class="mySlides fade">
+                <img  src='../img/Talend/Udemy/udemy.PNG' style='width: 100%;' alt=""/>
+              </div>
+              
+              <div class="mySlides fade">
+                <img  src='../img/Talend/Udemy/udemy3.PNG' style='width: 100%;' alt=""/>
+              </div>
+              
+              <div class="mySlides fade">
+                <img  src='../img/Talend/Udemy/udemy4.PNG' style='width: 100%;' alt=""/>
+              </div>
+            </div>
+            <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+            <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+        
+            <br/>
+            <div style='text-align: center;'>
+                <span class="dot" onclick='currentSlide(1)'></span>
+                <span class="dot" onclick='currentSlide(2)'></span>
+                <span class="dot" onclick='currentSlide(3)'></span>
+            </div>
+        </div>
+
+        <div class="cardTop stage_cardTop" style="margin-top: 6vw;">
+            Ateliers Hackathon - Live coding
+        </div>
+        <p class="doowup_description">
+            J'ai participé à deux ateliers hackathons organisés au sein de Data Domain Governance.
+            Les produits ciblés étaient donc Inventory, Prep et Stewardship. <br><br>
+            Pour le logiciel Data Inventory, l'objectif était de travailler sur des tests centrés sur la 
+            visualisation d'une page web. Cela permet de tester les changements d'apparence non détectable à l'oeil nu.
+            C'est ce que l'on appel des tests de non régression visuelle.
+            Pour cela, nous avons utilisé <a href="https://storybook.js.org" style="text-decoration: underline; color:rgb(247, 148, 222)">Storybook</a>
+            et <a href="https://www.chromatic.com/docs/" style="text-decoration: underline; color:rgb(247, 148, 222)">Chromatic.</a>
+            <br><br>
+        
+            Storybook est un outil de développement d'interface utilisateur. Il rend le développement plus rapide et plus 
+            facile en isolant les composants d’une partie spécifique de l’application. Il aide à documenter les 
+            composants à réutiliser et à les tester automatiquement pour éviter les bogues. <br><br>
+
+            Chromatic est un outil qui a été conçu pour Storybook. Très généralement, il va se charger d'effectué lui-même des tests de non-regression
+            au sein du logiciel Data Inventory. 
+        </p>
+
+        <img src="../img/Talend/StoryBook/datasetOverview.PNG" alt="" style="width: 52vw;height:31vw; margin: 3vw auto 1vw auto; border-radius: 0.3vw;">
+        <div class="legende_img">Composant Dataset Overview dans Storybook</div>
+
+        <div class="cardTop stage_cardTop">
+            Création de users story
+        </div>
+        <p class="doowup_description">
+            Lors de ma première semaine, le Product Owner de Data Inventory m’a présenté le processus de création de users story. 
+            Suite à ça, ma mission était d’écrire des scénarios de test en s’appuyant sur une
+            user story de Data Inventory. Cette approche permet de sensibiliser sur le travail de recherche et de conception de 
+            scénarios de test autour d'un récit utilisateur.  
+        </p>
+
+        <div class="cardTop stage_cardTop">
+            Le Product Owner
+        </div>
+        <p class="doowup_description">
+            Le Product Owner est un chef de projet agile ainsi que le premier responsable de la conception d'un produit. 
+            Pour mener à bien sa mission, il a pour objectif d'interpréter les besoins des clients pour répondre au mieux à leurs attentes. <br><br>
+            Pour cela, il travaille en collaboration avec les clients et l'équipe en charge de la conception à savoir : les développeurs, les UX designers, 
+            et les QA. Il est donc en charge de la création de scénarios utilisateurs selon les exigences attendues. <br><br>
+            Il effectue également des scénarios de tests utilisateurs pour énumérer toutes les actions possibles et réalisables attendues suite 
+            à la user story.
+        </p>
+        <img src="../img/Talend/US/po.PNG" alt="" style="width: 45vw;height:27vw; margin: 3vw auto 1vw auto; border-radius: 0.3vw;">
+        <div class="legende_img">Collaborations avec le Product Owner</div>
+
+        <div class="space"></div>
+
+        <div class="title title_stage">Organisation personnelle</div>
+        <div class="subtitle">Notion</div>
+        <p class="doowup_description">
+            Afin d'organiser au mieux l'ensemble de mon journal de bord, j'ai utilisé l'application Notion. 
+            De cette manière, toutes notes sont organisées par thématiques et nouveaux concepts que j'ai pu 
+            découvrir tout au long de mon stage chez Talend.
+            <a href="https://www.notion.so/Talend-d2cac19e27a14daba4685f216eac8870" style="text-decoration: underline; color:rgb(247, 148, 222)">Lien de mon Notion.</a>
+        </p>
+        <img src="../img/Talend/Notion/notion1.PNG" alt="" style="width:60vw;height:31vw; margin: 3vw auto 1vw auto; border-radius: 0.3vw;">
+        <div class="legende_img">Collaborations avec le Product Owner</div>
+
+        <div class="space"></div>
+        <div class="title title_stage">Les outils</div>
+        <div class="subtitle">Environnement d'apprentissage</div>
+        <p class="doowup_description">
+            <div class="card_stage card_outils">
+                <div class="row" style="width:95%">
+                    <img src="../img/Talend/outils/vscode.PNG" alt="" style="width: 6rem; height: 6rem; margin:auto;">
+                    <img src="../img/Talend/outils/udemy2.webp" alt="" style="width: 7rem; height: 7rem; margin:auto;">
+                    <img src="../img/Talend/outils/React-icon.svg" alt="" style="width: 5.5rem; height: 5rem; margin:auto ;">
+                    <img src="../img/Talend/outils/github.PNG" alt="" style="width: 6rem; height: 6rem; margin: auto;">
+                    <img src="../img/Talend/outils/storybook.PNG" alt="" style="width: 6rem; height: 6rem; margin: auto;">
+                    <img src="../img/Talend/outils/notion.png" alt="" style="width: 7rem; height: 7rem; margin: auto;">
+                </div>
+            </div>
+            <div class="banniere" style="width:55%">
+                <p>VSCode</p>
+                <p>Udemy</p>
+                <p>React</p>
+                <p>GitHub</p>
+                <p>Storybook</p>
+                <p>Notion</p>
+            </div>
+        </p>
+
+        <div class="space"></div>
+        <div class="title">Bilan de mon stage</div>
+        <div class="card_projet">
+            <div class="project_column">
+                <div class="cardTopProjet"></div>
+                <div class="project_row">
+                    <p class="projet_description"> Talend étant une très grande société, je m'attendais à voir beaucoup de nouveaux concepts et en apprendre beaucoup sur son
+                        fonctionnement avant mon premier jour. Comme je l'avais espéré, j'ai pu apprendre et expérimenter tout cela au sein d'un
+                        environnement agréable et dans une équipe très bienveillante. <br><br>
+                        Intégré dans l'équipe en tant que développeuse Frontend, la rigueur et le cadre agile dans 
+                        lequel je me trouvais m'ont beaucoup appris en ce qui concerne la gestion de projet. 
+                        Durant le cadre de travail SCRUM, j'ai participé à beaucoup de réunions très intéressantes et de cette manière, je me suis 
+                        senti davantage impliqué dans mon travail. <br><br>
+                        Je suis très reconnaissante envers mes tuteurs d'avoir pu me permettre de faire un stage aussi riche en terme de savoirs et humainement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Adeline Martineau
+        <div class="socials">
+            <a href="https://framagit.org/dashboard/projects" target="blank">
+                <i class="uil uil-gitlab icon_social"></i>
+            </a>
+
+            <a href="https://github.com/AdelineMartineau?tab=repositories" target="blank">
+                <i class="uil uil-github-alt icon_social"></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/adeline-martineau-0a0681167/" target="blank">
+                <i class="uil uil-linkedin-alt icon_social"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            © 2021 All rights reserved
+        </div>
+    </div>
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/slider.js"></script>
+</body>
+
+</html>

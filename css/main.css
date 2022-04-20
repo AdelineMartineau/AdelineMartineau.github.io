@@ -6,21 +6,25 @@
   padding: 0;
 }
 
-/*------------------------------------------------------------------------------------------------------*/
 :root {
   --bg-color: #f3f4f4;
   --card-color: #161e29;
+  --card-skills-color: #232f46;
+  --color-skills:rgb(247, 172, 255);
   --font-icon-color: #000000;
   --p-color:white;
+  --blue-color:#6d68ff;
+  --subtitle-color: #1a1919;
   --card-p-color:white;
   --title:#1c242e;
-  --btn-color:#dab3ff;
+  --skills-title:rgb(247, 148, 222);
+  --btn-color:#b9b6ff;
+  --btn-header-color:#d2d1ff;
   --nav-color:#9b98ff;
-  --progress-color: #9b98ff;
+  --progress-color: #7f7dc5;
   --container-color:#161e29d8;
-  --icon: #9b98ff;
+  --icon: #7f7dc5;
   --icon-skills: black;
-  --hover-icon-color:white;
 
   --weight-font-title: 900;
   --weight-font-text: 600;
@@ -30,16 +34,22 @@
 [data-theme="dark"] {
   --bg-color: #161e29;
   --card-color: #0d121a;
+  --card-skills-color: whitesmoke;
+  --color-skills:rgb(172, 255, 179);
   --font-icon-color: #f9f9fa;
   --title:#fafafa;
+  --skills-title:#97fd97;
+  --p-color:rgb(14, 13, 13);
+  --blue-color:#89d4f7;
+  --subtitle-color: #cacaca;
   --card-p-color:white;
   --btn-color:#dab3ff;
+  --btn-header-color:#e3c5ff;
   --nav-color:#89d4f7;
-  --progress-color: #89d4f7;
+  --progress-color: #7d99b8;
   --container-color:#0d121a;
   --icon: #f8f8f8;
   --icon-skills: rgb(255, 255, 255);
-  --hover-icon-color:#89d4f7;
 
   --weight-font-title: 600;
   --weight-font-text: 500;
@@ -50,11 +60,10 @@
 .theme-switch input {
   display:none;
 }
-/*------------------------------------------------------------------------------------------------------*/
 
 html, body {
-    background:var(--bg-color);
-    font-family: 'Montserrat', sans-serif;
+  background:var(--bg-color);
+  font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
     height: 100%;
 }
@@ -62,7 +71,7 @@ html, body {
 iframe {
   border:none; 
   border-radius: 0.4vw;
-  box-shadow:0 0 0.9vw rgba(0, 0, 0, 0.329);
+  box-shadow:0 0 1.5vw #070707; 
   margin-bottom: 10vh;
 }
 
@@ -100,7 +109,7 @@ iframe {
 }
 
 .img_mvc{
-  height: 30rem; 
+  height: 30rem;
   margin: 3vw auto 1vw auto;
 }
 
@@ -143,7 +152,8 @@ iframe {
 
 .legende_img{
   font-size: 1rem;
-  color:  rgb(206, 206, 206);
+  color: var(--font-icon-color);
+  font-weight: var(--weight-font-text);
 }
 
 /* general */
@@ -196,6 +206,7 @@ p {
   font-weight: 300;
   flex-direction: column;
   font-family: 'Great vibes', cursive;
+  /* font-family: 'Rajdhani', sans-serif; */
 }
 
 #hero_title{
@@ -230,7 +241,7 @@ p {
   color: var(--icon);
   margin: 0 1vw 0 0;
 }.icons:hover{
-  color: var(--hover-icon-color);
+  color: var(--nav-color);
   cursor:pointer;
 }
 
@@ -243,14 +254,13 @@ p {
 }
 
 .icon:hover{
-  color: var(--progress-color);
-  cursor: pointer;
+  color: var(--nav-color);
 }
 
 .icon_navstage{
   color: black;
 }.icon_navstage:hover{
-  color: var(--progress-color);
+  color: var(--nav-color);
 }
 
 .icon_skills{
@@ -284,11 +294,10 @@ p {
   width: 11rem;
   padding: 1rem 0.5rem 1rem 1rem;  
   text-decoration: none;
-  color: #000000;
-  font-weight: 600;
+  color: #0f0f0f;
+  font-weight: 800;
   border-radius: 0.8vw;
   margin: 2rem 0 0 2rem;
-  box-shadow:0 0 0.9vw rgba(0, 0, 0, 0.329);
 }.contact_button:hover{
   box-shadow: 0 0 0.8vw rgb(102, 102, 102);
   transition: 0.3s;
@@ -303,11 +312,19 @@ p {
   text-decoration: none;
   color: #020202;
   border-radius: 0.8vw;
-  margin-top: 2vw;
-  width: 13rem;
+  margin: 3vw 1vw 0vw 0vw;
+  width: 11rem;
 }.doowup_btn:hover{
   box-shadow: 0 0 0.6vw rgb(102, 102, 102);
   transition: 0.3s;
+}
+
+.row, .row_skills{
+  display: flex;
+  flex-direction: row;}
+
+.row_skills{
+  margin: 1rem auto;
 }
 
 .maquettes_btn{
@@ -363,10 +380,9 @@ p {
   font-size: 2.4rem;
   font-weight:var(--weight-font-title);
   color: var(--title);
-  display: flex;  
+  display: flex;
   justify-content: center;
   align-items: center;
-  /* font-family: 'Lobster two'; */
   font-family: 'Sansita Swashed', cursive;
 }
 
@@ -383,9 +399,15 @@ p {
   color: var(--font-icon-color);
 }
 
+.arrow_left{
+	text-shadow: 0 -1px 4px rgba(66, 66, 66, 0.719);
+  color:var(--font-icon-color);
+}
+
 .subtitle{
-  color:rgb(202, 202, 202);
+  color:var(--subtitle-color);
   margin-bottom: 3vw;
+  font-weight: var(--weight-font-text);
 }
 
 .description{
@@ -402,6 +424,11 @@ p {
   font-size: 1.1rem;
 }
 
+.skills_description{
+  font-size: 1rem;
+  font-weight: 700;
+  color:var(--p-color);
+}
 
 .cardTop {
   width: 90%;
@@ -418,12 +445,11 @@ p {
   text-align: center;
   font-size: 1.7rem;
   margin: 0 auto 2vw auto;
-  color:var(--p-color);
+  color:var(--card-p-color);
   font-family: 'Sansita Swashed', cursive;
 }
 
-
-.card{
+.card {
   display:flex;
   flex-direction: row;
   width: 90%;
@@ -432,7 +458,6 @@ p {
   background-color: var(--card-color);
   color:var(--card-p-color);
   border-radius: 0.8rem;
-  box-shadow:0 0 0.9vw rgba(0, 0, 0, 0.329);
   font-weight: var(--weight-font-text);
 }
 
@@ -442,7 +467,6 @@ p {
   width: 60%;
   margin: 0 auto 8vw auto;
   padding: 1vw;
-  box-shadow:0 0 0.9vw rgba(0, 0, 0, 0.329);
   background-color: var(--card-color);
   border-radius: 0.8rem;
   color:var(--card-p-color);
@@ -452,6 +476,15 @@ p {
 .card, .card_projet p{
   color:var(--card-p-color)
 }
+
+.card_projet_skills{
+  width: 40%;
+  background-color: var(--card-skills-color);
+  margin: 0 auto 5vw auto;
+  border-radius: 0.8rem;
+  font-weight: var(--weight-font-text);
+}
+
 
 .flex_column {
   display: flex;
@@ -517,6 +550,7 @@ p {
   color:var(--font-icon-color);
 }
 
+
 .skills_header{
   margin: 2vw auto 0 auto;
   display: flex;
@@ -537,10 +571,14 @@ p {
   margin-bottom: 2vw;
 }
 
-.legend{
+.legend, .legend_skills{
   display:flex;
   flex-direction: row;
   margin: 0 auto;
+}
+
+.legend_skills{
+  flex-direction: column;
 }
 
 .legend p {
@@ -549,14 +587,22 @@ p {
   color:var(--font-icon-color);
 }
 
-.color_legend{
+.color_legend, .color_skills {
   width: 0.6rem;
   height: 0.6rem;
   border-radius: 100%;
-  background-color: var(--progress-color);
+  background-color:var(--nav-color);
   border: none;
   box-shadow: 0 0 0.2vw rgba(0, 0, 0, 0.6);
-  margin: 1.4vh 0.7vw 0vw 0vw ;
+  margin: 1.4vh 0.7vw 0vw 0vw;
+}
+
+.color_skills{
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-skills);
+  margin: 0.4vh 1vw 0vw 0vw ;
+  padding: 0.5vw;
 }
 
 
@@ -599,7 +645,7 @@ p {
 
 .skills_percentage{
   display: block;
-  background-color: var(--progress-color);
+  background-color: var(--nav-color);
 }
 
 .skills_javascript{
@@ -710,6 +756,36 @@ p {
   font-size: 1rem;
 }
 
+/* competence */
+.row_projects{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.project_button{
+  display: flex;
+  width: auto;
+  padding: 0.7vw;
+  margin: 2.5vw 3vw 1vw 0vw;
+  background-color: whitesmoke;
+  border-radius: 0.2vw;
+  color: black;
+  font-weight: 700;
+  font-size: 1vw;
+}.project_button:hover{
+  box-shadow: 0 0 0.8vw rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.row_skills_cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
 /* stage */
 
 .stage{
@@ -725,15 +801,32 @@ p {
   width: 90%;
   margin: 6rem auto 5rem auto;
   padding: 3.5rem;
-  background-color: #12131a;
+  background-color: #0d121a;
   border-radius: 0.8rem;
 }
 
 .card_outils{
   flex-direction: row;
   padding: 1rem;
-  margin: 1rem auto 3rem auto;
+  margin: 1rem auto 1rem auto;
+  background-color: #232f46;
   width: 60%;
+}
+
+.banniere{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.banniere p { 
+  display: flex;
+  color: black;
+  margin : auto;
+  font-weight: 700;
+  padding : 0.2rem 1rem;
+  background-color: var(--btn-header-color);
+  border-radius: 0.3vw;
 }
 
 .card_bilan{
@@ -748,19 +841,27 @@ p {
   margin: auto 0;
 }
 
-.title_stage{
-  margin: 2rem auto 0.5rem auto
+.title_stage, .title_stage_skills{
+  margin: 2rem auto 0.5rem auto;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.title_stage_skills{
+  color:var(--skills-title);
+  margin: 4rem auto 2rem auto
 }
 
 .doowup_description{
   margin: 0 auto 1rem auto;
   width: 50%;
+  font-size: 1rem;
   text-align: justify;
   color:var(--font-icon-color);
+  font-weight: var(--weight-font-text);
 }
 
 .stage_cardTop{
-  color: var(--font-icon-color);
+  color: var(--blue-color);
 }
 
 .stage_description{
@@ -768,6 +869,23 @@ p {
   text-align: left;
   margin-top: 1rem ;
   font-size: 1rem;
+}
+
+.scroll_back{
+  display: flex;
+  text-align: right;
+  position: fixed;
+  margin: 32vw 0vw 0vw 80vw;
+ 
+}
+
+.uil-arrow-circle-up{
+  color:var(--nav-color);
+}
+
+.uil-arrow-circle-up:hover{
+  cursor:pointer;
+  color: var(--nav-color);
 }
 
 /* footer */
@@ -800,10 +918,12 @@ p {
 .icon_social{
   font-size: 2rem;
   padding: 1rem;
-  color: white;
+  color: var(--icon);
 }.icon_social:hover{
   cursor:pointer;
-  color:var(--nav-color);
+  color:var(--nav-color);;
+  
 }
+
 
 

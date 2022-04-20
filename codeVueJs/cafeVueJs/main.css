@@ -8,6 +8,14 @@ html, body{
     color: white;
 }
 
+li {
+	scroll-snap-align: center;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 0;
+}
+
+
 #app{
     width: 80vw;
     height:auto;

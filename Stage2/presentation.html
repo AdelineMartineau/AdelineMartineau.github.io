@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/moon-regular.svg">
+    <title>Adeline .M</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/slide.css">
+    <link rel="stylesheet" href="../css/slide2.css">
+    <link rel="stylesheet" href="../css/slide3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Ephesis&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body >
+
+    <nav class="nav_stage">
+        <label class="theme-switch" for="checkbox">
+            <input id="checkbox" type="checkbox">
+            <div class="logo"><i class="uil uil-sun icon" id="toggleDark"></i></div>
+        </label>
+        <ul class="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projet_perso.html">Projets Personnels</a></li>
+            <li><a href="../projet_BTS.html">Projets BTS</a></li>
+            <li><a href="../experiencePro.html" class="active">Stages</a></li>
+            <li><a href="../competences.html">Compétences</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+    <div class="container container_stage" id="start">
+        <div class="under_navbar">
+            <a href="presentation.html" class="under_nav_btn active">Présentation Talend</a>
+            <a href="produits.html" class="under_nav_btn">Data Inventory</a>
+            <a href="gestion_projet.html" class="under_nav_btn">Gestion de projet</a>
+            <a href="missions.html" class="under_nav_btn">Mes missions</a>
+            <a href="processus.html" class="under_nav_btn">Les processus</a>
+            <a href="formationpro.html" class="under_nav_btn">Formations professionnelles</a>
+        </div>
+        <a class="scroll_back" href="#start"><i class="uil uil-arrow-circle-up"></i></a>
+        <div class="title title_stage">Présentation Talend</div>
+        <div class="subtitle">Missions, Structure, équipes et produits</div>
+
+        <div class="card_projet">
+            <div class="project_column">
+                <div class="cardTopProjet">Missions de l'offre de stage</div>
+                <div class="project_row">
+                    <p class="projet_description"> 
+                        Au sein d’une équipe agile autonome, mettant en œuvre une démarche d’amélioration continue et motivé par 
+                        la valeur ajoutée délivrée pour les utilisateurs de la plateforme Talend, vous aurez comme principales 
+                        responsabilités : <br><br>
+                        - Participer au design du produit avec le Product Owner et le designer UX
+                        Mener à bien la conception technique et à l’implémentation frontend <br>
+                        - Participer à l’ensemble du processus de développement (design, implémentation, test et déploiement)<br>
+                        - Collaborer avec l'équipe QA pour mettre en place les tests unitaires et end-to-end de l'application<br>
+                        - Contribuer sur notre librairie de composants partagés (https://github.com/talend/ui) <br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cardTop stage_cardTop" style="margin-top: 0vw;">
+            Structure de Talend
+        </div>
+        <p class="doowup_description">
+            Voici une représentation de la stucture interne de Talend. On retrouve trois parties principales : <br><br>
+            Les domaines : Ce sont de grandes équipe au sein de Talend gérant plusieurs produits.
+            Data Governance Domain est composé d’une trentaine de personnes répartie à Nantes et à Suresnes (Paris). 
+            Elle gère actuellement 3 produits. <br><br>
+            Les équipes platforme : Elles gèrent les services backend commun entre plusieurs domaines. <br><br>
+            Les équipes infrastructure : Elles assurent la disponibilité  et la maintenabilité de l’ensemble de toutes les applications de Talend.<br>
+        </p>
+
+        <img class="" src="../img/Talend/Talend/infra_talend.png" alt="" style="width:52vw; height:29vw; border-radius: 0.3vw; margin: 3vw auto 1vw auto;">
+        <div class="legende_img">Structure de Talend</div>
+
+        <div class="cardTop stage_cardTop">
+            Equipes et produits au sein de Data Governance Domain
+        </div>
+        <p class="doowup_description"> 
+            Parmi les produits existants nous avons : Data Inventory, Data Preparation et Data Stewardship. 
+            Ces produits sont gérés par Data Governance Domain étant l’équipe qui gère le développement et la maintenance de ces trois produits.<br>
+            Au sein de DGD, on retrouve trois squads : Squad Crawling, Squad Runtime Convergence et Squad Rainbow.
+            <br><br> Romain Guillaume, mon maître de stage, est aussi le manager qui gère les développeurs Front-end de ces trois squads.
+            Dans chaque squad, on retrouve les profils suivant : QA, Front, Back, UI/UX et Product Owner. Chaque équipe travaille avec le modèle agile SCRUM. 
+            <br><br>
+            Durant ce stage, je suis intégré en tant que développeuse Front-end au sein du Squad Crawling. Le produit sur lequel nous travaillons
+            est Inventory.
+        </p>
+        <img class="" src="../img/Talend/Talend/dataGov_squads.PNG" alt="" style="width:42vw; height:32vw; border-radius: 0.3vw; margin: 3vw auto 1vw auto;">
+        <div class="legende_img">Squads et produits de Data Governance Domain</div>
+
+    </div>
+    
+    <div class="footer">
+        Adeline Martineau
+        <div class="socials">
+            <a href="https://framagit.org/dashboard/projects" target="blank">
+                <i class="uil uil-gitlab icon_social"></i>
+            </a>
+
+            <a href="https://github.com/AdelineMartineau?tab=repositories" target="blank">
+                <i class="uil uil-github-alt icon_social"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/adeline-martineau-0a0681167/" target="blank">
+                <i class="uil uil-linkedin-alt icon_social"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            © 2021 All rights reserved
+        </div>
+    </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+
+</html>

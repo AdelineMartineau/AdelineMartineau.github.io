@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/moon-regular.svg">
+    <title>Adeline .M</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/slide.css">
+    <link rel="stylesheet" href="../css/slide2.css">
+    <link rel="stylesheet" href="../css/slide3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Ephesis&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body >
+
+    <nav class="nav_stage">
+        <label class="theme-switch" for="checkbox">
+            <input id="checkbox" type="checkbox">
+            <div class="logo"><i class="uil uil-sun icon" id="toggleDark"></i></div>
+        </label>
+        <ul class="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projet_perso.html">Projets Personnels</a></li>
+            <li><a href="../projet_BTS.html">Projets BTS</a></li>
+            <li><a href="../experiencePro.html" class="active">Stages</a></li>
+            <li><a href="../competences.html">Compétences</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+    <div class="container container_stage" id="start">
+        <div class="under_navbar">
+            <a href="presentation.html" class="under_nav_btn" class="active">Présentation Talend</a>
+            <a href="produits.html" class="under_nav_btn">Data Inventory</a>
+            <a href="gestion_projet.html" class="under_nav_btn">Gestion de projet</a>
+            <a href="missions.html" class="under_nav_btn">Mes missions</a>
+            <a href="processus.html" class="under_nav_btn active">Les processus</a>
+            <a href="formationpro.html" class="under_nav_btn">Formations professionnelles</a>
+        </div>
+        <a class="scroll_back" href="#start"><i class="uil uil-arrow-circle-up"></i></a>
+        <div class="title title_stage">Les processus de développement</div>
+        <div class="subtitle">Patrimoine informatique, continuité, gestion d'incident et déploiement</div>
+        <p class="doowup_description">
+            Présentation des droits d'accès aux ressources numérique.
+            Puis ci-dessous un descriptif des étapes de l'integration continue, de la gestion des incidents et du processus de déploiement
+            de la version 1.82 de Data Inventory.
+        </p>
+
+        <div class="space"></div>
+        <div class="title title_stage">Patrimoine informatique</div>
+        <div class="subtitle">Accès aux ressources et normes</div>
+        <p class="doowup_description">
+            Dans cette section, je vous explique comment est-ce que j'ai pu avoir accès à mon environnement ainsi que les normes
+            que j'ai adopté tout au long de mon stage.
+            Voici un descriptif des accès à mon environnement de développement au sein de Talend. 
+        </p>
+
+        <div class="cardTop stage_cardTop" style="margin-top: 4vw;">
+            Portail Okta de Talend
+        </div>
+        <p class="doowup_description">
+            Okta est une plateforme qui permet une gestion sécurisée des accès aux outils et applications.  
+            Pour pouvoir accèder à Okta, j'ai d'abord été intégré dans le domaine de Talend. Puis, mes identifiants
+            ont été ajouté dans l'Active Directory de l'OS Windows. <br> 
+            Il met en lien les utilisateurs avec les ressources réseau dont ils ont besoin pour mener à bien leurs missions.<br><br>
+
+            Si je me trouve sur un réseau privé en dehors de l'entreprise, je dois utiliser un VPN avec le logiciel Global Protect pour accèder au portail d'Okta. 
+            Je peux donc accèder à l'ensemble des applications de Talend.
+        </p>
+        <img class="" src="../img/Talend/App/AD_Okta.PNG" alt="" style="width:48vw; height:18vw; border-radius: 0.3vw; margin: 2vw auto 1vw auto;">
+        <div class="legende_img">Schéma explicatif d'accès à Okta</div>
+
+        <div class="space"></div>
+        <div class="cardTop stage_cardTop" style="margin-top: 4vw;">
+            Semantic versionning
+        </div>
+        <p class="doowup_description">
+            Quand un changement est effectué sur l’application, sa version évolue. On parle de 
+            <a href="https://semver.org" style="color:rgb(247, 148, 222); text-decoration: underline;">Semantic versionning</a>
+            L'objectif du Semantic Versioning est de donner un numéro unique à chaque nouvelle version d'un logiciel. 
+            Une version possède 3 états : MAJOR.MINOR.PATCH.<br><br>
+
+            La Major indique une évolution critique nécessitant aux autres développeurs d'adapter leur code. 
+            La Minor indique l'ajout de fonctionnalités n'ayant pas d'impact pour les autres. 
+            Enfin le Patch indique une simple correction de bogues n'ayant aucun impact.<br><br>
+
+            Afin d’enregistrer tous les changements au sein de l’application, on utilise un changelog.
+            Le changelog contient une liste des changements dans un ordre chronologique de chaque version du projet. Cela permet d’en informer les contributeurs.
+            Pour gérer les changements, on utilise l’outil de version changeset.
+            <a href="https://github.com/changesets/changesets" style="color:rgb(247, 148, 222); text-decoration: underline;">Changeset Github</a> <br>
+            Il est conçu pour aider les personnes qui apportent des modifications, jusqu'à la publication d'une nouvelle version.
+        </p>
+
+       
+        <div class="space"></div>
+        <div class="title title_stage">Continuité du projet</div>
+        <div class="subtitle">Procédure avec GitHub</div>
+        <p class="doowup_description">
+            Le processus d'intégration est inclus dans la continuité d'un projet. Un certain nombre d'opérations de créations et de tests sont effectuées
+            automatiquement lorsque du nouveau code est implémenté. Cela vise à garantir un code de qualité avant la mise en production et d'avoir
+            un retour rapide des potentielles erreurs de développement. 
+        </p>
+
+        <div class="cardTop stage_cardTop">
+            Documentation GitHub
+        </div>
+        <p class="doowup_description">
+            Un repository GitHub est à la disposition de tous les développeurs. Il renseigne sur les procédures et les conventions de nommage 
+            de création de branche, de commit et de pull requests.
+        </p>
+
+        <div class="cardTop stage_cardTop">
+            Procédures avec les pulls request
+        </div>
+        <p class="doowup_description">
+            Pour chacune de mes missions, j’ai effectué une pull request. Cela m'a permis d'échanger avec les autres développeurs 
+            quant aux changements sur ma branche git. La pull request contient un fichier de suivi dans lequel je documente 
+            tous les changements effectués.  <br> <a href="https://github.com/Talend/ui/pull/3846" style="color:rgb(247, 148, 222); text-decoration: underline;">Voir ma pull request.</a>
+        </p>
+        <img class="" src="../img/Talend/Git/file.PNG" alt="" style="width:50vw; height:28vw; border-radius: 0.3vw; margin: 2vw auto 1vw auto;">
+        <div class="legende_img">Fichier de suivi</div>
+
+        <div class="space"></div>
+        <p class="doowup_description">
+            Lorsque je publie mes changements (push), le processus d'intégration continu s'exécute automatiquement et donne un retour sur les différents tests. 
+            Si des procédures échouent, il faut les corriger.
+        </p>
+        <img class="" src="../img/Talend/Git/checks_CI_ui.PNG" alt="" style="width:50vw; height:24vw; border-radius: 0.3vw; margin: 2vw auto 1vw auto;">
+        <div class="legende_img">Les procédures de la CI</div>
+        <div class="space"></div>
+        <p class="doowup_description">
+            Le principe de la pull request est de demandé aux autres développeurs de passer en revue code implémenté. 
+            Les réviseurs ont la possibilité de laisser des commentaires de proposer une correction de la fonctionnalité 
+            et d'approuver les changements pour validation. <br><br>
+            Quand deux développeurs ont approuvé mes changements, je peut procéder au Squash and Merge de ma pull request. 
+            Cela permet de rassembler tous les commits de ma branche en un seul.
+        </p>
+
+        <div class="space"></div>
+
+        <div class="title title_stage">Gestion des incidents</div>
+        <div class="subtitle">Support ticket avec Jira</div>
+        <p class="doowup_description">
+            Chaque semaine, les managers de chaque équipe (QA, Front, Back, Product Owner) s’entretiennent
+            concernant la gestion des incidents. Il y a deux niveaux d’intervention concernant le support à Talend. 
+            <a href="https://www.talend.com/technical-support/support-statements/#severity" style="color:rgb(247, 148, 222); text-decoration: underline;">Support Talend</a> <br>
+            Premièrement, l’équipe de support gère les incidents de premier niveau qui sont rapportés par les clients. 
+            Puis l’équipe de la R&D intervient lorsque le support n’a pas pu répondre à l’incident déclaré.
+        </p>
+        <img class="" src="../img/Talend/gestion Incident/GI_6.PNG" alt="" style="width:50vw; height:17vw; border-radius: 0.3vw; margin: 2vw auto 1vw auto;">
+        <div class="legende_img">Equipes de support</div>
+        <div class="space"></div>
+
+        <p class="doowup_description">
+            Côté R&D, l’analyse et le traitement des tickets d’incidents est reporter sur Jira Board. 
+            Les tickets peuvent provenir de clients ou bien de l’équipe interne de Talend.
+            L’équipe établit un premier niveau de priorité sur les nouveaux tickets. Puis elle notifie le support et le 
+            partage à Sales force, l'outil de la gestion relation client.<br><br>
+            Le rôle du Product Owner est d’analyser le ticket et d’envoyer un message au support afin de demander plus de précision 
+            sur l’incident, exemple : quel est le scénario exact à reproduire.
+            Il priorise également les tickets à traiter car la notion de perte d’argent importante à prendre en compte dans la priorisation.
+            Une fois l’équipe de la R&D dispose de plus d’information, elle fixe un délai de réponse en fonction de l’état.
+        </p>
+
+        <img class="" src="../img/Talend/gestion Incident/GI_2.PNG" alt="" style="width:50vw; height:17vw; border-radius: 0.3vw; margin: 2vw auto 1vw auto;">
+        <div class="legende_img">Etat délais de réponse</div>
+
+        <div class="space"></div>
+
+        <div class="title title_stage">Deploiement de Data Inventory</div>
+        <div class="subtitle">Version 1.82</div>
+        <p class="doowup_description">
+            Une release est un livrable pour lequel une nouvelle version de l'application est proposée et tester ensuite. 
+            <a href="https://github.com/Talend/ui/releases" style="color:rgb(247, 148, 222); text-decoration: underline;">Lien des releases sur GitHub</a> <br>
+            En général, elle est effectuée lorsque beaucoup de changements ont été implémentés au sein du projet et quand le 
+            besoin s'en fait ressentir.
+            Il y a plusieurs environnements pour tester la livraison de la version du produit.<br>
+            Une première validation de la release sur un environnement est effectué.
+            Une fois la release validée, elle est prête à être livrée en production. <br><br>
+            Le déploiement de la release jusqu’à la production s’effectue sur deux environnements différents.
+            Si un problème survient lors de la validation, alors le ticket concerné repasse en étape de progression dans Jira Board.
+        </p>
+
+        <p class="doowup_description">
+            Avant la mise en production, un ticket de déploiement est créé dans Jira. Il comprend les versions front et back choisis pour être envoyé en production.
+            Pour la synchronisation entre équipes, un Chanel Slack est créé pour le besoin du déploiement.
+            Toutes les équipes (Front, Back, QA...) interviennent après validation, on passe à l’environnement de production supérieur.<br><br>
+        </p>
+
+        <div class="space"></div>
+
+        <div class="title title_stage">Les outils</div>
+        <div class="subtitle">CI, destion d'incidents, déploiement</div>
+        <p class="doowup_description">
+            <div class="card_stage card_outils">
+                <div class="row" style="width:75%";>
+                    <img src="../img/Talend/outils/jira.PNG" alt="" style="width: 6rem; height: 6rem; margin:auto ;">
+                    <img src="../img/Talend/outils/github.PNG" alt="" style="width: 6rem; height: 6rem; margin: auto ;">
+                    <img src="../img/Talend/outils/okta-logo.png" alt="" style="width: 9rem; height: 3.5rem; margin:auto ;">
+                    <img src="../img/Talend/outils/slack.PNG" alt="" style="width: 6rem; height: 6rem; margin:auto ;">
+                </div>
+            </div>
+            <div class="banniere" style="width: 45%;">
+                <p>Jira</p>
+                <p>GitHub</p>
+                <p>Okta</p>
+                <p>Slack</p>
+            </div>
+        </p>
+        <div class="space"></div>
+        <div class="space"></div>
+    
+    <div class="footer">
+        Adeline Martineau
+        <div class="socials">
+            <a href="https://framagit.org/dashboard/projects" target="blank">
+                <i class="uil uil-gitlab icon_social"></i>
+            </a>
+
+            <a href="https://github.com/AdelineMartineau?tab=repositories" target="blank">
+                <i class="uil uil-github-alt icon_social"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/adeline-martineau-0a0681167/" target="blank">
+                <i class="uil uil-linkedin-alt icon_social"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            © 2021 All rights reserved
+        </div>
+    </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+
+</html>

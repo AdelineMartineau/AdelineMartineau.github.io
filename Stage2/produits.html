@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/moon-regular.svg">
+    <title>Adeline .M</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/slide.css">
+    <link rel="stylesheet" href="../css/slide2.css">
+    <link rel="stylesheet" href="../css/slide3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Ephesis&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body >
+    <nav class="nav_stage">
+        <label class="theme-switch" for="checkbox">
+            <input id="checkbox" type="checkbox">
+            <div class="logo"><i class="uil uil-sun icon" id="toggleDark"></i></div>
+        </label>
+        <ul class="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projet_perso.html">Projets Personnels</a></li>
+            <li><a href="../projet_BTS.html">Projets BTS</a></li>
+            <li><a href="../experiencePro.html" class="active">Stages</a></li>
+            <li><a href="../competences.html">Compétences</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+    <div class="container container_stage" id="start">
+        <div class="under_navbar">
+            <a href="presentation.html" class="under_nav_btn" class="active">Présentation Talend</a>
+            <a href="produits.html" class="under_nav_btn active">Data Inventory</a>
+            <a href="gestion_projet.html" class="under_nav_btn">Gestion de projet</a>
+            <a href="missions.html" class="under_nav_btn">Mes missions</a>
+            <a href="processus.html" class="under_nav_btn">Les processus</a>
+            <a href="formationpro.html" class="under_nav_btn">Formations professionnelles</a>
+        </div>
+        <a class="scroll_back" href="#start"><i class="uil uil-arrow-circle-up"></i></a>
+        <div class="title title_stage">Data Inventory</div>
+        <div class="subtitle">Analyse de la donnée</div>
+        <p class="doowup_description">
+            Il existe une multitude de données circulant au sein des réseaux de télécommunications informatique. 
+            La donnée est regroupée sous de nombreux formats. 
+            Elles surviennent dans n’importe quel domaine (web service, fichiers Excel…). 
+            Pour comprendre ces données, il faut les cataloguer, les documenter et les identifier. 
+            <br>Il faut aussi déterminer si elles sont importantes ou non.
+            Au sein de Data Inventory, les données à identifier proviennent de jeux de données appelé datasets.
+        </p>
+
+        <div class="cardTop stage_cardTop">
+            Identification et analyse des données
+        </div>
+        <p class="doowup_description">
+            Afin d’identifier les données et de corriger les erreurs,  
+            on utilise le logiciel Data Inventory. Grâce à une analyse sémantique, il détecte les erreurs que peuvent avoir certaines données. 
+            <br><br>Chacun des datasets possèdent un indice de confiance appelé Trust Score. 
+            Il se base sur 5 critères : Validity, Popularity, Completeness, Discoverability et Usage.
+            Ces datasets peuvent aussi être partagés par les utilisateurs. 
+            <br><br>Sur la vue d'un dataset, on peut observer ce niveau de confiance. Il est établi sur une échelle de 5 points. 
+            Il renseigne donc sur la santé et l'intégrité des données concernant un dataset.
+            On retrouve aussi cet indice de confiance global sur un ensemble de datasets.
+            <br><br>L'indice de confiance d'un dataset peut-être amélioré grâce à la documentation : 
+            la personne qui traite les informations des données peut augmenter l’indice de qualité.
+            L'indice de confiance peut aussi être amélioré grâce à la correction des données avec les deux autres produits Data Prep et 
+            Data Stewardship.
+        </p>
+        <img class="" src="../img/Talend/Inventory/Inventory -1.png" alt="" style="width:60vw; height:24vw; border-radius: 0.3vw; margin: 3vw auto 1vw auto;">
+        <div class="legende_img">Logiciel Data Inventory</div>
+
+        <div class="cardTop stage_cardTop" style="margin-top: 8vw;">
+            Architecture de Data Inventory 
+        </div>
+        <p class="doowup_description">
+            En fonction des actions de l’utilisateur sur Data Inventory, l’information passe d'abord par la Gateway qui 
+            effectue divers contrôles avant de rediriger vers un service en particulier. 
+            Chaque service va dépendre de plusieurs API avec leur propre base de données qui vont 
+            communiquer entre elles. Ici, la passerelle est le premier niveau 
+            de sécurité et effectue plusieurs contrôles comme indiqué sur le schéma.<br><br>
+        </p>
+        <img class="" src="../img/Talend/Talend/backend_inventory.PNG" alt="" style="width:52vw; height:25vw; border-radius: 0.3vw; margin: 0vw auto 1vw auto;">
+        <div class="legende_img">Architecture de Data Inventory</div>
+
+    </div>
+    
+    <div class="footer">
+        Adeline Martineau
+        <div class="socials">
+            <a href="https://framagit.org/dashboard/projects" target="blank">
+                <i class="uil uil-gitlab icon_social"></i>
+            </a>
+
+            <a href="https://github.com/AdelineMartineau?tab=repositories" target="blank">
+                <i class="uil uil-github-alt icon_social"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/adeline-martineau-0a0681167/" target="blank">
+                <i class="uil uil-linkedin-alt icon_social"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            © 2021 All rights reserved
+        </div>
+    </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+
+</html>

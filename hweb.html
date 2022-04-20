@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/moon-regular.svg">
+    <title>Adeline .M</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/slide2.css">
+    <link rel="stylesheet" href="./css/slide3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Ephesis&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav class="nav_stage">
+        <label class="theme-switch" for="checkbox">
+            <input id="checkbox" type="checkbox">
+            <div class="logo"><i class="uil uil-sun icon" id="toggleDark"></i></div>
+        </label>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projet_perso.html">Projets Personnels</a></li>
+            <li><a href="projet_BTS.html" class="active">Projets BTS</a></li>
+            <li><a href="experiencePro.html">Stages</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <div class="container container_stage" id="start">
+        <div class="under_navbar">
+            <a href="projet_BTS.html"><i class="uil uil-arrow-left arrow_left"></i></a>
+            <a href="hweb.html" class="under_nav_btn" class="active">Hackat'Web</a>
+            <a class="under_nav_btn">Hackat'Orga</a>
+            <a class="under_nav_btn">Hackat'Manage</a>
+        </div>
+        <a class="scroll_back" href="#start"><i class="uil uil-arrow-circle-up"></i></a>    
+        <div class="space" style="margin-bottom:1vw;"></div>
+
+        <div class="title title_stage">Hackat'Web</div>
+        <div class="subtitle">Contexte</div>
+        <p class="doowup_description">
+            Cette première application est développée en HTML/PHP avec une architecture Modèle Vue Controller. 
+            La mission principale est de procéder au développement de la phase d'inscription à un hackathon. 
+            On y retrouve ainsi 4 acteurs principaux : utilisateur, animateur, organisateur et participant. <br><br>
+            Pour ce faire, nous disposons d'une application de départ et des accès aux serveurs Web et BDD. 
+            Pour le serveur web, nous avions un accès FTP. Il s'agit donc d'un protocole utilisé pour transférer des fichiers 
+            lourd d'un ordinateur à un serveur ou inversement.
+        </p>
+
+            <div class="cardTop stage_cardTop">
+                Ressources
+            </div>
+            <p class="doowup_description">
+                Afin de prendre connaissance d'Hackat Web et d'en cerner les besoins, nous disposions d'une documentation complète 
+                de la solution. Parmi les ressources, on y trouvait l'explication du déroulement de l'étape d'inscription. 
+                <a href="./img/projet_bts/HackathonContexte.pdf" target="_blank"  style="text-decoration: underline; color:rgb(247, 148, 222)"> Cahier des charges.</a> 
+            </p>
+
+        <div class="space"></div>
+        <div class="title title_stage">Cahier des charges</div>
+        <div class="subtitle">Users story</div>
+        <p class="doowup_description">
+           Un cahier des charges nous était attribué et contenait plusieurs scénarios utilisateurs avec un niveau de priorité et un état.
+            Notre objectif dans un premier temps est d'analyser le besoin imposé par le prestataire informatique à travers ces fonctionnalités.
+        </p>
+        <img class="" src="./img/projet_bts/Hackat_Web/ruhweb.png" alt="" style="width:50vw;height:35vw; margin: 2vw auto 1vw auto">
+        <div class="legende_img">Users story</div>
+
+        <div class="space"></div>
+        <div class="title title_stage">Organisation</div>
+        <div class="subtitle">Délimitation des tâches</div>
+        <p class="doowup_description">
+           Afin de s'approprier un contexte professionnel, mon équipe et moi-même avons d'abord mis en place notre environnement de
+           développement. Nous avons récupéré le code initial fourni puis nous avons commencé à le versionner avec Framagit.<br><br>
+           Ensuite, nous avons réfléchi à l'organisation générale pendant la première semaine de ce sprint. 
+           Tout d'abord, nous avons analysé ce que chaque
+           users story pouvait représenter en matière de fonctionnalité et de difficultés. Suite à ça, nous avons effectué plusieurs schémas
+           pour comprendre l'organisation générale de l'application.<br><br>
+           A chaque début de séance, nous discutions entre nous des fonctionnalités en cours, des difficultés rencontrées de la séance précédante.
+           Puis chaque fin de séance, nous faisions un point sur notre avancé et prenions note des prochaines étapes.
+           A la fin de ce Sprint, nous avons passé une petite épreuve orale afin de faire un compte rendu autour de la gestion de projet 
+           et la gestion d'équipe.
+        </p>
+        <div class="space"></div>
+        <div class="title title_stage">Architecture</div>
+        <div class="subtitle">Modele Vue Controller</div>
+        <p class="doowup_description">
+            La solution est établie sur un modèle d'architecture MVC maison inspirée des frameworks Laravel ou
+            Symfony. Ce style d'architecture permet de bien organiser son code source. Il va nous aider à savoir quels
+            fichiers créer, mais surtout à définir leur rôle.
+            Le but de cette architecture est de séparer la logique du code en trois parties que l'on retrouve dans des
+            fichiers distincts. 
+        </p>
+        <img class="" src="./img/projet_bts/Hackat_Web/mvc.png" alt="" style="width:25vw;height:35vw; margin: 2vw auto 1vw auto">
+        <div class="legende_img">Achitecture MVC </div>
+
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="title title_stage">Continuité et sauvegarde</div>
+        <div class="subtitle">Avec Framagit et DBeaver</div>
+        <p class="doowup_description">
+            Voici une description des moyens établie concernant la sauvegarde du projet et le déroulement de sa continuité.
+        </p>
+        <div class="cardTop stage_cardTop">
+            Versionning
+        </div>
+        <p class="doowup_description">
+            Framagit est l'interface utilisée pour le versionning du projet. 
+            C'est également le moyen qui permet d’assurer la continuité de celui-ci. 
+
+            schéma
+        </p>
+
+        <div class="cardTop stage_cardTop">
+            Base de données
+        </div>
+        <p class="doowup_description">
+            La base de données utilisée était PostgreSQL sous le logiciel DBeaver. Tous les membres du projet travaillaient sur cette même base de données.
+            Nous disposions de deux bases de données différentes : une pour le développement en local et la seconde pour la version 
+            de mise en production. Ainsi, aucune des deux bases n'est impactée par les changements qui peuvent être opérés.<br><br>
+            Cependant, cette base de données sera la même pour chacune des applications d'Hachat'Innov.
+            Voici un aperçu de la toute première conception de la base de données pour Hackat'Web :
+        </p>
+        <img class="" src="./img/projet_bts/Hackat_Web/diagram.png" alt="" style="width:56vw;height:30vw; margin: 2vw auto 1vw auto">
+        <div class="legende_img">Diagramme de classe</div>
+
+        <div class="cardTop stage_cardTop">
+            Déploiement de l'application
+        </div>
+        <p class="doowup_description">
+            Pour le déploiement de notre application, nous avons utilisé le logiciel Filezilla. Il va nous permettre de nous connecter
+            à notre serveur web via un accès FTP en renseignent l'hôte, l'identifiant, mot de passe et le port. 
+            Le FTP est un protocole utilisé pour transférer des fichiers lourd d'un ordinateur à un serveur ou inversement.<br><br> 
+            Une fois connectés, nous pouvons accéder aux fichiers hebergés sur notre serveur et ceux qui se trouvent en local sur 
+            notre machine. De cette manière, nous avons transféré les fichiers du site en local sur le serveur et après cela, le site
+            était en ligne.
+        </p>
+
+        <div class="space"></div>
+        <div class="title title_stage">Gestion de projet</div>
+        <div class="subtitle">Planification et suivie avec Framagit</div>
+        <p class="doowup_description">
+            Afin de suivre l'avancée de chacun, nos récits utilisateurs étaient organisés dans les issues de Framagit.
+            Pour chaque ticket, un développeur de l'équipe y était assigné, permettant de communiquer 
+            aux autres membres et en temps réel, l'avancée de la fonctionnalité.
+            <a href="https://framagit.org/Mexonyx/latackdestitouans/-/issues" style="text-decoration: underline; color:rgb(247, 148, 222)">Voir les issues</a><br><br>
+        </p>
+
+        <img class="" src="./img/projet_bts/Hackat_Web/boardhwebframa.png" alt="" style="width:55vw;height:26vw; margin: 0 auto 1vw auto">
+        <div class="legende_img">Board Framagit</div>
+        <div class="space"></div>
+        <img class="" src="./img/projet_bts/Hackat_Web/boardhwebframa2.png" alt="" style="width:55vw;height:26vw;    margin: 0 auto 1vw auto">
+        <div class="legende_img">Board Framagit suite</div>
+
+        <div class="space"></div>
+        <div class="title title_stage">Fonctionnalités applicative</div>
+        <div class="subtitle">Schémas UML des fonctionnalitées utilisateur</div>
+        <p class="doowup_description">
+            Voici les fonctionnalités que peut effectuer un utilisateur (visiteur, animateur, organisateur) 
+            quant à l'étape d'inscription au hackathon :
+        </p>
+        <img class="img_uml" src="./img/projet_bts/Hackat_Web/umlhweb1.png" alt="" style=" margin: 2vw auto 1vw auto">
+        <div class="legende_img">Fonctionnalitées de l'animateur</div>
+        <img class="img_uml" src="./img/projet_bts/Hackat_Web/umlhweb2.png" alt="" style=" margin: 4vw auto 1vw auto">
+        <div class="legende_img">Fonctionnalitées de l'organisateur</div>
+        <img class="img_uml" src="./img/projet_bts/Hackat_Web/umlhweb3.png" alt="" style="height: 35vw; margin: 4vw auto 1vw auto">
+        <div class="legende_img">Fonctionnalitées de l'utilisateur/visiteur</div>
+
+        <div class="cardTop stage_cardTop">
+            Visuel de l'application
+        </div>
+
+        <div class="slideshow-container2">
+            <div class="slideshow-inner2">
+              <div class="mySlides2 fade">
+                <img  src='./img/projet_bts/Hackat_Web/accueil.PNG' style='width: 100%;' alt=""/>
+              </div>
+              <div class="mySlides2 fade">
+                <img  src='./img/projet_bts/Hackat_Web/modif_compte.png' style='width: 100%;' alt=""/>
+              </div>
+              <div class="mySlides2 fade">
+                <img  src='./img/projet_bts/Hackat_Web/renseignements.png' style='width: 100%;' alt=""/>
+              </div>
+              <div class="mySlides2 fade">
+                <img  src='./img/projet_bts/Hackat_Web/notifications.png' style='width: 100%;' alt=""/>
+              </div>
+              <div class="mySlides2 fade">
+                <img  src='./img/projet_bts/Hackat_Web/messages.png' style='width: 100%;' alt=""/>
+              </div>
+              <div class="mySlides2 fade">
+                <img  src='./img/projet_bts/Hackat_Web/inscritption.png' style='width: 100%;' alt=""/>
+              </div>
+              <div class="mySlides2 fade">
+                <img  src='./img/projet_bts/Hackat_Web/demande_inscription.png' style='width: 100%;' alt=""/>
+              </div>
+            </div>
+            <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+            <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+        
+            <br/>
+            <div style='text-align: center;'>
+                <span class="dot2" onclick='currentSlide(1)'></span>
+                <span class="dot2" onclick='currentSlide(2)'></span>
+                <span class="dot2" onclick='currentSlide(3)'></span>
+            </div>
+        </div>
+
+        <div class="space"></div>
+        <div class="title title_stage">Documentation utilisateur</div>
+        <div class="subtitle"> </div>
+        <p class="doowup_description">
+           Nous avons établi une documentation utilisateur afin de guider la personne qui va aller sur le site pour la première fois.
+           Les élèves de première année de BTS SIO étaient nos utilisateurs et ont utilisé notre documentation utilisateur. <br><br>
+            Cela a permis d'avoir un retour constructif sur la navigation utilisateur et la compréhension des fonctionnalités. 
+            Suite à ça, nous avons pris en compte ces changements dans une perspective d'amélioration.
+            <a href="https://docs.google.com/document/d/1500pLHl-j-epmf4o0pIKTtGaGpFBy0o7QRwRLxdwyxQ/edit?usp=sharing" style="text-decoration: underline; color:rgb(247, 148, 222)">Voir la documentation</a><br><br>
+        </p>
+
+        <div class="space"></div>
+        <div class="title title_stage">Retrospective</div>
+        <div class="subtitle"> </div>
+        <p class="doowup_description">
+            Notre impression de ce premier Sprint est plutôt bonne et encourageante. Cependant, des difficultés ont commencé à se développer
+            concernant la base de données. En effet, nous avions eu du mal à comprendre les enjeux et impacts que cela allait avoir sur les
+            autres applications.<br><br>
+           Au bout de ce premier Sprint, nous avons donc pu faire un point en équipe sur le déroulement. Après avoir discuté, nous avons établi
+           une première Retrospective pour laquelle nous nous appuierons lors du prochain Sprint.
+          
+        </p>
+        <img class="" src="./img/projet_bts/Hackat_Web/retro.png" alt="" style="height: 35vw; margin: 2vw auto 1vw auto">
+        <div class="legende_img">Schéma retrospective</div>
+
+        <div class="space"></div>
+        <div class="title title_stage">Les outils</div>
+        <div class="subtitle">Environement de développement</div>
+        <p class="doowup_description">
+            <div class="card_stage card_outils">
+                <div class="row" style="width:95%";>
+                    <img src="./img/projet_bts/Outils/PhpStorm_Icon.png" alt="" style="width: 6rem; height: 6rem; margin: auto ;">
+                    <img src="./img/projet_bts/Outils/PHP-logo.svg.png" alt="" style="width: 8rem; height: 6rem; margin:auto ;">
+                    <img src="./img/projet_bts/Outils/DBeaver_logo.png" alt="" style="width: 6rem; height: 6rem; margin:auto ;">
+                    <img src="./img/projet_bts/Outils/postgresql.png" alt="" style="width: 6rem; height: 5; margin:auto ;">
+                    <img src="./img/projet_bts/Outils/gitlab.png" alt="" style="width: 8rem; height: 8rem; margin:auto ;">
+                    <img src="./img/projet_bts/Outils/filezilla.png" alt="" style="width: 8rem; height: 8rem; margin:auto ;">
+                </div>
+            </div>
+            <div class="banniere" style="width: 55%;">
+                <p>PHP Storm</p>
+                <p>PHP</p>
+                <p>DBeaver</p>
+                <p>PostgreSQL</p>
+                <p>Framagit</p>
+                <p>Filezilla</p>
+            </div>
+        </p>
+        </p>
+    </div>   
+
+    <div class="footer">
+        Adeline Martineau
+        <div class="socials">
+            <a href="https://framagit.org/dashboard/projects" target="blank">
+                <i class="uil uil-gitlab icon_social"></i>
+            </a>
+            <a href="https://github.com/AdelineMartineau?tab=repositories" target="blank">
+                <i class="uil uil-github-alt icon_social"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/adeline-martineau-0a0681167/" target="blank">
+                <i class="uil uil-linkedin-alt icon_social"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            © 2021 All right reserved
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/slider2.js"></script>
+</body>
+</html>

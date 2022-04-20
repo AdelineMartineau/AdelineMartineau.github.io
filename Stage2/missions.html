@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/moon-regular.svg">
+    <title>Adeline .M</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/slide.css">
+    <link rel="stylesheet" href="../css/slide2.css">
+    <link rel="stylesheet" href="../css/slide3.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Ephesis&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <nav class="nav_stage">
+        <label class="theme-switch" for="checkbox">
+            <input id="checkbox" type="checkbox">
+            <div class="logo"><i class="uil uil-sun icon" id="toggleDark"></i></div>
+        </label>
+        <ul class="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projet_perso.html">Projets Personnels</a></li>
+            <li><a href="../projet_BTS.html">Projets BTS</a></li>
+            <li><a href="../experiencePro.html"class="active">Stages</a></li>
+            <li><a href="../competences.html">Compétences</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+    <div class="container container_stage" id="start">
+        <div class="under_navbar">
+            <a href="presentation.html" class="under_nav_btn" class="active">Présentation Talend</a>
+            <a href="produits.html" class="under_nav_btn">Data Inventory</a>
+            <a href="gestion_projet.html" class="under_nav_btn">Gestion de projet</a>
+            <a href="missions.html" class="under_nav_btn active">Mes missions</a>
+            <a href="processus.html" class="under_nav_btn">Les processus</a>
+            <a href="formationpro.html" class="under_nav_btn">Formations professionnelles</a>
+        </div>
+        <a class="scroll_back" href="#start"><i class="uil uil-arrow-circle-up"></i></a>
+        <div class="title title_stage">Mes missions</div>
+        <div class="subtitle">Fonctionnalités et gestion de projet</div>
+        <p class="doowup_description">
+            Au cours de ce stage, trois missions m'ont été confiées sur le logiciel Data Inventory au cours des sprints n°21 et n°22.
+            La technologie d'Inventory est React et je travaille sous l'éditeur VSCode.  
+            Voici ci-dessous, un descriptif des objectifs pour les besoins du produit Data Inventory.
+        </p>
+
+        <div class="cardTop stage_cardTop">
+            Premier ticket - Sprint 21
+        </div>
+        <p class="doowup_description">
+            L'objectif de ce premier ticket est de changer la couleur du Trust Score Shield. Ce Trust Score est présent dans divers composants
+            React d'Inventory. Pour cela, j'ai utilisé un design tokens.
+            Les design tokens sont des constantes (couleurs, marge, taille...) utilisées par les composants comme le Trust Score par exemple. 
+            Ils proviennent du Design System de Talend. <br>
+            <a href="https://github.com/Talend/ui/tree/master/packages/design-tokens" style="text-decoration: underline; color:rgb(247, 148, 222)">Lien GitHub du package</a>.<br><br>
+            <br><br>
+            Le Design System est une récente librairie 
+            open source permettant de partager et de documenter des composants React. Le but est que les développeurs puissent 
+            collaborer ensemble via cette librairie. Elle est développée et maintenue par l’équipe Design System de Talend. 
+            <a href="https://design.talend.com/?path=/docs/welcome--page&globals=theme:light" style="text-decoration: underline; color:rgb(247, 148, 222)">Design System</a>
+            <br><br>
+            Une fois les composants retrouvés, j'ai remplacé l'ancienne couleur en important ce token dans les fichiers .scss correspondants.
+        </p>
+
+        <div class="cardTop stage_cardTop">
+            Mon ticket 
+        </div>
+        <img src="../img/Talend/Jira/Jira_Ticket_11.PNG" alt="" style="width:51vw; height:17vw; border-radius: 0.3vw; margin: 0vw auto 3vw auto;">
+        <img src="../img/Talend/Jira/Jira_Ticket_12.PNG" alt="" style="width:51vw; height:22vw; border-radius: 0.3vw; margin: 0vw auto 3vw auto;">
+        <img src="../img/Talend/Jira/Jira_Ticket_13.PNG" alt="" style="width:51vw; height:16vw; border-radius: 0.3vw; margin: 0vw auto 3vw auto;">
+
+        
+        <div class="cardTop stage_cardTop">
+            Mockup Shield 
+        </div>
+        <img src="../img/Talend/Inventory/TTS_before_after.png" alt="" style="width:51vw; height:12vw; border-radius: 0.3vw; margin: 0vw auto 2vw auto;">
+
+        <div class="cardTop stage_cardTop">
+            Design tokens color
+        </div>
+        <img src="../img/Talend/designSystem/accent_icon.PNG" alt="" style="width:51vw; height:13vw; border-radius: 0.3vw; margin: 0vw auto 1vw auto;">
+
+        <div class="cardTop stage_cardTop">
+            Evolution de la demande
+        </div>
+        <p class="doowup_description">
+            Au cours de ce sprint, une demande d'évolution sur ce ticket a été demandée. Les composants du Trust Score présent à divers endroits de Data Inventory
+            avaient des noms et des propriétés différentes : TrustScoreBadge, TrustScoreIcon et TrustScoreTile.
+            L'objectif était de remplacer tous les composants par le TrustScoreBadge et d'adapter ses propriétés afin qu'il s'affiche dans le format
+            exact. Cela a permis d'alléger et d'optimiser davantage le code.
+        </p>
+
+        <div class="cardTop stage_cardTop">
+            Second ticket - Sprint 22
+        </div>
+        <p class="doowup_description">
+            L'objectif de ce second ticket consiste à remplacer un ancien composant switch par un nouveau plus lisible et compréhensible
+            à la lecture. Ce composant permet de filtrer la recherche entre deux états pour une liste de jeux de données.
+            Il sera une nouvelle fois importé depuis la librairie 
+            <a href="https://design.talend.com/?path=/docs/components-form-fields-switch--default-story&globals=theme:light" style="text-decoration: underline; color:rgb(247, 148, 222)">Design System</a> de Talend.<br><br>
+            Une fois l'emplacement de l'ancien composant trouvé, j'ai utilisé <a href="https://storybook.js.org" style="text-decoration: underline; color:rgb(247, 148, 222)">Storybook</a> 
+            afin de pouvoir tester individuellement les changements opérés.
+        </p>
+
+        <div class="cardTop stage_cardTop">
+            Mon ticket 
+        </div>
+        <img src="../img/Talend/Jira/Jira_ticket_21.PNG" alt="" style="width:51vw; height:16vw; border-radius: 0.3vw; margin: 0vw auto 3vw auto;">
+        <img src="../img/Talend/Jira/Jira_Ticket_22.PNG" alt="" style="width:51vw; height:15vw; border-radius: 0.3vw; margin: 0vw auto 3vw auto;">
+        <img src="../img/Talend/Jira/Jira_ticket_23.PNG" alt="" style="width:51vw; height:14vw; border-radius: 0.3vw; margin: 0vw auto 3vw auto;">
+
+        <div class="cardTop stage_cardTop">
+            Mockup Switch
+        </div>
+        <img class="" src="../img/Talend/Inventory/Data_Inventory_preview_switch.png" alt="" style="width:55vw; height:12vw; border-radius: 0.3vw; margin: 0vw auto 1vw auto;">
+        <div class="legende_img">Ancien composant switch</div>
+
+        <div class="cardTop stage_cardTop" style="margin-top: 7vw;">
+            Nouveau composant switch 
+        </div>
+        <img class="" src="../img/Talend/Inventory/Data_Inventory_Switch_3.PNG" alt="" style="width:55vw; height:9vw; border-radius: 0.3vw; margin: 0vw auto 1vw auto;">
+        <div class="legende_img">Mode basic</div>
+        <img class="" src="../img/Talend/Inventory/Data_Inventory_Switch_2.PNG" alt="" style="width:55vw; height:9vw; border-radius: 0.3vw; margin: 3vw auto 1vw auto;">
+        <div class="legende_img">Mode avancé</div>
+
+        <div class="cardTop stage_cardTop" style="margin-top: 8vw;">
+            Troisième ticket - Sprint 22
+        </div>
+        <p class="doowup_description">
+          L'objectif de ce troisième ticket était d'améliorer le style du composant QualityBar et d'utiliser les nouvelles couleurs 
+          provenant du Design tokens. 
+          Comme demandé, je me suis assuré que le code utilise le même composant partout dans l'application afin d'éviter la duplication.
+        </p>
+
+        <div class="cardTop stage_cardTop">
+            Mon ticket 
+        </div>
+        <img src="../img/Talend/Jira/Jira_ticket_31.PNG" alt="" style="width:51vw; height:22vw; border-radius: 0.3vw; margin: 0vw auto 3vw auto;">
+        <img src="../img/Talend/Jira/Jira_Ticket_32.PNG" alt="" style="width:51vw; height:28vw; border-radius: 0.3vw; margin: 0vw auto 3vw auto;">
+        <img src="../img/Talend/Jira/Jira_Ticket_33.PNG" alt="" style="width:51vw; height:20vw; border-radius: 0.3vw; margin: 0vw auto 3vw auto;">
+
+        <div class="cardTop stage_cardTop">
+            Mockup Quality Bar
+        </div>
+        <img class="" src="../img/Talend/StoryBook/datagrid.PNG" alt="" style="width:50vw; height:9vw; border-radius: 0.3vw; margin: 0vw auto 1vw auto;">
+
+        <div class="cardTop stage_cardTop" style="margin-top: 7vw;">
+            Nouvelles couleurs du Design System
+        </div>
+        <img class="" src="../img/Talend/designSystem/colors.png" alt="" style="width:50vw; height:13vw; border-radius: 0.3vw; margin: 0vw auto 1vw auto;">
+        <div class="legende_img">Design tokens colors</div>
+
+        <div class="space"></div>
+
+        
+        <div class="title title_stage">Les outils</div>
+        <div class="subtitle">Environnement de développement</div>
+        <p class="doowup_description">
+            <div class="card_stage card_outils">
+                <div class="row" style="width: 55%;">
+                    <img src="../img/Talend/outils/storybook.PNG" alt="" style="width: 6rem; height: 6rem; margin: auto ;">
+                    <img src="../img/Talend/outils/vscode.PNG" alt="" style="width: 6rem; height: 6rem; margin:auto ;">
+                    <img src="../img/Talend/outils/React-icon.svg" alt="" style="width: 6rem; height: 6rem; margin:auto;">
+                </div>
+            </div>
+            <div class="banniere" style="width:30%">
+                <p>Storybook</p>
+                <p>VSCode</p>
+                <p>React</p>
+            </div>
+        </p>
+        <div class="space"></div>
+
+    <div class="footer">
+        Adeline Martineau
+        <div class="socials">
+            <a href="https://framagit.org/dashboard/projects" target="blank">
+                <i class="uil uil-gitlab icon_social"></i>
+            </a>
+
+            <a href="https://github.com/AdelineMartineau?tab=repositories" target="blank">
+                <i class="uil uil-github-alt icon_social"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/adeline-martineau-0a0681167/" target="blank">
+                <i class="uil uil-linkedin-alt icon_social"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            © 2021 All rights reserved
+        </div>
+    </div>
+</div>
+<script src="../js/main.js"></script>
+<script src="../js/slider.js"></script>
+
+</body>
+
+</html>
