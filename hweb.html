@@ -47,7 +47,7 @@
         <div class="under_navbar">
             <a href="projet_BTS.html"><i class="uil uil-arrow-left arrow_left"></i></a>
             <a href="hweb.html" class="under_nav_btn" class="active">Hackat'Web</a>
-            <a class="under_nav_btn">Hackat'Orga</a>
+            <a href="horga.html" class="under_nav_btn">Hackat'Orga</a>
             <a class="under_nav_btn">Hackat'Manage</a>
         </div>
         <a class="scroll_back" href="#start"><i class="uil uil-arrow-circle-up"></i></a>    
@@ -56,7 +56,8 @@
         <div class="title title_stage">Hackat'Web</div>
         <div class="subtitle">Contexte</div>
         <p class="doowup_description">
-            Cette première application est développée en HTML/PHP avec une architecture Modèle Vue Controller. 
+            Cette première application est développée en HTML/PHP avec une architecture Modèle Vue Controller sous
+            l'éditeur PHPStorm. 
             La mission principale est de procéder au développement de la phase d'inscription à un hackathon. 
             On y retrouve ainsi 4 acteurs principaux : utilisateur, animateur, organisateur et participant. <br><br>
             Pour ce faire, nous disposons d'une application de départ et des accès aux serveurs Web et BDD. 
@@ -70,7 +71,7 @@
             <p class="doowup_description">
                 Afin de prendre connaissance d'Hackat Web et d'en cerner les besoins, nous disposions d'une documentation complète 
                 de la solution. Parmi les ressources, on y trouvait l'explication du déroulement de l'étape d'inscription. 
-                <a href="./img/projet_bts/HackathonContexte.pdf" target="_blank"  style="text-decoration: underline; color:rgb(247, 148, 222)"> Cahier des charges.</a> 
+                <a href="./img/projet_bts/HackathonContexte.pdf" target="_blank"  style="text-decoration: underline; color:rgb(247, 148, 222)"> Voir la documentation.</a> 
             </p>
 
         <div class="space"></div>
@@ -85,7 +86,7 @@
 
         <div class="space"></div>
         <div class="title title_stage">Organisation</div>
-        <div class="subtitle">Délimitation des tâches</div>
+        <div class="subtitle">Les grandes étapes</div>
         <p class="doowup_description">
            Afin de s'approprier un contexte professionnel, mon équipe et moi-même avons d'abord mis en place notre environnement de
            développement. Nous avons récupéré le code initial fourni puis nous avons commencé à le versionner avec Framagit.<br><br>
@@ -93,10 +94,12 @@
            Tout d'abord, nous avons analysé ce que chaque
            users story pouvait représenter en matière de fonctionnalité et de difficultés. Suite à ça, nous avons effectué plusieurs schémas
            pour comprendre l'organisation générale de l'application.<br><br>
-           A chaque début de séance, nous discutions entre nous des fonctionnalités en cours, des difficultés rencontrées de la séance précédante.
-           Puis chaque fin de séance, nous faisions un point sur notre avancé et prenions note des prochaines étapes.
+           A chaque début de séance, nous discutions entre nous des fonctionnalités en cours et des difficultés rencontrées de la séance précédente.
+           Puis à chaque fin de séance, nous faisions un point sur notre avancé et prenions note des prochaines étapes pour le développement.
            A la fin de ce Sprint, nous avons passé une petite épreuve orale afin de faire un compte rendu autour de la gestion de projet 
-           et la gestion d'équipe.
+           et la gestion d'équipe. 
+           <a href="https://docs.google.com/presentation/d/15T5DXu-6xgtBTWb_-oHNCutetMvoO2an0C8LZ07P2Lw/edit?usp=sharing" target="_blank" style="text-decoration: underline; color:rgb(247, 148, 222)">Voir notre diaporama</a><br><br>
+
         </p>
         <div class="space"></div>
         <div class="title title_stage">Architecture</div>
@@ -124,9 +127,9 @@
         <p class="doowup_description">
             Framagit est l'interface utilisée pour le versionning du projet. 
             C'est également le moyen qui permet d’assurer la continuité de celui-ci. 
-
-            schéma
         </p>
+        <img class="" src="./img/projet_bts/Hackat_Web/repository.png" alt="" style="width:55vw;height:25vw; margin: 2vw auto 1vw auto">
+        <div class="legende_img">Repository</div>
 
         <div class="cardTop stage_cardTop">
             Base de données
@@ -138,8 +141,8 @@
             Cependant, cette base de données sera la même pour chacune des applications d'Hachat'Innov.
             Voici un aperçu de la toute première conception de la base de données pour Hackat'Web :
         </p>
-        <img class="" src="./img/projet_bts/Hackat_Web/diagram.png" alt="" style="width:56vw;height:30vw; margin: 2vw auto 1vw auto">
-        <div class="legende_img">Diagramme de classe</div>
+        <img class="" src="./img/projet_bts/Hackat_Web/bddhweb1.png" alt="" style="width:55vw;height:30vw; margin: 2vw auto 1vw auto">
+        <div class="legende_img">Diagramme de classe Hackat'Web</div>
 
         <div class="cardTop stage_cardTop">
             Déploiement de l'application
@@ -159,8 +162,7 @@
         <p class="doowup_description">
             Afin de suivre l'avancée de chacun, nos récits utilisateurs étaient organisés dans les issues de Framagit.
             Pour chaque ticket, un développeur de l'équipe y était assigné, permettant de communiquer 
-            aux autres membres et en temps réel, l'avancée de la fonctionnalité.
-            <a href="https://framagit.org/Mexonyx/latackdestitouans/-/issues" style="text-decoration: underline; color:rgb(247, 148, 222)">Voir les issues</a><br><br>
+            aux autres membres et en temps réel, l'avancée de la fonctionnalité.<br>
         </p>
 
         <img class="" src="./img/projet_bts/Hackat_Web/boardhwebframa.png" alt="" style="width:55vw;height:26vw; margin: 0 auto 1vw auto">
@@ -171,10 +173,12 @@
 
         <div class="space"></div>
         <div class="title title_stage">Fonctionnalités applicative</div>
-        <div class="subtitle">Schémas UML des fonctionnalitées utilisateur</div>
+        <div class="subtitle">Schémas UML des fonctionnalitées</div>
         <p class="doowup_description">
-            Voici les fonctionnalités que peut effectuer un utilisateur (visiteur, animateur, organisateur) 
-            quant à l'étape d'inscription au hackathon :
+            Afin de mieux cerner visuellement les actions d'un utilisateur, visiteur, animateur et organisateur, 
+            nous avons choisis de créer des schémas UML quant à l'étape d'inscription au hackathon. 
+            Passer par cette étape n'est pas obligatoire mais elle est néanmoins très intéressante
+            car elle permet d'avoir une vue d'ensemble des actions pour chacun des rôles.
         </p>
         <img class="img_uml" src="./img/projet_bts/Hackat_Web/umlhweb1.png" alt="" style=" margin: 2vw auto 1vw auto">
         <div class="legende_img">Fonctionnalitées de l'animateur</div>
@@ -234,11 +238,11 @@
            Les élèves de première année de BTS SIO étaient nos utilisateurs et ont utilisé notre documentation utilisateur. <br><br>
             Cela a permis d'avoir un retour constructif sur la navigation utilisateur et la compréhension des fonctionnalités. 
             Suite à ça, nous avons pris en compte ces changements dans une perspective d'amélioration.
-            <a href="https://docs.google.com/document/d/1500pLHl-j-epmf4o0pIKTtGaGpFBy0o7QRwRLxdwyxQ/edit?usp=sharing" style="text-decoration: underline; color:rgb(247, 148, 222)">Voir la documentation</a><br><br>
+            <a href="https://docs.google.com/document/d/1500pLHl-j-epmf4o0pIKTtGaGpFBy0o7QRwRLxdwyxQ/edit?usp=sharing" target="blank" style="text-decoration: underline; color:rgb(247, 148, 222)">Voir la documentation</a><br><br>
         </p>
 
         <div class="space"></div>
-        <div class="title title_stage">Retrospective</div>
+        <div class="title title_stage">SprintRetrospective</div>
         <div class="subtitle"> </div>
         <p class="doowup_description">
             Notre impression de ce premier Sprint est plutôt bonne et encourageante. Cependant, des difficultés ont commencé à se développer
