@@ -53,81 +53,67 @@
         <a class="scroll_back" href="#start"><i class="uil uil-arrow-circle-up"></i></a>    
         <div class="space" style="margin-bottom:1vw;"></div>
 
-        <div class="title title_stage">Hackat'Orga</div>
+        <div class="title title_stage">Hackat'Manage</div>
         <div class="subtitle">Contexte</div>
         <p class="doowup_description">
-            Hacka't Orga est notre seconde application ddu projet Hcackat'Innov. Elle est développée en Java 
-            avec le modèle DAO.
-            La mission principale est de procéder au développement de la phase d'initialisation à un hackathon.
-            On y retrouve l'acteur principal : l'organisateur. <br><br>
-            Au même titre que la première application Hackat'Web, nous disposons d'une application de départ avec un modèle fourni.
-            Nous utilisons également le même système de gestion de BDD PostgreSQL. 
-            L'application Hackat’Orga doit permettre de gérer les étapes du processus visant à configurer
-            le hackathon : initialisation et planification à destination de l'organisateur du hackathon. 
+            Hacka't Manage est notre troisième et dernière application du projet Hackat'Innov. Elle est développée
+            avec le framework Symfony sous l'éditeur PHPStorm.
+            La mission principale d'Hackat'Manage est de procéder au développement des étapes de choix de projets et de
+            lancement du hackathon.
+            On y retrouve les acteurs suivants : expert et animateur. <br><br>
+            En comparaison aux deux autres applications, le code de départ ne nous est pas fourni.
+            En revanche, nous disposons toujours du même système de gestion de BDD PostgreSQL. 
         </p>
 
             <div class="cardTop stage_cardTop">
                 Ressources
             </div>
             <p class="doowup_description">
-                Une nouvelle fois, nous disposions de la même documentation qui nous avait servies pour l'application Hackat'Web et Hackat'Manage.
-                Parmi les ressources, on y trouvait des détails quant à la phase de planification d'un hackathon.
-                <a href="./img/projet_bts/HackathonContexte.pdf" target="_blank"  style="text-decoration: underline; color:rgb(247, 148, 222)"> Voir la documentation.</a> 
+                Une nouvelle fois, nous disposions de la même documentation qui nous avait servie pour l'application Hackat'Web et Hackat'Orga.
+                Parmi les ressources, on y trouvait des détails quant à la phase de séléction des projets, de constitution des équipes et du vote
+                des membres du jury.
+                <a href="./img/projet_bts/HackathonContexte.pdf" target="_blank" style="text-decoration: underline; color:rgb(247, 148, 222)"> Voir la documentation.</a> 
             </p>
 
         <div class="space"></div>
         <div class="title title_stage">Cahier des charges</div>
         <div class="subtitle">Users story</div>
         <p class="doowup_description">
-            Pour ce second sprint, un nouveau cahier des charges nous était attribué et contenait les nouveaux scénarios utilisateurs avec un niveau de priorité et un état.
-            Notre objectif dans un premier temps est d'analyser le besoin imposé par le prestataire informatique à travers ces fonctionnalités. 
+            Pour ce dernier sprint, un nouveau cahier des charges nous était attribué et contenait les nouveaux scénarios utilisateurs avec un niveau de priorité et un état.
+            Notre objectif comme à chaque début de sprint est d'analyser le besoin imposé par le prestataire informatique à travers ces fonctionnalités. 
             Cette étape est nécessaire pour bien cerner la demande de chaque users story.
         </p>
-        <img class="" src="./img/projet_bts/Hackat_Orga/horgaru.png" alt="" style="width:50vw;height:26vw; margin: 2vw auto 1vw auto">
+        <img class="" src="./img/projet_bts/Hackat_Manage/ruhmanage.png" alt="" style="width:50vw;height:32vw; margin: 2vw auto 1vw auto">
         <div class="legende_img">Users story</div>
 
         <div class="space"></div>
         <div class="title title_stage">Organisation</div>
         <div class="subtitle">Les grandes étapes</div>
         <p class="doowup_description">
-            Nous avons suivi la même progression concernant l'organisation de début de sprint : mise en place de l'environnement de développement, 
-            création du projet sur Framagit et récupération du script Java donné par nos professeurs. <br><br>
-            Mais cette fois-ci, nous avons pris davantage de temps en ce qui concerne l'analyse des users story. En effet, dans la 
-            rétrospective du sprint précédent, nous avons mentionné que nous devions être plus rigoureux dans l'organisation et qu'il 
-            était aussi important de ne pas partir directement dans le développement. <br><br>
-            Pour cela, mon équipe et moi avons pris le temps de réfléchir à la priorisation des users story ainsi que les attributions à chaque membre.
+            Une nouvelle fois, rien ne change. Nous commençons par mettre en place et configurer notre environnement de développement.
+            Après avoir créé et configurer notre projet Hackat'Manage, nous avons créé le repository Framagit rattaché à ce dernier projet.<br><br>
+
+            Ensuite, nous analysons les users story et nous commençons par schématiser les différentes pages ainsi que les noms des 
+            fonctionnalités présentes à l'intérieur. En effet, nous l'avons notifieé dans la rétrospective du sprint précédent.
+            Cela nous donne donc un visuel sur l'organisation et le cheminement à entreprendre
+            par la suite dans notre arborescence de code.<br><br>
             
-            Nous avions également un autre détail à prendre en compte : l'utilisation du modèle DAO en Java. En effet, l'architecture restait assez
-            nouvelle malgré le fait que nous l'ayons abordé un peu plus tôt en cours d'année.<br><br>
-
-            De nouveau, nous appliquons la même habitude à chacune de nos séances à savoir : discuter entre nous des fonctionnalités en cours et 
-            des difficultés rencontrées de la séance précédente.
-            Puis à chaque fin de séance, nous faisions un point sur notre avancé et prenions note des prochaines étapes pour le développement.
-        
-            Enfin, nous avons passé une petite épreuve orale à la fin de ce sprint afin de faire un compte rendu autour de la gestion de projet 
-            et la gestion d'équipe. 
-            <a href="https://docs.google.com/presentation/d/1JUNJl8OT_0TSTFsAT92OqUKHPdmczQntjxWO23hocjU/edit?usp=sharing" style="text-decoration: underline; color:rgb(247, 148, 222)">Voir notre diaporama</a><br><br>
-
+            Une fois ce travail fait, nous commençons par nous attribuer quelques users story en fonction des acteurs : animateur et expert.
+            Cela nous aidera à individualiser au maximum la modification de fichier de code entre chaque membre de l'équipe.
+            Le fonctionnement en matière de réunions lors du sprint reste le même.
         </p>
         <div class="space"></div>
         <div class="title title_stage">Architecture</div>
-        <div class="subtitle">Modèles MVC et DAO</div>
+        <div class="subtitle">Modèles MVC</div>
         <p class="doowup_description">
-            La solution est établie sur deux designs pattern : MVC et DAO.
-            Nous avons vu le modèle MVC dans la première application Hacka't Web. Pour rappel, c'est un modèle qui permet de séparer
+            Symfony est un Framework MVC. Un framework permet principalement de s’assurer qu’une application est bien structurée, 
+            qu’elle est maintenable et qu’il est possible de facilement la mettre à jour.<br><br>
+            Nous avons vu le modèle MVC dans la première et la seconde application de ce projet. Pour rappel, c'est un modèle qui permet de séparer
             la logique du code en trois parties distinctes : le Modèle pour l'accès aux données, la Vue pour l'affichage côté utilisateur et
-            le Controller qui permet le traitement et la redirection de route dans l'application. <br></br>
-
-            Puis nous avons le modèle DAO (Data Access Object) autrement dit l'objet d'accès aux données qui s'inspire du MVC. 
-            Ce pattern permet de séparer le modèle où sont situés les scripts SQL, de la base de données.<br><br>
-            
-            Ainsi, le modèle communique d'abord avec une interface DAO où sont listé un certain nombre de noms de méthodes. 
-            Puis, ces méthodes sont implémentées par un DAO qui cette fois-ci implémente l'interface. C'est ici que le code sera écrit et 
-            que l'échange avec la base de données se fera.
-            
+            le Controller qui permet le traitement et la redirection de route dans l'application. 
             </p>
-        <img class="" src="./img/projet_bts/Hackat_Orga/DAO.png" alt="" style="width:50vw;height:16vw; margin: 2vw auto 1vw auto">
-        <div class="legende_img">Schéma DAO</div>
+        <img class="" src="./img/projet_bts/Hackat_Manage/mvc.png" alt="" style="width:25vw;height:35vw; margin: 2vw auto 1vw auto">
+        <div class="legende_img">Schéma MVC</div>
 
         <div class="space"></div>
         <div class="space"></div>
@@ -148,11 +134,11 @@
         </div>
         <p class="doowup_description">
             Pour rappel, nous réutilisons ici la même base de données PostgreSQL.
-            Voici un aperçu de la base de données en cours de développement après ajout de nouvelles tables.
-            Nous avons décidé de mettre en place un héritage à partir de la classe utilisateur.
-            Des modifications ont également été apportées à certaines tables pour correspondre aux nouveaux besoins du projet.
+            Voici un aperçu de la base de données en cours de développement après l'ajout de nouvelles tables. 
+            Bien évidemment, certaines tables déjà existantes ont de nouveau été modifiées pour répondre aux besoins 
+            de cette dernière application. Il s'agit de la dernière version à jour.
         </p>
-        <img class="" src="./img/projet_bts/Hackat_Orga/evolutionBDD.png" alt="" style="width:56vw;height:30vw; margin: 2vw auto 1vw auto">
+        <img class="" src="./img/projet_bts/Hackat_Manage/diagramclasshackatManage.png" alt="" style="width:56vw;height:30vw; margin: 2vw auto 1vw auto">
         <div class="legende_img">Diagramme de classe</div>
 
         <div class="space"></div>
@@ -161,80 +147,83 @@
             Déploiement de l'application
         </div>
         <p class="doowup_description">
-           De la même manière que la première application Hackat'Web, 
-            nous avons utilisé le logiciel Filezilla pour le déploiement d'Hackat'Orga.
+           Comme pour les deux autres applications, 
+            nous avons utilisé le logiciel Filezilla pour le déploiement d'Hackat'Manage.
         </p>
 
         <div class="space"></div>
         <div class="title title_stage">Gestion de projet</div>
         <div class="subtitle">Planification et suivie avec Clickup</div>
         <p class="doowup_description">
-            Cette fois-ci, nous avons choisi d'utiliser l'outil de suivie de projet Clickup.
-            Premièrement, nous avons fait ce choix car l'organisation ainsi que le suivi des tâches était plus compréhensible 
-            et intuitive pour l'équipe. <br><br>De plus, il y a la possibilité d'ajouter des items pour chaque users story telle que 
-            l'estimation du temps, l'ajout de commentaires ou encore les dates de début et d'échéance.
-            Enfin, Clickup nous offre la possibilité d'avoir un diagramme de GANTT, ce qui est très pratique pour la visualisation 
-            du temps de développement des tâches.  <br><br>
-            Cependant, cela représentera quelques inconvénients notamment au niveau du diagramme de GANTT car la durée de réalisation des
-            tâches n'est pas totalement fidèle à la réalité. L'estimmation est donnée en fonction du nombre de jours et non pas en fonction
-            du nombre d'heures.
+            Une nouvelle fois, nous avons choisi de rester sur l'utilisation de l'outil de suivie de projet Clickup.
+            Cependant, les avantages qu'on l'on avait auparavant n'étaient plus disponible, étant donné que l'on avait une version
+            gratuite de Clickup. <br><br>
+            Cela ne nous a pas empêché d'avoir un visuel correct même s'il manquait certaines fonctionnalités telles que le niveau de 
+            progression, l'état actuel du ticket ou bien le diagramme de GANTT. <br></br>
+            En revanche, nous avons rajouté la fonctionnalité de temps de suivie
+            nous permettant de savoir le nombre d'heures passées pour chacune de nos fonctionnalités. L'estimation et le temps réel
+            passé à développer une tâche sont des éléments importants pour le suivie de réalisation du projet.
         </p>
 
-        <img class="" src="./img/projet_bts/Hackat_Orga/clickuphorga1.png" alt="" style="width:55vw;height:28vw; margin: 2vw auto 1vw auto">
+        <img class="" src="./img/projet_bts/Hackat_Manage/clickuphmanage1.png" alt="" style="width:55vw;height:31vw; margin: 2vw auto 1vw auto">
         <div class="legende_img">Vue d'ensemble</div>
-        <img class="" src="./img/projet_bts/Hackat_Orga/clickuphorga2.png"  alt="" style="width:55vw;height:28vw; margin:3vw auto 1vw auto">
+        <img class="" src="./img/projet_bts/Hackat_Manage/clickuphmanage2.png"  alt="" style="width:55vw;height:28vw; margin:3vw auto 1vw auto">
         <div class="legende_img">Détails d'une tâche</div>
-        <img class="" src="./img/projet_bts/Hackat_Orga/clickuphorga3.png" alt="" style="width:55vw;height:28vw; margin: 3vw auto 1vw auto">
-        <div class="legende_img">Diagramme de GANTT</div>
+        <img class="" src="./img/projet_bts/Hackat_Manage/clickuphmanage3.png" alt="" style="width:55vw;height:30vw; margin: 3vw auto 1vw auto">
+        <div class="legende_img">Board</div>
 
         <div class="space"></div>
         <div class="title title_stage">Fonctionnalités applicative</div>
-        <div class="subtitle">Schéma UML des fonctionnalitées de l'organisateur</div>
+        <div class="subtitle">Schéma UML des fonctionnalités de l'organisateur</div>
         <p class="doowup_description">
-            Une nouvelle fois, nous avons réalisé un schéma UML comme nous l'avons fait pour Hackat'Web lors du premier Sprint.
+            Une nouvelle fois, nous avons réalisé des schémas UML comme nous l'avons fait pour les autres applications.
             Voici les fonctionnalités que peut effectuer un organisateur quant à l'étape d'inscription d'un hackathon :
         </p>
-        <img class="img_uml" src="./img/projet_bts/Hackat_Orga/umlhorga.png" alt="" style="width:35vw;height:40vw; margin: 2vw auto 1vw auto">
-        <div class="legende_img">Fonctionnalitées de l'organisateur</div>
+        <img class="img_uml" src="./img/projet_bts/Hackat_Manage/uml1.png" alt="" style="width:35vw;height:25vw; margin: 2vw auto 1vw auto">
+        <div class="legende_img">Fonctionnalités de l'expert</div>
+        <img class="img_uml" src="./img/projet_bts/Hackat_Manage/uml2.png" alt="" style="width:35vw;height:40vw; margin: 2vw auto 1vw auto">
+        <div class="legende_img">Fonctionnalités de l'animateur</div>
+
 
         <div class="cardTop stage_cardTop">
             Visuel de l'application
         </div>
-        <p class="doowup_description">
-            Pour cette application, le visuel correspond à une interface graphique qui sera mise en place grâce au plugin JFormDesigner
-            sous l'éditeur IntelliJ IDEA. 
-        </p>
 
-        <img  src='./img/projet_bts/Hackat_Orga/visuel1.png' style='width:25vw;height:25vw; margin: 2vw auto 1vw auto' alt=""/>
-        <div class="legende_img">Page d'accueil d'un nouvel Hackathon</div>
+        <div class="slideshow-container2">
+            <div class="slideshow-inner2">
+              <div class="mySlides2 fade">
+                <img  src='./img/projet_bts/Hackat_Manage/' style='width: 100%;' alt=""/>
+              </div>
+              <div class="mySlides2 fade">
+                <img  src='./img/projet_bts/Hackat_Manage/' style='width: 100%;' alt=""/>
+              </div>
+              <div class="mySlides2 fade">
+                <img  src='./img/projet_bts/Hackat_Manage/' style='width: 100%;' alt=""/>
+              </div>
+              <div class="mySlides2 fade">
+                <img  src='./img/projet_bts/Hackat_Manage/' style='width: 100%;' alt=""/>
+              </div>
+            </div>
+            <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+            <a class="next" onclick='plusSlides(1)'>&#10095;</a>
         
-        <img  src='./img/projet_bts/Hackat_Orga/visuel2.png' style='width:30vw;height:30vw; margin: 3vw auto 1vw auto' alt=""/>
-        <div class="legende_img" style="text-align: center;">Formulaire Hackathon</div>
+            <br/>
+            <div style='text-align: center;'>
+                <span class="dot2" onclick='currentSlide(1)'></span>
+                <span class="dot2" onclick='currentSlide(2)'></span>
+                <span class="dot2" onclick='currentSlide(3)'></span>
+                <span class="dot2" onclick='currentSlide(4)'></span>
+            </div>
+        </div>
     
-        <img  src='./img/projet_bts/Hackat_Orga/visuel3.png' style='width:25vw;height:23vw; margin: 3vw auto 1vw auto' alt=""/>
-        <div class="legende_img" style="text-align: center;">Création d'un juré</div>
-    
-        <img  src='./img/projet_bts/Hackat_Orga/visuel4.png' style='width:40vw;height:15vw; margin: 3vw auto 1vw auto' alt=""/>
-        <div class="legende_img" style="text-align: center;">Modification d'un juré</div>
-    
-        <img  src='./img/projet_bts/Hackat_Orga/visuel5.png' style='width:30vw;height:30vw; margin: 3vw auto 1vw auto' alt=""/>
-        <div class="legende_img" style="text-align: center;">Ajout et suppression d'un juré</div>
-    
-        <img  src='./img/projet_bts/Hackat_Orga/visuel6.png' style='width:30vw;height:30vw; margin: 3vw auto 1vw auto' alt=""/>
-        <div class="legende_img" style="text-align: center;">Ajout et suppression d'un animateur</div>
-            
         <div class="space"></div>
         <div class="title title_stage">Sprint Retrospective</div>
         <div class="subtitle"> </div>
         <p class="doowup_description">
-            Pour ce second sprint, nous avions eu de nouvelles  difficultés concernant l'adaptation de la base de données pour cette nouvelle application.
-            De plus, le design pattern n'était pas évident à prendre en main et nous étions de ce fait moins efficaces.<br><br>
-           Au bout de ce premier Sprint, nous avons donc pu faire un point en équipe sur le déroulement. Après avoir discuté, nous avons établi
-           une seconde rétrospective pour laquelle nous tenterons d'en retirer les leçons et de s'améliorer lors du dernier sprint.<br><br>
-           Cependant, nous nous sommes mieux organisé concernant l'attribution des tâches et nous avons pris davantage de temps pour
-           réfléchir aux impacts de la nouvelle implémentation de code.
+            Pour ce tout dernier Sprint, mon équipe et moi-même avons fait des progrès quant au sprint précédent. 
+            Nous disposions de bases plutôt solides en ce qui concerne l'entraide et l'organisation. 
         </p>
-        <img class="" src="./img/projet_bts/Hackat_Orga/retro.png" alt="" style="height: 35vw; margin: 2vw auto 1vw auto">
+        <img class="" src="./img/projet_bts/Hackat_Manage/retro.png" alt="" style="height: 35vw; margin: 2vw auto 1vw auto">
         <div class="legende_img">Schéma retrospective</div>
 
         <div class="space"></div>
@@ -243,23 +232,22 @@
         <p class="doowup_description">
             <div class="card_stage card_outils">
                 <div class="row" style="width:100%";>
-                    <img src="./img/projet_bts/Outils/intellij.png" alt="" style="width: 6rem; height: 6rem; margin: auto ;">
-                    <img src="./img/projet_bts/Outils/java.png" alt="" style="width: 5rem; height: 7em; margin:auto ;">
+                    <img src="./img/projet_bts/Outils/PhpStorm_Icon.png" alt="" style="width: 6rem; height: 6rem; margin: auto ;">
+                    <img src="./img/projet_bts/Outils/symfony.png" alt="" style="width: 8rem; height: 7em; margin:auto ;">
                     <img src="./img/projet_bts/Outils/DBeaver_logo.png" alt="" style="width: 6rem; height: 6rem; margin:auto ;">
                     <img src="./img/projet_bts/Outils/postgresql.png" alt="" style="width: 6rem; height: 5; margin:auto ;">
                     <img src="./img/projet_bts/Outils/clickup.png" alt="" style="width: 8rem; height: 8rem; margin:auto ;">
                     <img src="./img/projet_bts/Outils/gitlab.png" alt="" style="width: 8rem; height: 8rem; margin:auto ;">
                 </div>
             </div>
-            <div class="banniere" style="width: 55%;">
-                <p>IntelliJ</p>
-                <p>Java</p>
+            <div class="banniere" style="width: 60%;">
+                <p>PHPStorm</p>
+                <p>Symfony</p>
                 <p>DBeaver</p>
                 <p>PostgreSQL</p>
                 <p>Clickup</p>
                 <p>Framagit</p>
             </div>
-        </p>
         </p>
     </div>   
 

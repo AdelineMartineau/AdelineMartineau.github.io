@@ -19,7 +19,7 @@ nav {
 	top: 0;
 	padding: 0 5%;
 	height: 80px;
-	background: #0b1016;
+	background: #161E29;
 	box-shadow: 0 -1px 4px rgb(0 0 0 / 60%);
 }
 
@@ -47,8 +47,6 @@ nav {
 	background-color: var(--btn-header-color) ;
 	box-shadow: 0 0 0.8vw rgb(102, 102, 102);
 }	
-
-
 
 .anim-nav {
     background:var(--card-color);
