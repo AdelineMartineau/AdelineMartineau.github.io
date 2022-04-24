@@ -42,12 +42,12 @@ nav {
 	border-radius: 0.4vw;
 	box-shadow: 10px 5px 5px var(--shadow-button);
 }.under_nav_btn:hover{
-	box-shadow: 10px 5px 5px rgb(157, 157, 157);
+	box-shadow: 10px 5px 5px var(--shadow-button-hover);
 }
 
 .under_navbar .active{
 	background-color: var(--btn-header-color) ;
-	box-shadow: 10px 5px 5px rgb(157, 157, 157);
+	box-shadow: 10px 5px 5px var(--shadow-button-hover);;
 }	
 
 .anim-nav {

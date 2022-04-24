@@ -31,6 +31,7 @@
   --weight-font-card-projet: 500; 
 
   --shadow-button: rgb(125, 125, 125);
+  --shadow-button-hover: rgb(106, 106, 106);
 }
 
 [data-theme="dark"] {
@@ -58,7 +59,8 @@
   --weight-font-p:400;
   --weight-font-card-projet: 500; 
 
-  --shadow-button: rgb(93, 93, 93);
+  --shadow-button: rgba(94, 94, 94, 0.455);
+  --shadow-button-hover: rgba(160, 160, 160, 0.475);
 }
 
 .theme-switch input {
