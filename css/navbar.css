@@ -32,20 +32,22 @@ nav {
 	display:flex;
 	flex-direction: row;
 	width: auto;
-	margin: 0 2vw;
+	margin: 1vw 2vw;
 	align-items: center;
 	color:black;
 	background-color: var(--btn-color);
+	border:rgb(15, 15, 15) 2px solid;
 	font-weight: 800;
 	padding: 0.6vw 1vw;
 	border-radius: 0.4vw;
+	box-shadow: 10px 5px 5px var(--shadow-button);
 }.under_nav_btn:hover{
-	box-shadow: 0 0 0.8vw rgb(102, 102, 102);
+	box-shadow: 10px 5px 5px rgb(157, 157, 157);
 }
 
 .under_navbar .active{
 	background-color: var(--btn-header-color) ;
-	box-shadow: 0 0 0.8vw rgb(102, 102, 102);
+	box-shadow: 10px 5px 5px rgb(157, 157, 157);
 }	
 
 .anim-nav {

@@ -29,6 +29,8 @@
   --weight-font-title: 900;
   --weight-font-text: 600;
   --weight-font-card-projet: 500; 
+
+  --shadow-button: rgb(125, 125, 125);
 }
 
 [data-theme="dark"] {
@@ -55,6 +57,8 @@
   --weight-font-text: 500;
   --weight-font-p:400;
   --weight-font-card-projet: 500; 
+
+  --shadow-button: rgb(93, 93, 93);
 }
 
 .theme-switch input {
