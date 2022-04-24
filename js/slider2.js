@@ -9,15 +9,12 @@ window.addEventListener("load",function() {
     myTimer = setInterval(function(){plusSlides(1)}, 4000);
   
     //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
     slideshowContainer2 = document.getElementsByClassName('slideshow-inner2')[0];
 
   
     //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
     // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
   
-    slideshowContainer.addEventListener('mouseenter', pause)
-    slideshowContainer.addEventListener('mouseleave', resume)
     slideshowContainer2.addEventListener('mouseenter', pause)
     slideshowContainer2.addEventListener('mouseleave', resume)
 })

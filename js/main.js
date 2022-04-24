@@ -50,15 +50,14 @@ if (currentTheme) {
 
 function switchTheme(e) {
     if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-        icon.className = 'uil uil-sun icon'
-
-    }
-    else {        
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
         icon.className = 'uil uil-moon icon'
+    }
+    else {        
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        icon.className = 'uil uil-sun icon'
     }    
 }
 

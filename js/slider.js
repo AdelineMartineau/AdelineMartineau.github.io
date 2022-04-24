@@ -10,7 +10,6 @@ window.addEventListener("load",function() {
   
     //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
     slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
-    slideshowContainer2 = document.getElementsByClassName('slideshow-inner2')[0];
 
   
     //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
@@ -18,8 +17,6 @@ window.addEventListener("load",function() {
   
     slideshowContainer.addEventListener('mouseenter', pause)
     slideshowContainer.addEventListener('mouseleave', resume)
-    slideshowContainer2.addEventListener('mouseenter', pause)
-    slideshowContainer2.addEventListener('mouseleave', resume)
 })
 
 // NEXT AND PREVIOUS CONTROL

@@ -51,7 +51,7 @@
   --nav-color:#89d4f7;
   --progress-color: #7d99b8;
   --container-color:#0d121a;
-  --icon: #f8f8f8;
+  --icon: #89d4f7;
   --icon-skills: rgb(255, 255, 255);
 
   --weight-font-title: 600;
@@ -261,6 +261,7 @@ p {
 
 .icon:hover{
   color: var(--nav-color);
+  cursor: pointer;
 }
 
 .icon_navstage{
@@ -301,9 +302,11 @@ p {
   padding: 1rem 0.5rem 1rem 1rem;  
   text-decoration: none;
   color: #0f0f0f;
+  border:rgb(15, 15, 15) 2px solid;
   font-weight: 800;
   border-radius: 0.8vw;
   margin: 2rem 0 0 2rem;
+  box-shadow: 0 0 0.6vw rgb(102, 102, 102);
 }.contact_button:hover{
   box-shadow: 0 0 0.8vw rgb(102, 102, 102);
   transition: 0.3s;
@@ -318,10 +321,11 @@ p {
   text-decoration: none;
   color: #020202;
   border-radius: 0.8vw;
+  box-shadow: 0 0 0.6vw rgb(102, 102, 102);
   margin: 3vw 1vw 0vw 0vw;
   width: 11rem;
 }.doowup_btn:hover{
-  box-shadow: 0 0 0.6vw rgb(102, 102, 102);
+  box-shadow: 0 0 0.6vw rgb(145, 145, 145);
   transition: 0.3s;
 }
 
