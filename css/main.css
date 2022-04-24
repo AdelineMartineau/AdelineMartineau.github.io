@@ -890,12 +890,11 @@ p {
 }
 
 .uil-arrow-circle-up{
-  color:var(--nav-color);
+  color:var(--blue-color);
 }
 
 .uil-arrow-circle-up:hover{
   cursor:pointer;
-  color: var(--nav-color);
 }
 
 /* footer */
