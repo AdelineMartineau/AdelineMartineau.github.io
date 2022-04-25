@@ -19,7 +19,7 @@
   --title:#1c242e;
   --skills-title:rgb(247, 148, 222);
   --btn-color:#b9b6ff;
-  --btn-header-color:#d2d1ff;
+  --btn-header-color:#7f7dfdcd;
   --nav-color:#9b98ff;
   --progress-color: #7f7dc5;
   --container-color:#161e29d8;
@@ -47,7 +47,7 @@
   --subtitle-color: #cacaca;
   --card-p-color:white;
   --btn-color:#dab3ff;
-  --btn-header-color:#e3c5ff;
+  --btn-header-color:#f1aaffe7;
   --nav-color:#89d4f7;
   --progress-color: #7d99b8;
   --container-color:#0d121a;
@@ -835,7 +835,7 @@ p {
   margin : auto;
   font-weight: 700;
   padding : 0.2rem 1rem;
-  background-color: var(--btn-header-color);
+  background-color: var(--btn-color);
   border-radius: 0.3vw;
 }
 
